@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="xsd2svg">
+	<title>XSD2DITA Overview</title>
+	<shortdesc>What is XSD2DITA for?</shortdesc>
+	<conbody>
+		<section>
+			<p>This tool will create a <codeph>reference</codeph> DITA topic file, which can be included in the <codeph>DITAMAP</codeph> file.  
+			This will complete a table as shown below, and using the documentation elements to populate the table. 
+			</p>
+		</section>
+	</conbody>
+</concept>

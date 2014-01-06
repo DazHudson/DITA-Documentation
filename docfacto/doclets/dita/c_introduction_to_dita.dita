@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="dita_introduction">
+	<title><keyword keyref="javadoc2dita" /> Introduction</title>
+	<shortdesc>An Introduction to <codeph><keyword keyref="javadoc2dita" /></codeph>.</shortdesc>
+	<conbody>
+		<section>
+			<p><codeph><keyword keyref="javadoc2dita" /></codeph> is a <codeph>Doclet</codeph> which runs inside the
+			<codeph><keyword keyref="javadoc.gloss"/></codeph> process, which instead of generating HTML, generates DITA files instead. The normal <codeph>Javadoc</codeph> parameters can be used for public / private scope and which tags get processed.</p>
+			<p><codeph><keyword keyref="javadoc2dita" /></codeph> will produce the same heiraric structure as with the HTML version.  The root folder will contain a file called packages.ditamap, which can be used as inclusion to your existing DITA project, or standalone.
+			Each package folder will contain a file called r_package.dita, which contains tha package summary and links to the other DITA files.  Each class will generate a r_<codeph>class name</codeph>.dita file, inturn these files have the summary and detail sections for constructors, methods and fields.</p>
+			<p>The DITA files will contain links to references within the scope of the packages supplied to the <codeph>doclet</codeph> and will create external links to those classes that are not.  This includes generics</p>
+		</section>
+	</conbody>
+</concept>

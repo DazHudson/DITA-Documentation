@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="installing_sonar_adam">
+	<title>Installing the Sonar Adam Plugin</title>
+	<shortdesc>
+		Configuring the Adam Plugin for Sonar is done as follows.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				Copy the plugin jar (<keyword keyref="adam.sonar.jar" />) from the <filepath>lib</filepath> directory of the docfacto installation to the <filepath>'/extensions/plugin'</filepath> folder of your Sonar installation. Then
+				restart the server for the plugin to take effect. Remember to have set the necessary properties into your project's Sonar configuration.
+			</p>
+		</section>
+	</conbody>
+</concept>

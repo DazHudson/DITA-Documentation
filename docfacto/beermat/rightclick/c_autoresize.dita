@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="rightclick-menu-autoresize">
+	<title>Trim Canvas</title>
+	<shortdesc>
+		This option is always available on the right click menu
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				This tool trims the unused whitespace around the elements in a canvas. Therefore the canvas is resized to an appropriate size that just fits its contents.
+				This is useful for after finishing a diagram, you no longer need the extra white space.
+			</p>
+		</section>
+	</conbody>
+</concept>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="installing_docfacto">
+	<title>Installing <keyword keyref="links" /></title>
+	<shortdesc>How to install <keyword keyref="links" />.</shortdesc>
+	<conbody>
+		<section>
+			<p><keyword keyref="links" /> is released and shipped as a self extracting <codeph>jarball</codeph>.  To extract the contents of the <codeph>jarball</codeph> either double click the <codeph>jarball</codeph> or
+			by using the Java <cmdname>java -jar </cmdname> command.
+			</p>
+		</section>
+		<example>
+			<title>Example extraction command</title>
+			<cmdname>java</cmdname> <parmname>-jar</parmname> <filepath><keyword keyref="docfacto" /><keyword keyref="docfacto.release.version" />.jar</filepath>
+		</example>
+		<section>
+			<p>When extracted a directory of <keyword keyref="docfacto" /><keyword keyref="docfacto.release.version" /> will be created, and that will contain the sub directories as shown</p>
+				<simpletable>
+					<sthead>
+						<stentry>Directory Name</stentry>
+						<stentry>Description</stentry>
+					</sthead>
+					<strow>
+						<stentry>bin</stentry>
+						<stentry>Contains shell scripts for running some of the utilities</stentry>
+					</strow>
+					<strow>
+						<stentry>docs</stentry>
+						<stentry>Contains product documentation and the release notice</stentry>
+					</strow>
+					<strow>
+						<stentry>etc</stentry>
+						<stentry>Contains a sample Docfacto.xml file and licence information</stentry>
+					</strow>
+					<strow>
+						<stentry>jaxb</stentry>
+						<stentry>Contains the the <keyword keyref="jaxb-for-java">JAXB</keyword> version <keyword keyref="jaxb.version"></keyword></stentry>
+					</strow>
+					<strow>
+						<stentry>lib</stentry>
+						<stentry>Contains <keyword keyref="docfacto.jar" /> library file.  As well as the Sonar extension <keyword keyref="adam.sonar.jar" /> plugin jar file.</stentry>
+					</strow>
+					<strow>
+						<stentry>resources</stentry>
+						<stentry>Contains files that are used by Taglets</stentry>
+					</strow>
+				</simpletable>
+		</section>
+	</conbody>
+</concept>

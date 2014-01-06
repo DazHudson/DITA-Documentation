@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="xsd2svgant">
+	<title>Running XSD2SVG from Ant</title>
+	<shortdesc>How to use Ant to run XSD2SVG.</shortdesc>
+	<conbody>
+		<example>
+			<title>Example of using an Ant target which runs <codeph>XSD2SVG</codeph></title>
+			<codeblock><coderef href="ex_running_xsd2svg_ant_1.xml"/></codeblock>
+			<p>In the example you can see that a root node is being specified, along with a title.</p>
+		</example>
+	</conbody>
+</concept>

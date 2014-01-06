@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="adam_introduction">
+	<title><codeph><keyword keyref="adam" /></codeph> Introduction</title>
+	<shortdesc>An Introduction to <codeph><keyword keyref="adam" /></codeph>.</shortdesc>
+	<conbody>
+		<section>
+			<p><codeph><keyword keyref="adam" /></codeph> is a <codeph>Doclet</codeph> which runs inside the
+			<codeph><keyword keyref="javadoc.gloss"/></codeph> process.  <codeph><keyword keyref="adam" /></codeph> checks the consistency between the <codeph>Javadoc</codeph> present above the code and the code its self. 
+			<codeph><keyword keyref="adam" /></codeph> is controlled via a XML config file.  
+			This config file allows for the configuration of comment structures, required tags and user defined comment checks.  <codeph><keyword keyref="adam" /></codeph> can be used to 
+			check the validity and well-formedness of all <codeph>Javadoc</codeph> from packages, classes, constructors, methods and fields.  As <keyword keyref="adam" /> is a <codeph>Doclet</codeph>, changing the <codeph>Javadoc</codeph>
+			parameters also means that public, protected  and private comments can also be processed.</p>
+			<fig>
+				<title>Description of the different elements in Javadoc</title>
+				<image href="JavaDoc.svg" width="450" otherprops="pdf" placement="break" />
+				<image href="JavaDoc.svg" otherprops="html"/>
+			</fig>
+			<p><codeph><keyword keyref="adam" /></codeph> can check to make sure that not only are comments and tags present, but also that
+			tag descriptions are present as well.  Its is also possible to issue warnings when certain strings appear in comments, like <i>TODO</i>.  
+			Using <codeph><keyword keyref="adamlet" />s</codeph> ( see <xref format="dita" href="c_adamlets.dita"></xref>) it
+			is also possible to create user defined warning messages depending on the contents of comments.</p>
+		</section>
+	</conbody>
+</concept>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="rightclick-menu-grouping">
+	<title>Grouping options</title>
+	<shortdesc>
+		Group and ungroup.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+			Group becomes enabled when multiple elements are selected.
+			Ungroup becomes available when a group is selected.
+			The functionality of these options are explained in <xref href="../controlbar/c_group_tool_palette_item.dita"/>
+			</p>
+		</section>
+	</conbody>
+</concept>

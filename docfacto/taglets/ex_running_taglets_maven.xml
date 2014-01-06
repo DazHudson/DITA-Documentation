@@ -1,0 +1,16 @@
+<build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-javadoc-plugin</artifactId>
+			<version>2.9</version>
+			<configuration>
+				<taglet>com.docfacto.taglets.DocfactoTaglets</taglet>
+				<tagletpath>../../lib/__JAR_FILE__</tagletpath>
+				<stylesheetfile>../../resources/Docfacto.css</stylesheetfile>
+				<additionalJOption>-J-Ddocfacto.config=../../etc/Docfacto.xml</additionalJOption>
+				<useStandardDocletOptions>true</useStandardDocletOptions>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>

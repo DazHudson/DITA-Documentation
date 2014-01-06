@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- @docfacto.link key="copyAttributeToolItem" uri="${src-beermat}/ui/ControlToolBar.java" link-to="source" -->
+<concept id="copyAttribute-toolitem">
+	<title>Copy Attribute Tool Item</title>
+	<shortdesc>
+		The copy attributes tool item is located in the top element
+		control toolbar and
+		represented by an eye-dropper with an 'a' next to it.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>The purpose of this tool is to copy the attributes of one element,
+				to 'paste' them on other elements</p>
+			<p>To use this tool, select the element you wish to copy attributes
+				from. Then click the tool item, it will become enabled. Now each
+				element you click on will take the attributes of first selected
+				element.</p>
+			<p>
+				The tool will not enable if no elements are selected when pressing the
+				tool item. It will also not enable if more than one element is
+				selected, as this tool is for copying over one elements attributes
+				only.
+			</p>
+		</section>
+	</conbody>
+</concept>

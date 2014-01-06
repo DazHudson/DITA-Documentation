@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- @docfacto.link key="circleTool" uri="${src-beermat}/ui/toolbar/shapes/CircleShapeHandler.java" link-to="source" -->
+<!-- @docfacto.link key="ellipseTool" uri="${src-beermat}/ui/toolbar/shapes/EllipseShapeHandler.java" link-to="source" -->
+<concept id="circle-paletteItem">
+	<title>Draw circle and ellipses</title>
+	<shortdesc>
+		There are separate tools for circle drawing and ellipse drawing, but they follow similar behaviour
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>Use the circle tool for when you require a perfect circle, with a constrained radius. Use the ellipse tool when you
+				require an irregular ellipse
+			</p>
+			<ol>
+				<li>
+					Select the Circle tool<image href="circleTool.png" />or the Ellipse tool<image href="ellipseTool.png" />
+				</li>
+				<li>
+					Do one of the following
+					<ul>
+						<li>Move your mouse to where you want the centre of the circle/ellipse to be and then start dragging away from
+							this point.
+						</li>
+						<li>Click where you want the centre of a circle/ellipse to be, a new object is created with the dimension of the
+							previous circle/ellipse created. (or 100 radius by default)
+						</li>
+					</ul>
+				</li>
+			</ol>
+		</section>
+	</conbody>
+</concept>

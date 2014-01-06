@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="adamlets">
+	<title>Docfacto Installation Overview</title>
+	<shortdesc>How to install Docfacto</shortdesc>
+	<conbody>
+		<section>
+			<p>Docfacto has a runtime engine component, as well as Sonar and Eclipse plugin components, which takes the form of a <codeph>plugins</codeph>.  
+			The runtime engine installation has the Docfacto.xml configuration file, which the Sonar and Eclipse installations requires to be complete.
+			</p>
+		</section>
+	</conbody>
+</concept>

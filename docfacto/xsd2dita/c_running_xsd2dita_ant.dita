@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="xsd2ditaant">
+	<title>Running XSD2DITA from Ant</title>
+	<shortdesc>How to generate a reference topic DITA file from an XSD using XSD2DITA.</shortdesc>
+	<conbody>
+		<example>
+		<title>Example of an Ant target which runs XSD2DITA</title>
+		<p>Note that not only the <codeph><keyword keyref="docfacto.jar" /></codeph> needs to be added to the Ant classpath, 
+		   but also <codeph>jaxb-xjc.jar</codeph></p>
+		<codeblock><coderef href="ex_running_xsd2dita_ant_1.xml" /></codeblock>
+		</example>
+	</conbody>
+</concept>

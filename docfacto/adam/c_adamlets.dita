@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="adamlets">
+	<title>Adamlets</title>
+	<shortdesc><codeph><keyword keyref="adamlet" />s</codeph>, what are they?</shortdesc>
+	<conbody>
+		<section>
+			<p>An <codeph><keyword keyref="adamlet" /></codeph> is an extension point for <codeph><keyword keyref="adam" /></codeph>. This allows for user defined checks to be performed 
+			in the <codeph>Javadoc</codeph> and comments. This can be at the <codeph>Javadoc</codeph> level or at the tag level.</p>
+			<p><codeph><keyword keyref="adamlet" />s</codeph> are written in Java and must implement the <apiname>com.docfacto.doclets.Adamlet</apiname> interface.  
+			The class is also required to have an empty <codeph>constructor</codeph></p>
+		</section>
+		<section>
+			<title><codeph><keyword keyref="adamlet" /></codeph> interface</title>
+			<codeblock><coderef href="ex_adamlets_1.java"/></codeblock>
+		</section>
+		<section>
+			<title><codeph><keyword keyref="adamlet" /></codeph> Example</title>
+			<p>This example <codeph><keyword keyref="adamlet" /></codeph> checks the comment on the tag <codeph>since</codeph> and makes sure that it is a numeric and with a valid range</p>
+			<codeblock><coderef href="ex_adamlets_2.java" /></codeblock>
+		</section>
+		<section>
+			<title>Example output</title>
+			<p>In the example below, the last line is a warning from the 'Since Checker' <codeph>Adamlet</codeph>, which is the code example above.  
+			<codeph><keyword keyref="adam" /></codeph> will automatically output the name of the <codeph><keyword keyref="adamlet" /></codeph> as defined in the XML Config file and any positional information as well.</p>
+			<codeblock frame="all" scale="60">
+[javadoc] javadoc: warning - Adam: XSD2DITAProcessor.java:46: Field has no comment [theSVGProcessor]
+[javadoc] javadoc: warning - Adam: XSD2DITAProcessor.java:53: Javadoc param tag [generateSVGs] has no description [XSD2DITAProcessor]
+[javadoc] javadoc: warning - Adam: XSD2DITAProcessor.java:68: Adamlet [Since Checker] issued warning : Invalid release number [2.n] [process]			
+			</codeblock>
+		</section>
+		<section>
+			<title><codeph><keyword keyref="adamlet" /></codeph> Configuration</title>
+			<p>To configure an <codeph><keyword keyref="adamlet" /></codeph> an element needs to be added to the <codeph>comments</codeph> section.
+			Below is an example of how to add a <codeph><keyword keyref="adamlet" /></codeph> for the <codeph><keyword keyref="adam" /></codeph> processor. 
+			As the <parmname>tag-name</parmname> has been used
+			the <codeph><keyword keyref="adamlet" /></codeph> will only be called if a <parmname>@since</parmname> tag is present, otherwise the <codeph>Adamlet</codeph> will 
+			always be called for every comment.  Depending on the section that the <codeph><keyword keyref="adamlet" /></codeph> is defined in, will limit the scope of
+			the <codeph><keyword keyref="adamlet" /></codeph>.  For example, if the <codeph><keyword keyref="adamlet" /></codeph> is only defined in the package section, then the execution of
+			the <codeph><keyword keyref="adamlet" /></codeph> will be restricted to the package processing only.</p>
+			<codeblock>
+&lt;comments&gt;
+	&lt;comment-required&gt;true&lt;/comment-required&gt;
+	&lt;check-meaningless-comment>true&lt;/check-meaningless-comment&gt;
+	&lt;throws-tag-require-descriptions>true&lt;/throws-tag-require-descriptions&gt;
+	&lt;param-tag-require-descriptions>true&lt;/param-tag-require-descriptions&gt;
+	&lt;adamlet name="Since Checker" tag-name="since"&gt;com.docfacto.doclets.adam.adamlets.SinceAdamlet&lt;/adamlet&gt;
+&lt;/comments&gt;
+			</codeblock>
+		</section>
+	</conbody>
+</concept>

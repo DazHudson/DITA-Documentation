@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+                           "reference.dtd">
+<reference id="reference_booking">
+    <title>Course booking schema table</title>
+    <shortdesc>Course booking Schema</shortdesc>
+    <refbody>
+        <section id="courseBooking">
+            <title>courseBooking</title>
+            <p>Attributes</p>
+            <simpletable>
+                <sthead>
+                    <stentry>Name</stentry>
+                    <stentry>Type</stentry>
+                    <stentry>Description</stentry>
+                    <stentry>Required</stentry>
+                </sthead>
+                <strow>
+                    <stentry>courseReference</stentry>
+                    <stentry>string</stentry>
+                    <stentry>Course reference number</stentry>
+                    <stentry>true</stentry>
+                </strow>
+                <strow>
+                    <stentry>totalPrice</stentry>
+                    <stentry>decimal</stentry>
+                    <stentry>The total price</stentry>
+                    <stentry>true</stentry>
+                </strow>
+                <strow>
+                    <stentry>invoiceReference</stentry>
+                    <stentry>string</stentry>
+                    <stentry>Invoice or PO reference</stentry>
+                    <stentry>true</stentry>
+                </strow>
+                <strow>
+                    <stentry>courseDate</stentry>
+                    <stentry>date</stentry>
+                    <stentry>Date of the course</stentry>
+                    <stentry>true</stentry>
+                </strow>
+            </simpletable>
+        </section>
+        <section id="company">
+            <title>company</title>
+            <p>Attributes</p>
+            <simpletable>
+                <sthead>
+                    <stentry>Name</stentry>
+                    <stentry>Type</stentry>
+                    <stentry>Description</stentry>
+                    <stentry>Required</stentry>
+                </sthead>
+                <strow>
+                    <stentry>name</stentry>
+                    <stentry>string</stentry>
+                    <stentry/>
+                    <stentry>false</stentry>
+                </strow>
+            </simpletable>
+            <simpletable>
+                <sthead>
+                    <stentry>Name</stentry>
+                    <stentry>Type</stentry>
+                    <stentry>Description</stentry>
+                    <stentry>Range</stentry>
+                </sthead>
+                <strow>
+                    <stentry>address</stentry>
+                    <stentry>anyType</stentry>
+                    <stentry/>
+                    <stentry>[1 .. 1]</stentry>
+                </strow>
+                <strow>
+                    <stentry>contact</stentry>
+                    <stentry>
+                        <xref href="#reference_booking/contact">contact</xref>
+                    </stentry>
+                    <stentry/>
+                    <stentry>[1 .. 1]</stentry>
+                </strow>
+            </simpletable>
+        </section>
+        <section id="contact">
+            <title>contact</title>
+            <p>Attributes</p>
+            <simpletable>
+                <sthead>
+                    <stentry>Name</stentry>
+                    <stentry>Type</stentry>
+                    <stentry>Description</stentry>
+                    <stentry>Required</stentry>
+                </sthead>
+                <strow>
+                    <stentry>name</stentry>
+                    <stentry>string</stentry>
+                    <stentry>Company contact name</stentry>
+                    <stentry>true</stentry>
+                </strow>
+                <strow>
+                    <stentry>telephone</stentry>
+                    <stentry>string</stentry>
+                    <stentry>Company contact phone number</stentry>
+                    <stentry>true</stentry>
+                </strow>
+                <strow>
+                    <stentry>email</stentry>
+                    <stentry>string</stentry>
+                    <stentry>Company email contact</stentry>
+                    <stentry>true</stentry>
+                </strow>
+            </simpletable>
+        </section>
+        <section id="student">
+            <title>student</title>
+            <p>Attributes</p>
+            <simpletable>
+                <sthead>
+                    <stentry>Name</stentry>
+                    <stentry>Type</stentry>
+                    <stentry>Description</stentry>
+                    <stentry>Required</stentry>
+                </sthead>
+                <strow>
+                    <stentry>firstName</stentry>
+                    <stentry>string</stentry>
+                    <stentry>First name of the student</stentry>
+                    <stentry>true</stentry>
+                </strow>
+                <strow>
+                    <stentry>surname</stentry>
+                    <stentry>string</stentry>
+                    <stentry>Surname of the student</stentry>
+                    <stentry>true</stentry>
+                </strow>
+            </simpletable>
+        </section>
+    </refbody>
+</reference>
+<!-- Created by Docfacto [2012-08-14 13:58:53] -->

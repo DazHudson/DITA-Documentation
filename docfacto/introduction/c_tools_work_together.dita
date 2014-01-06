@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_">
+	<title>How docfacto tools work together</title>
+	<shortdesc>We have developed our tools to work together as an integrated solution to take the "too hard"
+	 out of documentation for developers as demonstrated in the following figure:.</shortdesc>
+	<conbody>
+		<section>			
+			<fig>
+			<image href="working-together.png" width="360" height="520" otherprops="pdf" />
+			<image href="working-together.png" scalefit="yes" otherprops="html" />
+			</fig>
+		</section>
+	</conbody>
+</concept>

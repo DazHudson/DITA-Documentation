@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="generalBeermat">
+	<title>Using Beermat</title>
+	<shortdesc>
+		Beermat is comprised of two editor pages, for graphical
+		and XML viewing, making it a multi-page editor
+	</shortdesc>
+	<conbody>
+		<section>
+			<title>Multi page editor</title>
+			<p>
+				This means that Beermat shows both the result of rendering the SVG document, the graphical editor and the raw XML,
+				in an XML editor. Any changes made in the SVG viewer will be reflected in the XML editor. The XML editor also allows
+				for adding extra SVG attributes to elements that are not currently enabled via the SVG editor. Any changes to the
+				XML document will also be reflected in the SVG viewer.
+			</p>
+		</section>
+	</conbody>
+</concept>

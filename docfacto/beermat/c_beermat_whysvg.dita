@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="whySVG">
+	<title>What is SVG?</title>
+	<shortdesc>
+		SVG is a flexible, scaleable and up-and-coming XML based
+		vector graphics.
+	</shortdesc>
+	<conbody>
+		<section>
+			<title>Advantages to using SVG</title>
+			<ul>
+				<li>
+					SVG provides the infinite scalability that raster graphics cannot (<codeph>jpeg</codeph>,
+					<codeph>png</codeph>).
+				</li>
+				<li>SVG's files are XML based. Every visual element is represented
+					by textual XML, meaning elements can easily be changed,
+					and changes are never permanent(as with Raster Images). Elements and
+					text can be altered without limit, this wouldn't be possible with a
+					raster image, without having to erase and recreate parts of the image, a long-winded
+					affair, but not with SVG!</li>
+				<li>Since Text elements within an SVG are actual text in the XML;
+					when the time comes to internationalise and translate the
+					documentation, the task is a walk in the park, the images do not
+					need to be redone in other languages!  SVG understands the locale that the image is being presented on, this means that the correct translation
+					will be displayed without the need for multiple files.
+				</li>
+				<li>Images (for example screen shots) can be embedded within the SVG to allow for screen shot annotations</li>
+				<li>The content and the style can be separated.</li>
+				<li>Can be easily transformed as its XML</li>
+			</ul>
+		</section>
+	</conbody>
+</concept>

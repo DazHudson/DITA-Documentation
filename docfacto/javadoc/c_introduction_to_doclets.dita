@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="doclets">
+	<title>Introduction to Doclets</title>
+	<shortdesc>Doclets, what are they</shortdesc>
+	<conbody>
+		<section>
+			<p>Javadoc uses a built-in Doclet, called <codeph>HtmlDoclet</codeph> this Doclet which generates HTML output. A Doclet can generate any format required,
+			or no format at all, as in the case of Adam, which is a Doclet, uses the Javadoc engine to validate the Javadoc with the code.</p>
+		</section>
+	</conbody>
+</concept>

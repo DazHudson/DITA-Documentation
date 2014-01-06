@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="upgrading_eclipse">
+	<title>Upgrading Eclipse Plugins</title>
+	<shortdesc>How to upgrade the eclipse plugins</shortdesc>
+	<conbody>
+		<section>
+			<title>Manually</title>
+			<p>
+			In case any new features have been added to the toolkit, it is best to use the install new software option, which will pick up new features and upgrade existing ones at the same time. 
+			<menucascade>
+				<uicontrol>Help</uicontrol>
+				<uicontrol>Install New Software</uicontrol>
+			</menucascade>
+			The work with URL is http://www.docfacto.com/eclipse/4.2
+			</p>
+		</section>
+		<section>
+			<title>Automatic</title>
+			<p>
+				To enable automatic updates, this feature will need to be enabled within Eclipse.  The feature can be found in Preferences
+			<menucascade>
+				<uicontrol>Eclipse</uicontrol>
+				<uicontrol>Preferences</uicontrol>
+				<uicontrol>Install / Update</uicontrol>
+				<uicontrol>Automatic Updates</uicontrol>
+			</menucascade>
+			</p>
+		</section>
+	</conbody>
+</concept>

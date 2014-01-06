@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="arrows-paletteItems">
+	<title>Drawing</title>
+	<shortdesc>
+		Arrows are created in Beermat by adding arrowheads, otherwise known as markers, to the start and end of
+		lines
+		or paths. Only a Line or a Path can have a marker set to it
+	</shortdesc>
+	<conbody>
+		<section>
+			<title>Locating the markers</title>
+			<p>
+				The markers are located on the stroke widget along the top toolbar.
+				<image href="markers.png"></image>
+			</p>
+			<p>
+				Expand each marker selection by clicking the blue arrow.
+				Start markers are leftward facing, and are an exact reverse
+				of the end markers.
+				
+				<!-- @docfacto.link key="markerList" uri="${src-beermat}/ui/widgets/StrokeWidget.java" link-to="source" -->				
+				<image href="startMarker.png" placement="break" />
+				End markers are rightward facing.
+				<image href="endMarker.png" placement="break" />
+			</p>
+		</section>
+
+		<section>
+			<title>Using the markers on new Paths/Lines</title>
+			<ol>
+				<li>Have the Line or Path tool selected</li>
+				<li>Select a start and/or end marker</li>
+				<li>
+					Draw your line or path, the markers appear as arrowheads. For further information on drawing see
+					<xref href="../simpleshapes/c_lineTool.dita" />
+				</li>
+			</ol>
+		</section>
+
+		<section>
+			<title>Setting markers on existing lines and paths</title>
+			<ol>
+				<li>Select a Line or Path element on the canvas</li>
+				<li>
+					Then do one of the following
+					<ul>
+						<li>Select a start or end marker. This marker will then appear on the line or path selected</li>
+						<!-- @docfacto.link key="arrowShortcut" uri="${src-beermat}/ui/widgets/StrokeWidget.java" link-to="source" -->
+						<li>Use the blank line, or arrow shortcut to automatically make the selected Line or Path a blank line or single
+							headed arrow</li>
+					</ul>
+				</li>
+			</ol>
+		</section>
+
+
+	</conbody>
+</concept>

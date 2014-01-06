@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="shape-paletteItems">
+	<title>Flow Chart Shapes</title>
+	<shortdesc>
+		A collection of shapes.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				A collection of shapes are included, these are likely to increase over time. To select the
+				required shape, click the
+				<codeph>mode</codeph>
+				white icon to display the palette of shapes.
+				Select the shape you require and then this shape will be shown as the
+				icon. A single click on the canvas will draw the shape the shape of
+				a default size, drag the mouse on the canvas to create a larger
+				shape, to
+				maintain the aspect ratio of the shape whilst resizing, hold down the
+				<codeph>shift</codeph>
+				key.
+			</p>
+		</section>
+	</conbody>
+</concept>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="links_file_associations">
+	<title>Links File Associations</title>
+	<shortdesc>
+		How to set up link file associations
+	</shortdesc>
+	<conbody>
+		<!-- @docfacto.link key="file-associations-provider" uri="${source-root}/com/docfacto/links/FileAssociationsProvider.java" version="1.0" link-to="doc" -->
+		<section>
+			<p>
+			The links section of the Docfacto.xml contains optional 'file-associations' elements which can be added underneath the 'basedir' and 'path' 
+			elements to determine how files with certain extensions are to be treated.
+			</p>
+			<p>
+			For example you may have files which use the file extension '.newExtension', and these files have the same structure and formatting 
+			as xml files, so you can associate the '.newExtension' extension with the 'xml' file type
+			</p>
+		</section>
+		<example>
+			<title>Links File Associations Example</title>
+			<codeblock>
+				&lt;links>
+					%lt;basedir>.&lt;/basedir>
+
+					&lt;path name="doc-root" description=Doc Root">./doc&lt;/path>
+					
+					&lt;file-associations>
+						&lt;association type="java">
+							&lt;extension>.java&lt;/extension>
+						&lt;/association>
+						&lt;association type="xml">
+							&lt;extension>.dita&lt;/extension>
+							&lt;extension>.newExtension&lt;/extension>
+						&lt;/association>
+					&lt;/file-associations>
+				&lt;/links>		
+			</codeblock>
+			<p>
+				In the above example, all files ending with '.java' will be processed as 'java' files, and files ending with '.dita' or '.newExtension' will 
+				be treated as 'xml' files.
+			</p>
+		</example>
+		<section>
+			<!-- @docfacto.link key="file-association-type" uri="${source-root}/com/docfacto/links/FileType.java" version="1.0" link-to="source" -->
+			<title>File Types</title>
+			<p>
+				As explained in the 'Links Format' section, Java, Javascript. HTML and XML file types are supported. The corresponding association 'type' values 
+				for these file types are:
+				
+				<ul>
+					<li>Java = 'java'</li>
+					<li>Javascript = 'javascript'</li>
+					<li>HTML = 'html'</li>
+					<li>XML = 'xml'</li>
+				</ul>
+			</p>
+		</section>
+		<example>
+			<title>File associations for Java, Javascript, HTML and XML file types</title>
+			<codeblock>
+				&lt;links>
+					%lt;basedir>.&lt;/basedir>
+
+					&lt;path name="doc-root" description=Doc Root">./doc&lt;/path>
+					
+					&lt;file-associations>
+						&lt;association type="java">
+							&lt;extension>.java&lt;/extension>
+						&lt;/association>
+						&lt;association type="javascript">
+							&lt;extension>.javascript&lt;/extension>
+						&lt;/association>
+						&lt;association type="html">
+							&lt;extension>.htm&lt;/extension>
+							&lt;extension>.html&lt;/extension>
+						&lt;/association>
+						&lt;association type="xml">
+							&lt;extension>.dita&lt;/extension>
+							&lt;extension>.xml&lt;/extension>
+						&lt;/association>
+					&lt;/file-associations>
+				&lt;/links>		
+			</codeblock>
+			<p>
+				In the above example, all files ending with '.java' will be processed as 'java' files, and files ending with '.dita' or '.newExtension' will 
+				be treated as 'xml' files.
+			</p>
+		</example>
+	</conbody>
+</concept>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="javadoc2dita">
+	<title>Javadoc to DITA Overview</title>
+	<shortdesc>What is <keyword keyref="javadoc2dita" />all about?
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				The standard <codeph>Javadoc</codeph> process generated HTML.  <codeph><keyword keyref="javadoc2dita" /></codeph>, as the name suggests generates DITA output. This then can be used
+				in conjuction with your existing DITA maps and files.  Although there are other tools out there that can do this, they don't seem to handle generics and need specialisation of the tool kit, 
+			    <codeph><keyword keyref="javadoc2dita" /></codeph> handles generics and does not require any specialisation of the <keyword keyref="DITAOT">DITA Open Toolkit</keyword>
+			</p>
+		</section>
+	</conbody>
+</concept>

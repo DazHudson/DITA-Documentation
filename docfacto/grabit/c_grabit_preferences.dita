@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="grabitprefs">
+	<title>Docfacto Grabit Preferences</title>
+	<shortdesc>Select which screen to capture.</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				Users with multiple screens can change the tool's default action to
+				take only a selected desktop.
+				In Eclipse menu, navigate to
+				<menucascade>
+					<uicontrol>Preferences</uicontrol>
+					<uicontrol>docfacto</uicontrol>
+					<uicontrol>Grabit</uicontrol>
+				</menucascade>
+				to modify your screenshot settings.
+			</p>
+			<fig>
+				<title>Grabit Preferences</title>
+				<image href="preference-page.png" />
+			</fig>
+		</section>
+	</conbody>
+</concept>

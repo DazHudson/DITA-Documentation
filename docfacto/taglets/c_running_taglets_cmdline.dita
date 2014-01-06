@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tagletscmdline">
+	<title>Running Taglets from the command line</title>
+	<shortdesc>How to use <codeph>Javadoc</codeph> to run the <codeph>Taglets</codeph>.</shortdesc>
+	<conbody>
+		<example>
+			<codeblock>
+javadoc -tagletpath ../lib/<keyword keyref="docfacto.jar" /> -J-Ddocfacto.config=../etc/Docfacto.xml  -taglet com.docfacto.taglets.DocfactoTaglets -stylesheetfile ../resources/Docfacto.css -sourcepath ../src/java -d ../output @../src/java/packages		
+			</codeblock>
+		</example>
+	</conbody>
+</concept>

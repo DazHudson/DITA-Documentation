@@ -1,0 +1,16 @@
+<!-- @docfacto.link key="zoomWidget" uri="/Volumes/Striped/Users/dhudson/development/docfacto/main/eclipse/beermat/Beermat UI/src/com/docfacto/beermat/ui/widgets/ZoomWidget.java" version="1.1" link-type="link-to-source" target-file-type="java" metadata="" -->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="zoom-widget">
+	<title>Zooming</title>
+	<shortdesc>
+		Functions of zoom.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>The zoom widget is a combination of combo box and zoom in/out buttons located on the bottom left side of beermat.
+				Using the combo box, you may select one of the sizes specified ranging from 5% to 3000%, or you may input a custom
+				size. The +/- buttons are included for quick and easy zooming, these will zoom by a 50% factor each click. By
+				clicking the word zoom, the image will return to its default size.</p>
+		</section>
+	</conbody>
+</concept>

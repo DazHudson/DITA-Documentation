@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="introDocfacto">
+	<title>Introduction</title>
+	<shortdesc>
+		Why did we create <keyword keyref="doc-tm" />?
+	</shortdesc>
+	<conbody>
+		<section>
+		<!-- 
+			<p>Docfacto was conceptualised from the basic need of having good technical documentation that actually reflected what the code does.
+			The need for good documentation, which would prevent the need to re-write excisting code, documentation that reflected
+			what the code actually did, and documentation which could explain <b>how</b> and <b>why</b> something was done, and not simply the what was done.</p>
+			
+			<p>One positive trait of software development that can lead to lack of documentation, is the mind set of those developing the software; the coders. 
+			When coders are problem solving and developing; 'in the zone' as such, that flowing ability to write out code without interruption. 
+			While this is a great mind set to be in for getting out code quickly and solving that problem, a gift any development manager would be happy
+			to see; it means that coders are less likely to stop after writing each method to comprehensively and correctly document their code, not because the developers are
+			lazy or don't want too, its just all too hard!  Often not in the same environment, and normally means talking to someone else.
+			It is these very attributes themselves that don't contribute to the "Interruption of consciousness" that documenting code is commonly seen as.
+			Today's standards of documentation are therefore not acceptable, the following chapters of this book explains what is practised, why this is wrong,
+			and how we have saught to solve this.
+			</p>
+			-->
+			<p>Nobody denies there is an essential requirement to produce quality documentation for software. Up to now this has been treated as low priority 
+			by creative developers or passed to technical authors with less knowledge of the code resulting in inaccurate and out of date documentation. <keyword keyref="doc-tm" /> 
+			has changed that and created a suite that provides an exciting solution.</p>
+			<p>We are tackling both the User document and System document (Technical doc) generation processes in order to better deliver on the user experience 
+			and the development and retention of intellectual property. Critically the User doc should describe the ‘how’ of the code and the System doc should 
+			describe the ‘what’ and ‘why’ of the code.</p>
+			<p>Our vision is the delivery of a set of tools for developers that make 'code the king' and thus generate quality code that is well documented within 
+			the existing development environment.</p>
+		</section>
+	</conbody>
+</concept>

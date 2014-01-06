@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="fill-widget">
+	<title>Fill Widget</title>
+	<shortdesc>
+		Functions of the fill widget.
+	</shortdesc>
+	<conbody>
+		<section>
+		<!-- @docfacto.link key="noColourFillWidget" uri="${src-eclipse-root}/core/src/com/docfacto/core/widgets/AbstractColorPicker.java" link-to="source" -->		
+			<p>The fill widget is used to select a colour that the shape chosen from the palette bar will be filled with.  This also includes free hand drawing.
+			To select a colour simply select the colour from the palette.
+			</p>
+			<p>The fill widget allows for no colour to be selected, this is the second x icon from the top right of the colour palette picker.</p>
+		</section>
+	</conbody>
+</concept>

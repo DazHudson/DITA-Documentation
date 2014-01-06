@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="rightclick-menu-toPath">
+	<title>Convert to Path</title>
+	<shortdesc>
+		The option is available on the main popup menu and appears
+		enabled when an element is selected.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				This option allows you to convert any element to a path element.
+				The attributes of your original element are retained during the
+				conversion.
+				The element appears exactly as it was before
+				converting
+				to a path, but in the XML it will no longer be an element
+				of its old
+				type, but now a path element.
+				This may be useful for when only a
+				path
+				is required.
+			</p>
+			<p>The conversion can also be used on path element, you may require
+				this, as the conversion to path, strips out any translates, scales
+				or any other transformations applied to the old path, and returns a
+				path which is exactly the same without these transformations</p>
+			<p>
+				The menu option becomes available when one or more elements are
+				selected, when multiple elements are selected, this option will
+				<b>not</b>
+				convert all elements to a single path, but instead will convert
+				each selected element to its own respective path
+			</p>
+		</section>
+	</conbody>
+</concept>

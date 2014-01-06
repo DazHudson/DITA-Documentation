@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<map>
+	<title>
+		Taglets
+	</title>
+	<topicref href="c_taglets_overview.dita" type="concept">
+		<topicref href="c_introduction_to_taglets.dita" type="concept" />
+		<topicref href="r_docfacto_taglets.dita" type="reference" />
+		<topicref href="r_taglets_config.dita" type="reference" />
+		<topicref href="c_running_the_taglets.dita" type="concept">
+			<topicref href="c_running_taglets_ant.dita" type="concept" />
+			<topicref href="c_running_taglets_cmdline.dita" type="concept" />
+			<topicref href="c_running_taglets_maven.dita" type="concept" />
+		</topicref>
+		<mapref href="eclipse-plugin/taglets_plugin.ditamap" />
+	</topicref>
+	<mapref href="../keyrefs.ditamap" processing-role="resource-only" />
+</map>

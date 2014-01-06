@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="assign-class">
+	<title>Assign Class</title>
+	<shortdesc>
+		Assign a style class to an element or group of elements.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>Styles can be assigned to any element, just like <codeph>HTML</codeph>.  If there are any class styles defined within
+			the document, or an external reference to a style sheet, then the class names will be populated in a drop down list.  You can
+			select one from the list, or type in a new class to be defined later.</p>
+			<fig>
+				<title>Assign Class Dialog</title>
+				<image href="AssignClass.png" placement="break"></image>
+			</fig>
+		</section>
+	</conbody>
+</concept>

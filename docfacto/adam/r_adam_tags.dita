@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="adam_tags">
+	<title>Adam Tags</title>
+	<shortdesc><codeph>Javadoc</codeph> Tags that can be used with <codeph><keyword keyref="adam" /></codeph>.</shortdesc>
+	<refbody>
+		<section>
+			<p>
+				The <codeph>Javadoc</codeph> process uses <codeph>tags</codeph> in the <codeph>Javadoc</codeph> comments to generate output.  
+				<codeph><keyword keyref="adam" /></codeph> uses a custom <codeph>tag</codeph> of <codeph>docfacto.adam ignore</codeph> 
+				which instructs the <codeph><keyword keyref="adam" /></codeph> processor to ignore processing that comment or section.  For package <codeph>Javadoc</codeph> the tag can 
+				be contained either within <filepath>package.html</filepath> or <filepath>package-info.java</filepath>.
+			</p>
+			<p>Below is a table here the ignore tag can be used and what the outcome will be.
+			</p>
+			<simpletable>
+				<sthead>
+					<stentry>Section</stentry>
+					<stentry>Outcome</stentry>
+				</sthead>
+				<strow>
+					<stentry>package</stentry>
+					<stentry>The entire package will be ignored, so no classes within this package will be processed</stentry>
+				</strow>
+				<strow>
+					<stentry>class</stentry>
+					<stentry>The entire class will be ignored, so no constructors / methods / fields will be processed.  This includes inner classes</stentry>
+				</strow>
+				<strow>
+					<stentry>constructor</stentry>
+					<stentry>The constructors will not be processed</stentry>
+				</strow>
+				<strow>
+					<stentry>method</stentry>
+					<stentry>The method will not be processed</stentry>
+				</strow>
+				<strow>
+					<stentry>field</stentry>
+					<stentry>The field (instance varible) will not be processed</stentry>
+				</strow>				
+			</simpletable>
+
+		</section>
+	</refbody>
+</reference>

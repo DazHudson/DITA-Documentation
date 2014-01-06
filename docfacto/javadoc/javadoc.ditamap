@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<map>
+	<topicref href="c_javadoc_overview.dita" type="concept">
+		<topicref href="c_introduction_to_javadoc.dita" type="concept" />
+		<topicref href="c_introduction_to_doclets.dita" type="concept" />
+		<topicref href="c_introduction_to_taglets.dita" type="concept" />
+	</topicref>
+</map>

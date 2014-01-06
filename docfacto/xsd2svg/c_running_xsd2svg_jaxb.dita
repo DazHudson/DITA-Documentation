@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="xsd2svgjaxb">
+	<title>Running XSD2SVG from JAXB / XJC</title>
+	<shortdesc>How to invoke XSD2SVG from the XJC plugin.</shortdesc>
+	<conbody>
+		<section>
+		<p>In order to use the JAXB plugin, the XSD will need some modifications so that parameters can be retrieved from the XSD. It is important to extend the <codeph>jxb:extensionBindingPrefixes</codeph>
+		with <keyword keyref="doc-tm" /> and to include the Docfacto namespace.
+		</p>
+		</section>
+		<example>
+			<title>Extending the XSD to enable to XSD2SVG plugin</title>
+			<codeblock><coderef href="ex_running_xsd2svg_jaxb_1.xml" /></codeblock>
+		</example>
+		<example>
+			<title>Example of running XSD2SVG for xjc</title>
+			<codeblock>
+java -cp ../lib/<keyword keyref="docfacto.jar" />:../jaxb/lib/jaxb-xjc.jar com.sun.tools.xjc.Driver -extension -Xsvg-generator ../samples/course-booking.xsd
+			</codeblock>
+		</example>
+	</conbody>
+</concept>

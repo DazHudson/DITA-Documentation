@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="rightclick-menu-arrange">
+	<title>Arranging options</title>
+	<shortdesc>
+		The options under 'Arrange' sub-menu allow to rearrange
+		element order for selected elements in the canvas.
+	</shortdesc>
+	<conbody>
+		<section>
+			All arrange options become available when one or more elements on the
+			canvas are selected, the options allow for elements to move forwards
+			and backwards within the document.
+			More information on this
+			functionality is explained here
+			<xref href="../controlbar/c_bring_backFront_palette_item.dita" />.
+		</section>
+	</conbody>
+</concept>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="css-paletteItem">
+	<title>CSS Selector</title>
+	<shortdesc>
+		How to assign a CSS to the SVG.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				Style and content have been separated in SVG as in HTML, this
+				means that a style sheet can be supplied to style elements. Use the
+				browser to select the CSS file required.
+			</p>
+		</section>
+	</conbody>
+</concept>

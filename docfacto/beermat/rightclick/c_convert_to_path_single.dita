@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="rightclick-menu-toPath-single">
+	<title>Convert to Single Path</title>
+	<shortdesc>
+		The option is available on the main popup menu only when more
+		than 1 element is selected.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				Similar to convert to path, this converts multiple selected elements
+				to a single path element in the SVG.
+				<note>Due to multiple elements being selected which could all have
+					different element attributes; the stroke/fill colours are removed,
+					and a default of black stroke and no fill is set.</note>
+			</p>
+			<p>
+				The menu option becomes available multiple elements are selected on
+				the canvas.
+				This option
+				<b>will</b>
+				convert all elements to a single path.
+			</p>
+		</section>
+	</conbody>
+</concept>

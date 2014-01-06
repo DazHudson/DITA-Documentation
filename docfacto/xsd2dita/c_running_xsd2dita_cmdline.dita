@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="xsd2ditacmdline">
+	<title>Running XSD2DITA from the command line</title>
+	<shortdesc>How to run XSD2DITA from the command line.</shortdesc>
+	<conbody>
+		<section>
+		<p>In the <filepath>bin</filepath> directory there is a shell script called <codeph>xsd2dita.sh</codeph>.  This takes two arguments the first argument is the XSD to process.
+		The section argument is the output folder.
+		</p>
+		</section>
+		<example>
+		<title>Example of using <codeph>xsd2dita.sh</codeph> from the command line</title>
+		<codeblock>
+./xsd2dita.sh -xsd<filepath>../xsds/course-booking.xsd</filepath> -output <filepath>../output/r_cource-booking.dita</filepath>
+</codeblock>
+		</example>
+	</conbody>
+</concept>

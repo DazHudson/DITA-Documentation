@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<map>
+	<title>
+		XSD Documentation
+	</title>
+	<topicref href="c_xsddoc_overview.dita" type="concept">
+		<topicref href="c_introduction_to_xsddoc.dita" type="concept" />
+		<topichead>
+			<mapref href="../xsd2svg/xsd2svg.ditamap" type="ditamap" />
+  		</topichead>
+		<topichead product="dita">
+			<mapref href="../xsd2dita/xsd2dita.ditamap" type="ditamap" />
+  		</topichead>
+  		<topichead>
+  			<mapref href="../xsdtree/xsdtree.ditamap" type="ditamap" />
+  		</topichead>
+	</topicref>
+
+	<mapref href="../keyrefs.ditamap" processing-role="resource-only" />
+</map>

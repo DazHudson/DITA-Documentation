@@ -1,0 +1,15 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:docfacto="http://www.docfacto.com"
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+	jxb:extensionBindingPrefixes="xjc docfacto" jxb:version="2.1">
+
+	<xsd:annotation>
+		<xsd:appinfo>
+			<docfacto:settings>
+				<docfacto:output>/Users/dhudson/development/Docfacto/output/r_adam.dita</docfacto:output>
+				<docfacto:rootnode>adam</docfacto:rootnode>
+				<docfacto:title>Adam</docfacto:title>
+			</docfacto:settings>
+		</xsd:appinfo>
+	</xsd:annotation>

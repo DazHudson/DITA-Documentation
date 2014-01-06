@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="xsd2svg">
+	<title>XSD2SVG Overview</title>
+	<shortdesc>What is this for?</shortdesc>
+	<conbody>
+		<section>
+			<p>The idea here is that although the user can be presented with the XSD itself, it doesn't show the hierarchical nature of what the XML should look like.
+			A nested diagram helps to show how the XML structure should be and also detail the element and attribute types.  Rounded boxes are <codeph>attributes</codeph> 
+			whilst solid rectangles are elements.  Dashed rectangles are complex items.  If an element or attribute name is in red then that element / attribute is required. 
+			</p>
+		</section>
+		<section>
+			<fig>
+				<title>Diagrammatic schema of course-booking.xsd</title>
+				<desc>
+					Generated SVG for course booking
+				</desc>
+				<image href="course-booking.svg" placement="break" width="300" otherprops="pdf" />
+				<image href="course-booking.svg" otherprops="html" />
+				<p>Here is an example of a generated SVG showing the course booking's XML hierachical structure.</p>
+			</fig>
+		</section>
+		<section>
+			<fig>
+				<title>SVG showing tool-tip</title>
+				<desc>Annotated tool tips<lines></lines></desc>
+				<image href="svg-with-tooltip.png" placement="break" otherprops="pdf" />
+				<image href="svg-with-tooltip.png" otherprops="html" />				
+				<p>If the image is displayed in a browser, the annotated attributes and elements will have tool-tips; as shown in the image below.</p>
+			</fig>
+		</section>
+		<section>
+			<p>
+			The generated SVG can be used in <codeph>Javadoc</codeph> documentation as well.  The best way to do this is to create a <filepath>doc-files</filepath> within the java package required.
+			Move the generated SVG to the doc-files folder and then in the Javadoc link the image as follows.
+			</p>
+			<codeblock>
+&lt;div&gt;
+ 	&lt;object data="doc-files/docfacto.svg" type="image/svg+xml"&gt;&lt;/object&gt;
+&lt;/div&gt;	
+			</codeblock>
+			or the <codeph>docfacto.media</codeph> taglet can be used.
+			<codeblock>
+{@docfacto.media uri="doc-files/docfacto.svg" placement="break"}			
+			</codeblock>
+			<p>This can be placed in the source files, <filepath>overview.html</filepath>, or <filepath>package.html</filepath></p>
+			<note>
+				The <codeph>Javadoc</codeph> engine will automatically copy any files that are in the <filepath>doc-files</filepath> sub-directory.
+			</note>
+		</section>
+	</conbody>
+</concept>

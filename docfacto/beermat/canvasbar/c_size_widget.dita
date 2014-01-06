@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="size-widget">
+	<title>Size Widget</title>
+	<shortdesc>
+		Functions of the size widget.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>The size widget enables the user to change the size of the SVG size.  By clicking the word size or the size shown a dialog is presented which allows the user
+			to select the new size of SVG.
+			</p>
+			<p>Preset sizes of widely used sizes and resolutions are included with the Size dialog, selecting one of these will automatically fill in the values.
+			</p>
+		</section>
+	</conbody>
+</concept>

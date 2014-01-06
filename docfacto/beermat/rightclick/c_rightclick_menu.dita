@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="rightclick-menu">
+	<title>Right Click Menu</title>
+	<shortdesc>
+		Right clicking on the canvas pops up a menu that contains a
+		number of features.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				To use the right click popup menu, right click anywhere on the
+				canvas, this can be done with or without element(s) selected.
+				The
+				menu options will change depending on whether one element is
+				selected, multiple elements are selected, or no elements are
+				selected.
+			</p>
+		</section>
+	</conbody>
+</concept>

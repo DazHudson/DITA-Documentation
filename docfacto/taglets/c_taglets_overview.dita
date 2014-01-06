@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="taglets">
+	<title>Taglets Overview</title>
+	<shortdesc>So what are <codeph>taglets</codeph> all about?</shortdesc>
+	<conbody>
+		<section>
+			<p><codeph>Taglets</codeph> are an extension to the <codeph>Javadoc</codeph> framework. It is not only a way of capturing, but also  of way filtering <codeph>Javadoc</codeph>
+			output within the code.  The idea of the <keyword keyref="doc-tm" /> <codeph>Taglets</codeph> is to highlight to the reader certain aspects of the code; the how and the why and not just the what.  
+			<keyword keyref="doc-tm" /> <codeph>Taglets</codeph> stand out against
+			normal <codeph>Javadoc</codeph> and can be customised by changing the supplied style sheet or by changing the configuration XML file.
+			</p>
+		</section>
+	</conbody>
+</concept>

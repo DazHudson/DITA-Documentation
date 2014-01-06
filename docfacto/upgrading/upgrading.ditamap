@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<map>
+	<title>Upgrading</title>
+	<topicref href="c_upgrading_overview.dita">
+		<topicref href="c_upgrading_docfacto.dita" type="concept"/>
+		<topicref href="c_upgrading_eclipse.dita" type="concept" />
+		<!--<topicref href="c_upgrading_sonar.dita" type="concept" /> -->
+	</topicref>
+</map>

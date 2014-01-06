@@ -1,0 +1,34 @@
+	<property name="doc.dir" value="../../doc/dita/docfacto" />
+	<property name="html-doc-dir" value="../../doc/html/cms" />
+	
+	<target name="links">
+		<taskdef name="links" classname="com.docfacto.links.ant.LinksTask"  />
+		<links versionmatch="true" configpath="../../etc/Docfacto.xml">
+			<source>
+				<!-- Java source set -->
+				<sourceset type="java">
+					<fileset dir=".">
+				  	<include name="**/*.java"/>
+				  	<exclude name="**/generated/**"/>
+					</fileset>
+				</sourceset>
+			
+				<!-- XML source set -->
+				<sourceset type="xml">
+					<fileset dir=".">
+						<include name="*.xml" />
+						<include name="*.xsd" />
+					</fileset>
+				</sourceset>
+			</source>
+			
+			<doc>
+				<!-- DITA source set -->
+				<docset type="xml">
+					<fileset dir="${doc.dir}">
+						<include name="**/*.dita" />
+					</fileset>
+				</docset>
+			</doc>
+		</links>
+	</target>

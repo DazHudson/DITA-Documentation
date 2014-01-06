@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="canvas-bar">
+	<title>Canvas Control Bar</title>
+	<shortdesc>
+		Functions of the Canvas control bar.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				The canvas control bar is the horizontal toolbar located along the bottom of the SVG editor.  
+				The canvas control bar contains widgets for controlling changes to the whole canvas and SVG; such as, changing svg size, and
+				zooming the canvas.		
+			</p>
+		</section>
+	</conbody>
+</concept>

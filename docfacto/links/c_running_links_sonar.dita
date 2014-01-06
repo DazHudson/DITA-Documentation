@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="linkssonar">
+	<title>
+		Running
+		<keyword keyref="links" />
+		from Sonar
+	</title>
+	<shortdesc>
+		How to use Sonar to run
+		<codeph>
+			<keyword keyref="links" />
+		</codeph>
+		.
+	</shortdesc>
+	<conbody>
+		<section>
+			<title>Viewing Links output in Widgets</title>
+			<p>
+				If you have installed the Links Plugin for Sonar correctly, there
+				are two widgets available for you
+				to use:
+			</p>
+			<p>
+				The Docfacto Links Summary Widget gives
+				a summary of the Links output.
+				It shows
+				the percentage of source lines which have been linked to
+				documentation, along with other simple statistics.
+				There is a pie chart that shows the percentage of the source lines which
+				have been linked to doc (the
+				section in green and labeled with 'With Doc') and the percentage of source
+				lines which have not been linked
+				to documentation (the section in red and labeled with 'Without Doc').
+			</p>
+			<p>
+				The Docfacto Links Statistics Widget lists all the measures from
+				Links.
+			</p>
+			<p>To
+				enable the widgets, login to Sonar as admin and
+				either go
+				to
+				the
+				main
+				'Dashboards'
+				page or the Dashboard for a
+				specific
+				project
+				by
+				clicking on
+				the project
+				in the main Dashboards page
+				under
+				'Projects'.
+			</p>
+
+			<p>
+				Then click on 'Configure Widgets' on the top right of
+				the
+				page, and
+				scroll down to find the two Docfacto Links widgets, then add the
+				widgets you want.
+
+				<fig>
+					<title>Adding the Sonar Docfacto Links widgets</title>
+					<image href="SonarAddLinksWidgets.png" width="350" placement="break"></image>
+				</fig>
+
+				<fig>
+					<title>The Docfacto Links Summary widget</title>
+					<image href="SonarLinksSummaryWidget.png" width="350"
+						placement="break"></image>
+				</fig>
+
+				<fig>
+					<title>The Docfacto Links Statistics widget</title>
+					<image href="SonarLinksStatisticsWidget.png" width="300"
+						placement="break"></image>
+				</fig>
+
+				<note>
+					If you added the widget at the main 'Dashboards'
+					page,
+					then a
+					'Project' dropdown will appear for the widget and you need to type
+					in the name of the project you want
+					to see
+					the
+					Links
+					metric results
+					for,
+					select it
+					and
+					save.
+				</note>
+			</p>
+
+		</section>
+	</conbody>
+</concept>

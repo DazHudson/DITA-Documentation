@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_">
+	<title>The coolest tools ever!</title>
+	<shortdesc>Here is a list of our cool tools:</shortdesc>
+	<conbody>
+		<section>
+			<title>Docfacto Adam: </title>
+			<p>
+			Comments validation and syntax checker that checks Javadoc comments against the code with easily customisable rules that allows you to extend your coding standards to comments, to ensure greater accuracy and improved documentation. Adam is also available for Eclipse and Sonar.
+			</p>
+		</section>
+		<section>
+			<title>Docfacto Beermat: </title>
+			<p>
+			A SVG editor for Eclipse that allows developers to easily create and edit SVG diagrams within Eclipse, providing a quick and easy way to doodle ideas and designs and share them with the development community or add them to documentation without leaving the IDE.
+			</p>
+		</section>
+		<section>
+			<title>Docfacto Taglets: </title>
+			<p>
+			Customisable rich content taglets that extend the Javadoc framework to capture and explain the why and not just the what.
+			</p>
+		</section>
+		<section>
+			<title>Docfacto Links: </title>
+			<p>
+			A code, developer asset and documentation linking tool that shows the impact of any code change on each other, the scope of documentation coverage and exposes hidden features. It also helps technical authors track what code is responsible for which features and functions.
+			</p>
+		</section>
+		<section>
+			<title>Docfacto Grabit: </title>
+			<p>
+			A simple screen capture and annotate facility within the IDE, which simplifies the process of including screen shots as a development asset.
+			</p>
+		</section>
+		<section product="dita">
+			<title>Docfacto DITA Doclet:</title>
+			<p>
+			Javadoc to DITA Doclet that handles generics, doesn't require any specialisation and can generate DITA files from Javadoc to compliment your existing DITA files.  This Doclet honours the Docfacto Taglets as well.
+			</p>
+		</section>
+		<section>
+			<title>Docfacto XSD Tools:</title>
+			<p>
+			XSD documentation tool that extracts the annotations from the XSD, generates system and user documentation from them, making the XSD's self-documenting to describe and visualise what the schemas look like.
+			</p>
+		</section>
+	</conbody>
+</concept>

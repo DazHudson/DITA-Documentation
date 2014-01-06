@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_">
+	<title>Impact of documentation debt</title>
+	<shortdesc>Eliminating documentation debt has been a concern for development teams of all sizes since the early days of coding. </shortdesc>
+	<conbody>
+		<section>
+			<p>Strategies to manage documentation debt and bring it in sync with the code involve either having a full time team of
+			 technical authors or committing large amounts of resources usually late in the development cycle.
+			  The problem with this is that as soon as you write another line of code the documentation debt starts to grow again
+			   and the code immediately becomes legacy code.</p>
+			<p>Business also shares this concern, as documentation debt can affect the bottom line, increasing time
+			    to market, higher support costs, lower uptake of product, poorer reputation and overall higher documentation
+			     costs. Development departments have reduced performance due to higher costs for document maintenance,
+			      refactoring and development and more inefficiencies with longer on-boarding times for new developers,
+			       inability to reuse code and increased technical debt.</p>
+			<p>Furthermore, intellectual property that isn’t properly specified and accurately documented has a lower perceived
+				 value to potential investors. This is because it is more difficult to assess your code’s reliability
+				  and is riskier investing in developing it further without complete and accurate documentation making
+				   it more difficult to predict or defend your software’s value.</p>
+				   <p> </p>
+				   <p>Docfacto – Eliminating Documentation Debt.</p>
+				   <fig>
+				<title>Effects of Documentation Debt</title>
+				<image href="effectsdocdebtsq.png" width="450" height="264" otherprops="pdf" />
+				<image href="effectsdocdebtsq.png" scalefit="yes" otherprops="html" />
+					</fig>
+				 
+		</section>
+	</conbody>
+</concept>

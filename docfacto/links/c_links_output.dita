@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="linksoutput">
+	<title>Generating output from Links</title>
+	<shortdesc>How to generate output from Links.</shortdesc>
+	<conbody>
+		<section>
+			<codeph><keyword keyref="links" /></codeph> has the ability to output its findings, results and statistics to a file, which can be consumed by other applications. 
+			*** Damon to fill in here ***.  The resulting file
+			is in XML format as shown below.
+			<fig>
+				<title>Schema of the <keyword keyref="adam" /> output file</title>
+				<image href="LinksOutput.svg" width="450" otherprops="pdf" placement="break" />
+				<image href="LinksOutput.svg" otherprops="html"/>
+			</fig>
+		</section>
+	</conbody>
+</concept>

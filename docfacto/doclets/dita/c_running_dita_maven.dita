@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ditamaven">
+	<title>Running <keyword keyref="javadoc2dita" /> from Maven</title>
+	<shortdesc>How to use Maven to run <codeph><keyword keyref="javadoc2dita" /></codeph>.</shortdesc>
+	<conbody>
+		<example>
+			<title>Example section of a pom.xml to configure <codeph><keyword keyref="javadoc2dita" /></codeph></title>
+			<codeblock><coderef href="ex_running_dita_maven.xml" /></codeblock>
+		</example>
+		<section>
+			<p>There may be a requirement to add the __JAR_FILE__ to the your local repository, this can be done by the following</p>
+			<userinput>
+mvn install:install-file -Dfile=<keyword keyref="docfacto.jar"/> -DgroupId=com.docfacto -DartifactId=java-toolkit -Dversion=<keyword keyref="docfacto.release.version" /> -Dpackaging=jar
+			</userinput>
+			or run the <filepath>mvn-install</filepath> script in the bin directory
+		</section>
+		<section>
+			<p>To execute <codeph><keyword keyref="javadoc2dita" /></codeph> within the <codeph>Maven</codeph> framework</p>
+			<userinput>
+mvn javadoc:javadoc
+			</userinput>
+		</section>
+	</conbody>
+</concept>

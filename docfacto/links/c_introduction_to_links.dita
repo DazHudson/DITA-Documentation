@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="links_introduction">
+	<title>Links Introduction</title>
+	<shortdesc>An Introduction to <keyword keyref="links" />.</shortdesc>
+	<conbody>
+		<section>
+			<keyword keyref="links" /> lets you link code to external documentation and documentation to code. This can:
+			<ul>
+				<li>Provide an indication as to the level of documentation debt.</li>
+				<li>Expose hidden features.</li>
+				<li>Provide developers the ability to find which documents need to be changed when refactoring code.</li>
+				<li>Provide the ability to calculate the documentation impact of feature / code changes.</li>
+				<li>Enable technical authors to track what code is responsible for certain features and functions.</li>
+			</ul>
+		</section>
+		<section>
+			<note>
+				<p>
+					It is important to note that links in source code which link to documentation files are called 
+					<b>Doc Links</b> and Links from documentation to source files are called <b>Source Links</b>.
+				</p>
+			</note>
+		</section>
+	</conbody>
+</concept>

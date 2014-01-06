@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="linksEclipseOverview">
+	<title>Link - Eclipse Plugin</title>
+	<shortdesc>The Links plugin adds Links between files</shortdesc>
+	<conbody>
+		<section id="links_eclipse_plugin">
+			<p>
+				The eclipse plugin for Links helps you to more quickly add links to your source/documentation files.
+			</p>
+		</section>
+		
+		<section id="installing_links_plugin">
+			<title>Installing the Links Plugin for the Eclipse IDE</title>
+			<p>
+				Links comes bundled with the Eclipse ‘Docfacto Toolkit’. If you don't
+				have the Docfacto Toolkit, install the feature from Docfacto update
+				site (<xref href="../../installation/c_installing_plugin.dita" />).
+
+				The Links plugin should be available after you restart eclipse.
+			</p>
+		</section>
+	</conbody>
+</concept>

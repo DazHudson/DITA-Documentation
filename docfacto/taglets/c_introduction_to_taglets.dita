@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="taglet_introduction">
+	<title>Taglet Introduction</title>
+	<shortdesc>An Introduction to <codeph>Taglets</codeph>.</shortdesc>
+	<conbody>
+		<section id="block_tags">
+			<title>Block Tags</title>
+			<p>
+			A tag is a special keyword within a doc comment that the <codeph>Javadoc</codeph> tool can process. 
+			There are two kinds of tags: block tags, which appear as @tag (also known as "stand-alone tags"), and in-line tags, 
+			which appear within curly braces, as {@tag}. To be interpreted, a block tag must appear at the beginning of a line, 
+			ignoring leading asterisks, white space, and separator (/**). This means you can use the @ character elsewhere in 
+			the text and it will not be interpreted as the start of a tag. If you want to start a line with the @ character and not have it be interpreted, 
+			use the HTML entity <![CDATA[&#064;]]>. Each block tag has associated text, which includes any text following the tag up to, but not including, 
+			either the next tag, or the end of the doc comment. This associated text can span multiple lines. 
+			</p>
+		</section>
+		<section id="inline_tags">
+			<title>In-line tags</title>
+			<p>
+			An in-line tag is allowed and interpreted anywhere that text is allowed. In-line tags can also be nested, so for example the following is possible.
+			</p>
+		</section>
+		<example>
+			<title>Example of nested in-line tags</title>
+			<codeblock>
+ * {@docfacto.system This is the entry point from Javadoc.  {@docfacto.note @see &lt;a href="http://docs.oracle.com/.../overview.html"&gt;Taglet Overview&lt;/a&gt; }  }
+			</codeblock>
+		</example>
+		<section>
+			<p>
+			As an in-line tag will be rendered at the position where the tag is encountered, it may be required to position the tag by using HTML.
+			</p>
+		</section>			
+		<example>
+			<title>HTML positioned in-line tag</title>
+			<codeblock>
+* &lt;p&gt;
+* {@docfacto.note This is an example of a note}
+* &lt;/p&gt;
+			</codeblock>
+		</example>
+	</conbody>
+</concept>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="book-abstract">
+	<title>Abstract</title>
+	<conbody>
+		<p>A brief summary of all operational knowledge
+			including the evolution of human culture.</p>
+	</conbody>
+</concept>

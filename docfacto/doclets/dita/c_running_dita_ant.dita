@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ditaant">
+	<title>Running <keyword keyref="javadoc2dita" /> from Ant</title>
+	<shortdesc>How to use Ant to run <codeph><keyword keyref="javadoc2dita" /></codeph>.</shortdesc>
+	<conbody>
+		<example>
+			<title>Example of an Ant target which runs <codeph><keyword keyref="javadoc2dita" /></codeph></title>
+			<codeblock><coderef href="ex_running_dita_ant.xml" /></codeblock>
+		</example>
+	</conbody>
+</concept>

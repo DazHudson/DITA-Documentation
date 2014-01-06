@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<target name="javadoc" description="Generates Javadoc for the project">
+	<javadoc sourcepath="." destdir="${javadoc.dir}"
+	author="false"
+	stylesheetfile="${docfacto}/resources/Docfacto.css"
+	link="http://download.oracle.com/javase/6/docs/api" > 
+		additionalparam="-J-Ddocfacto.config=../../etc/Docfacto.xml"
+		<taglet name="com.docfacto.taglets.DocfactoTaglets"
+		path="${docfacto}/lib/__JAR_FILE__"/>
+		<package name="com ... " />
+	</javadoc>
+</target>

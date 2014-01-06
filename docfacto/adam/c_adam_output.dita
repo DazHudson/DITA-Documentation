@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="adamoutput">
+	<title>Generating output from Adam</title>
+	<shortdesc>How to use Javadoc to run Adam.</shortdesc>
+	<conbody>
+		<section>
+			Adam has the ability to output its findings, results and statistics to a file, which can be consumed by other applications. 
+			<codeph><keyword keyref="adam" /></codeph> has an additional parameter of <parmname>-output</parmname> where by you would need to specify a filename.  The resulting file
+			is in XML format as shown below.
+			<fig>
+				<title>Schema of the <keyword keyref="adam" /> output file</title>
+				<image href="AdamOutput.svg" width="450" otherprops="pdf" placement="break" />
+				<image href="AdamOutput.svg" otherprops="html"/>
+			</fig>
+		</section>
+	</conbody>
+</concept>

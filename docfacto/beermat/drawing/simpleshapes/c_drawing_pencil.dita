@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- @docfacto.link key="pencilTool" uri="${src-beermat}/ui/toolbar/shapes/PathShapeHandler.java" link-to="source" -->
+<concept id="pencil-paletteItem">
+	<title>Draw paths using the Pencil tool</title>
+	<shortdesc>
+		The Pencil tool lets you draw paths, replicating using a pencil drawing on paper. The tool is most useful
+		for creating hand-drawn looking shapes.
+	</shortdesc>
+	<conbody>
+		<section>
+			To use the Pencil tool:
+			<ol>
+				<li>
+					Select the Pencil tool <image href="pencilTool.png"/>
+				</li>
+				<li>Position the mouse where you want to begin drawing, now start dragging the mouse, the path created follows the
+					mouse</li>
+			</ol>
+		</section>
+	</conbody>
+</concept>

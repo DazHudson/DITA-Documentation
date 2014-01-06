@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="javadoc">
+	<title>Introduction to Javadoc</title>
+	<shortdesc>Javadoc, what is it</shortdesc>
+	<conbody>
+		<section>
+			<p>Javadoc has been around for ever, and is a general tool for generating API documentation.  At Java 1.4, its was updated to handle generics and annotations, at 
+			java 1.7, there has been some style sheet changes, but we also know that there are going to be some internal changes to Javadoc.  One of the main changes is that 
+			currently, there is a restriction that Javadoc can only be run once within a JVM.  This is not normally an issue as its run from the command line or ant task, but does make
+			testing difficult.  At Java 1.8, there are also going to be some internal changes to the way taglets and doclets will work.</p>
+			<p>This section is purely to provide an synopis on the Javadoc tool and is in no way the definitive guide.</p>
+		</section>
+	</conbody>
+</concept>

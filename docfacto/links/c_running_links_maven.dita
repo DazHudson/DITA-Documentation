@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="linksmaven">
+	<title>Running Links from Maven</title>
+	<shortdesc>
+		How to use Maven to run
+		<codeph>
+			<keyword keyref="links" />
+		</codeph>
+		.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				To run Links via Maven, you can use the 'Maven AntRun' plugin to run
+				the Ant task which is used to run Links.
+				An example of how you can do this is shown in the following example
+				section which you can add into the pom file
+				for your project
+			</p>
+		</section>
+		<example>
+			<title>
+				Example section of a pom.xml to configure
+				<codeph>
+					<keyword keyref="links" />
+				</codeph>
+			</title>
+			<codeblock>
+				<coderef href="ex_running_links_maven.xml" />
+			</codeblock>
+		</example>
+	</conbody>
+</concept>

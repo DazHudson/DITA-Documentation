@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="workingwithimages" xml:lang="en-US">
+	<title>Working With Image Files</title>
+	<shortdesc>
+		Images launched with the Grabit image editor are displayed at
+		the centre of the canvas area if the image is smaller than editor area.
+		Otherwise, it is displayed with scroll bars to enable panning.
+		
+		The Grabit tool has a basic selection of tools which can be used to add 
+		lines, shapes and texts to images. This section provides information on
+		their usage.
+
+	</shortdesc>
+	<conbody>
+		
+		<fig>
+			<title>Docfacto Grabit Image Editor</title>
+			<image href="GrabitScreenShot.png" placement="break" />
+		</fig>
+		<section id="editingimages">
+			<title>Editing Images</title>
+			<p>
+			The editing tools available in Grabit can be accessed from
+			the toolbar. These tools are:
+
+
+			<ul>
+				<li>Freehand drawing - Can be used for drawing freeform lines.
+				</li>
+				<li>Straight line - for drawing straight lines.
+				</li>
+				<li>Rectangle tool - for drawing a rectangular shapes.
+				</li>
+				<li>Square tool - for drawing squares.
+				</li>
+				<li>Oval tool - for drawing oval shapes.
+				</li>
+				<li>Circle tool - for drawing circle shapes.
+				</li>
+				</ul>
+				All the above tools have line and fill properties that can be set to suit individual
+				 needs. Properties of a selected tool are visible in the property panel at the bottom
+				 of the drawing area. The line size, style and colour can be changed as well as the fill colour.
+				 </p><p>
+				 
+				The other tools in the toolbar are:
+				<ul>
+				<li>Text tool - for adding text to images</li>
+				<li>Crop tool - for cropping the image
+				</li>
+				<li>Zoom tools - for zooming in and out.
+				</li>
+				<li>SVG export tool - for exporting to svg.
+				</li>
+				</ul>
+				The above tools will be discussed in a little more
+				detail.
+
+
+				</p>
+		</section>
+		<section id="addingtexts">
+			<title>Adding text to image</title>
+			<p>
+				Using the text tool is easy. Select the text tool then click on the drawing area 
+				and start typing in the text field. When the 'Enter' is pressed, the text would 
+				be written on the image using the font style in the property panel.
+				A desired font type, size and colour can be set using the property panel. Texts
+				can also be set to bold, italic and underline.
+			</p>
+		</section>
+		
+		
+		<section id="croppingimages">
+			<title>Cropping</title>
+			<p>
+				To enable cropping, first click the crop tool then move to a
+				desired point within the drawing area.
+				Clicking and holding the mouse button while moving the mouse over the
+				desired crop area would draw a rectangle over the image.
+				The image would become cropped when the mouse button is released.
+			</p>
+		</section>
+		<section id="zoomingimages">
+			<title>Zooming</title>
+			<p>
+				The zoom icons in the grabit sidebar can be used to zoom in/out of an image. 
+				Alternatively, holding down the CTRL (or command key) whilst pressing – or + keys 
+				would also zoom out or in on the displayed image. Using the zoom-in icon, users 
+				can zoom-in to a specific point, the zoom to point is more accurate when the screen 
+				image is not smaller the drawing area.
+			</p>
+		</section>
+
+		
+		<section id="exportingimagestosvg">
+			<title>Exporting Images to SVG Editor</title>
+			<p>
+				The SVG tool (<xref href="../beermat/c_beermat_whysvg.dita"/>) allows Grabit to embed an image in 
+				an svg file. Clicking the SVG tool will prompt the user for a filename to be used. Once
+				created the svg file will be launched by Beermat (or your default SVG editor).
+				<note>This action will cause your image to be saved. If the image is an unsaved screen grab, 
+				you will be prompted twice (first, to save the image. Secondly, to provide a filename for 
+				the svg file.)</note>
+				
+			</p>
+		</section>
+		
+		<section id="exportingimages">
+			<title>Saving Images</title>
+			<p>
+				Saving an image in a format different from the source image’s
+				format can be done by clicking the
+				<b>SaveAs</b>
+				in the file menu option and simply set the extension to the desired
+				format (any of .bmp, .gif, .png, .jpg, .jpeg, ico. and .tiff).
+			</p>
+		</section>
+	</conbody>
+</concept>

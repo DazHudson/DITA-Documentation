@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<val>
+	<prop att="product" val="java" action="exclude" />
+	<prop att="product" val="dita" action="include" />
+	<prop att="otherprops" val="pdf" action="include" />
+	<prop att="otherprops" val="html" action="exclude" />
+</val>

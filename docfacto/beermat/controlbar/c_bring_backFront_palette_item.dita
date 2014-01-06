@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- @docfacto.link uri="${src-beermat}/ui/toolbar/LayerUpDownPaletteItem.java key="layerUpDown-action" version="2.4.2" -->
+<concept id="layerUpDown-paletteItem">
+	<title>Bring-fowards / bring-backwards Tool</title>
+	<shortdesc>
+		These two tools are represented two adjacent elements with an arrow moving forwards or backwards respectively.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>These tools allow you to alter the order of a selected element(s).
+			With an element selected, a click on either tool, will move the element up and down the document.
+			Elements which appear last in a document appear at the top, and elements at the start appear behind.
+			</p>
+			<p>The canvas popup menu also allows for one selected item to be either at the beginning or the end of the document.</p>
+			<note>SVG draws the items in the order that they appear in the XML document</note>
+		</section>
+	</conbody>
+</concept>

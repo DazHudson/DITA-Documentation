@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<map>
+	<title>
+		<keyword keyref="adam"></keyword>
+	</title>
+	<topicref href="c_adam_overview.dita" type="concept">
+		<topicref href="c_introduction_to_adam.dita" type="concept" />
+		<topicref href="r_adam_config.dita" type="reference" />
+		<topicref href="r_docfacto_config.dita" type="reference" />
+		<topicref href="r_adam_tags.dita" type="reference" />
+		<topicref href="c_running_adam.dita" type="concept">
+			<topicref href="c_running_adam_ant.dita" type="concept" />
+			<topicref href="c_running_adam_cmdline.dita" type="concept" />
+			<topicref href="c_running_adam_maven.dita" type="concept" />
+			<topicref href="c_running_adam_from_eclipse.dita" type="concept" />
+			<topicref href="c_running_adam_from_sonar.dita" type="concept" />
+		</topicref>
+		<mapref href="eclipse-plugin/adam_plugin.ditamap" />
+		<topicref href="c_adam_output.dita" type="concept" />
+		<topicref href="r_adam_statistics.dita" type="reference" />
+		<topicref href="c_adamlets.dita" type="concept" />
+	</topicref>
+</map>

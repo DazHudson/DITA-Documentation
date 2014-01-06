@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="grabitoverview">
+	<title>Docfacto Grabit Overview</title>
+	<shortdesc>Docfacto Grabit what is it?
+	</shortdesc>
+	<conbody>
+		<section id="performingscreencapture">
+			<p>Docfacto Grabit is a screen capture tool developed specifically
+				for the Eclipse IDE
+				and can be used as an image viewer. Image files such as .bmp, .gif,
+				.png, .jpg, .jpeg, ico. and .tiff can be viewed and edited within
+				the IDE using Grabit.</p>
+			<p>
+				When the Grabit button is clicked, the default action is to take a
+				screen shot of the desktop(s) but this can be changed to a timed
+				shot.
+				The timer is particularly useful when taking shots of menus because
+				most menus disappear when a key is pressed on the keyboard.
+
+				<note>If unsaved, newly taken screenshots would be discarded on
+					application close without a prompt!</note>
+			</p>
+			<fig>
+				<title>Changing default action</title>
+				<image href="dropdown.png" placement="break" />
+			</fig>
+		</section>
+	</conbody>
+</concept>

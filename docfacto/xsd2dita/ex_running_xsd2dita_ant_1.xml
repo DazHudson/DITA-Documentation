@@ -1,0 +1,8 @@
+<taskdef name="xsd2dita" classname="com.docfacto.xsd2dita.XSD2DITATask" />
+		
+<target name="xsd2dita-task" description="Generate DITA reference files from the XSD's">
+	<xsd2dita xsd="/Users/dhudson/development/docfacto/main/src/java/com/docfacto/config/resources/Docfacto.xsd" outputdir="/Users/dhudson/development/Docfacto/output" 
+		rootnode="adam" 
+		title="Adam Config">
+	</xsd2dita>	
+</target>

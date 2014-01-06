@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="installing_sonar_links">
+	<title>Installing the Docfacto Links Servlet</title>
+	<shortdesc>
+		Configuring the Links Servlet is done as follows.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				Deploy the (<keyword keyref="links.servlet.war" />) from the <filepath>lib</filepath> directory of the docfacto installation.
+			</p>
+			
+			<p>
+				The default username and password are both: admin. After redeployment, you can change this at the config file in the following location: 
+				<filepath>/location-you-deployed-servlet-to/docfacto-links-servlet/WEB-INF/config/config.xml</filepath>. 
+				
+				You should see:
+				
+				<codeblock>					
+					&lt;links>
+						&lt;username>admin&lt;/username>
+						&lt;password>admin&lt;/password>
+					&lt;/links>
+				</codeblock>
+				
+				After changing the username/password values, you need to reload the servlet for it to take effect.
+			</p>
+		</section>
+	</conbody>
+</concept>

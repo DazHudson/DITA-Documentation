@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tagletsant">
+	<title>Running Taglets from Ant</title>
+	<shortdesc>How to use Ant to run the <codeph>Taglets</codeph>.</shortdesc>
+	<conbody>
+		<example>
+			<title>Example of an <codeph>Ant</codeph> target which runs the <codeph>Javadoc</codeph> task with the <keyword keyref="doc-tm"></keyword> <codeph>Taglets</codeph></title>
+			<codeblock><coderef href="ex_running_taglets_ant_1.xml" /></codeblock>
+		</example>
+		<section>
+			<note>
+				The <codeph>additionalparam</codeph> points to the configured <codeph>Docfacto.xml</codeph>
+			</note>
+		</section>
+	</conbody>
+</concept>

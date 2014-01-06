@@ -1,0 +1,8 @@
+<taskdef name="xsd2svg" classname="com.docfacto.xsd2svg.XSD2SVGTask" />
+	
+<target name="xsd2dita-task" description="Generate DITA reference files from the XSD's">
+	<xsd2dita xsd="/Users/dhudson/development/docfacto/main/src/java/com/docfacto/config/resources/Docfacto.xsd" 
+		output="${project.root}/output/adam.dita" 
+		rootnode="adam" 
+		title="Adam Config" />
+</target>

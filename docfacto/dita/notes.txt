@@ -1,0 +1,500 @@
+Use the following DITA tags to produce output that matches the highlighting guidelines.
+
+// http://my.safaribooksonline.com/book/information-technology-and-software-development/9780132118989/appendixes/app02
+
+Element	Usage	DITA tag (1)	Example	DITA tagging for example	IBM style highlighting (2)
+Acronyms and initialisms	 	Do not tag.	IBM	 	 
+API class or method name	Name of an API such as a Java class or method name and their data structures.	<apiname> (5)	Use the setName method of the Widget class. Free the memory allocated by the db2AutoConfig API.	Use the <apiname>setName </apiname>method of the <apiname>Widget </apiname>class. Free the memory allocated by the <apiname>db2AutoConfig </apiname>API.	None
+API structure parameter	The name and value of an API structure parameter. (8)	Same tagging as for Environment variable	 	 	 
+Bold highlighting	Do not use, unless no alternative. Use appropriate semantic tag instead.	<b> (3)	 	 	Bold (default browser setting)
+Boolean expression	One of two opposite values.	<boolean>	She said “boolean: yes” when I asked her to marry me!	She said “<boolean state=“yes”/>” when I asked her to marry me!	Green
+Character or letter	 	<i> (7)	... must start with the letter H ...	... must start with the letter <i>H</i>...	Italic
+Citation	Bibliographic reference that refers to the title of a book, article, white paper, diskette, CD, or readme file. Note: the titles of information centers are not highlighted.	<cite>	The Making Widgets manual states that ...	The <cite>Making Widgets</cite> manual states that ...	Italic (default browser setting)
+Code phrase	Snippet of code within the main flow of text. Use also for Java properties.	<codeph>	... use a while loop to ...	... use a <codeph>while</codeph> loop to ...	Monospace
+Code block	Same context as for <codeph>, but for a block element, rather than inline. Use also for lists of Java properties.	<codeblock>	... catching exceptions:
+catch (Exception e) { 
+   log("Failed!" + e);
+}                     
+
+... catching exceptions: <codeblock>
+catch (Exception e) {
+  log("Failed! "+ e);
+}
+</codeblock>	Monospace with gray background line breaks are preserved
+Column headings	References to column headings in standard text.	Do not tag.	The Compiler column lists ...	 	 
+Command names	Name of a command (or macro or utility that you can type as a command) when it is part of a discussion; not when part of user input.	<cmdname> (5)	Use the ping command to test ...
+The db2trc utility ...
+
+The ATTACH macro ...	Use the <cmdname>ping</cmdname> command to test ...
+The<cmdname>db2trc </cmdname> utility ...
+
+The <cmdname>ATTACH </cmdname> macro ...	Bold monospace
+Component or feature name	Distinct components or units within a product.	Do not tag.	Configuration Manager Broker User Name Server Workbench	 	 
+Configuration parameters and their options	 	<parmname> (5) <option>	... set the catalog_noauth configuration parameter to 1 ...	... set the <parmname> catalog_noauth</parmname> to <option>1</option>...	Bold monospace monospace
+Data type	 	Do not tag.	... can have a CLOB or LONG VARCHAR data type.	... can have a CLOB or LONG VARCHAR data type.	 
+Database table name	 	Do not tag.	 	 	 
+Definition in text	A new word or phrase that you introduce with its definition.	<term> (the definition is not tagged) Tagged words are normally included in the glossary.	A line is called a point-to-point line if it ...	A line is called a <term> point-to-point</term>line if it ...	Italic
+Directory name	See File name.	 	 	 	 
+Draft comment	Allows simple review and discussion of topic contents. Can include author, time, and disposition attributes. Note: Ensure draft comments are switched off before publishing.	<draft-comment> The disposition attribute can have values:
+issue
+open
+accepted
+rejected
+deferred
+duplicate
+reopened
+unassigned
+completed
+
+ 	<draft-comment author="PMH" disposition="unassigned " time="1st April">A comment ...
+</draft-comment>	Green background
+Email address	 	You might want to make this an active link, but do not tag specifically for highlighting.	Send an email to: askibm@vnet.ibm.com	Send an email to: <xref href= "mailto:
+askibm@vnet.ibm.com"
+format="other"
+scope="external">
+askibm@vnet.ibm.com
+</xref>	 
+Emphasized text	Do not use <i> except rarely for a word or phrase that you want to highlight only for emphasis. Do not use to force italic where you should use a semantic tag.	<i> (3)	This is a contrived example where using <i>might be acceptable ... Use the word that to introduce a restrictive clause.	This is a contrived example where using &lt;i> <i>might</i> be acceptable ... Use the word <i>that</i> to introduce a restrictive clause.	Italic
+Entered data	See User input.	 	 	 	 
+Environment variable	The name and value of an environment variable. (8)	Name: <parmname> (5) Value: <option>	... set the ProgramFiles environment variable to true if ...	... set the <parmname>ProgramFiles
+</parmname>environment
+variable to <option>true
+</option>if ...	Parmname: bold monospace option: monospace
+Example text	See Code phrase and Code block.	 	 	 	 
+File name / File extension / File path / Directory name	Name or location or full path of a referenced file. (But not for Internet addresses.)	<filepath> (5)	To view the trace output, open the tracelog.txt file.
+Copy all .exe files to the bin directory.
+
+The default installation directory is C:\Program Files\	To view the trace output, open the <filepath>tracelog.txt</filepath> file.
+Copy all <filepath>.exe</filepath> files to the <filepath>bin</filepath> directory.
+
+The default installation directory is <filepath>C:\Program Files\</filepath>	Monospace
+Footnote	Use sparingly. In online information, alternative methods are preferred. See “Footnotes” on page 143.	<fn>	Use a widget1to ...
+---
+
+1A widget is ...	Use a widget <fn>A widget is ...</fn> to ...	 
+FTP address	See Internet address.	 	 	 	 
+Macro name	 	Do not tag. (5)	The BUILD macro ...	 	 
+Glossary term	See List - definition.	Note: a more complete set of descriptive tags for glossary terms is available in the DITA glossary specialization. However, using a definition list (<dl>) is an accepted way of creating a glossary.	 	 	If using a definition list, the <dt> element is rendered bold.
+Graphic	See Image.	 	 	 	 
+GUI control	See User interface control.	 	 	 	 
+Hardware label or button name	 	Do not tag.	The serial connector is labeled COM1. Press the Power button.	 	 
+Image	Artwork, screen shots, and so on.	<image>
+  <alt>
+The placement attribute can have the values:
+
+   inline | break
+
+If placement= "break", the align attribute can have the following values:
+
+   left | right |
+   center
+
+Use <image> alone for inline graphics (such as icons). To include a title (and automatically generated Fig. number) wrap in <fig> tag.
+
+<fig>
+  <title> [note
+automatic addition of
+period]
+  <desc>
+  <image>
+   <alt>	Figure 1. Steam. This image shows a steam engine and train.
+
+
+<fig>
+  <title>Steam</title>
+  <desc>This image shows a
+   steam engine and train.</desc>
+  <image href="steam.gif"
+   longdescref="steamdesc.dita"
+   placement="break"
+   align="center">
+   <alt>Steam engine and
+     train.</alt>
+  </image>
+</fig>	.figcap,.figdesc: italic
+Image map	Provides the basic functionality of HTML client-side image map markup. See DITA documentation for details of usage.	
+<imagemap>
+  <image>
+  <area>
+    <shape>
+    <coords>
+    <xref>
+
+ 	 	 
+Italic highlighting	See Emphasized text.	 	 	 	 
+Internet address (web, FTP, IP, and so on)	Web address, FTP address, and so on. Do not refer to these as URLs. Refer to ‘four numbers separated by dots’ as an IP address.	You might want to make this an active link, but do not tag specifically for highlighting. Use case-sensitive capitalization. (5) If the protocol is HTTP, you can omit http://. Include other protocols. Be consistent if there is a mixture.	http://www.ibm.com/software http://127.0.0.1:8080	<xref href="http://www.ibm.com/
+ software" format="html"
+ scope="external">
+http://www.ibm.com/software
+</xref>	 
+Java properties	See Code phrase and Code block.	 	 	 	 
+Keyboard key	 	Do not tag.	 	 	 
+Key value pair	See Code phrase and Code block.	 	 	 	 
+Keyword in text	Names of keywords in text.	Same tagging as for Parameter name Do not use the <keyword> tag for semantic tagging, only for reusable text. (4)	The INSTALL_TYPE keyword specifies the type of installation.	The <parmname>INSTALL_TYPE</parmname>keyword specifies the type of installation.	Bold monospace
+List - definition	See Glossary term for one use of a definition list.	<dl>
+ <dlhead>
+  <dthd>
+  <ddhd>
+ <dlentry>
+   <dt>
+   <dd>	Term header Definition header
+A term A definition
+
+Another term Another definition	<dl>
+ <dlhead>
+  <dthd>Term header</dthd>
+  <ddhd>Definition
+    header</ddhd>
+  </dlhead>
+  <dlentry>
+   <dt>A term</dt>
+   <dd>A definition</dd>
+  </dlentry>
+</dl>	dthd, ddhd, dt: bold
+List - ordered	Use where sequence of items is important.	<ol>
+ <li>	1. First item 2. Second item	<ol>
+ <li>First item</li>
+ <li>Second item</li>
+</ol>	 
+List -parameter	Similar to a definition list, but specifically for terms and definitions that describe the parameters for a command or an API.	<parml>
+  <plentry>
+   <pt>
+   <pd>	 	 	pt: bold
+List - simple	Simple list of short, phrase-like content.	<sl>
+  <sli>	One item Another item	<sl>
+ <sli>One item</sli>
+ <sli>Another item</sli>
+</sl>	No list style
+List -unordered	Use where order of items is not significant.	<ul>
+ <li>	
+One item
+
+Another item
+
+<ul>
+ <li>One item</li>
+ <li>Another item</li>
+</ul>	 
+Log name	 	Do not tag. (5)	The history log ...	 	 
+Long quotation	Long quote: same context as for <q>, but for a block element, rather than inline. See also Quotation.	<lq>	The manual states: There are two ways to make widgets, either using thingumajigs, or using whatchamacallits ...	The manual states: <lq>There are two ways to make widgets, either using thingumajigs, or using whatchamacallits ... </lq>	Indented block line breaks are preserved
+Menu cascade	Series of menu choices. Note: Do not include spaces in <uicontrol> tags, other than between words. See also User interface control.	<menucascade>
+ <uicontrol>
+   <shortcut>
+(use of <shortcut>
+varies by product)	Start > Programs Accessories	<menucascade>
+  <uicontrol>Start</uicontrol>
+  <uicontrol><shortcut>P
+    </shortcut>rograms
+    </uicontrol>
+    ...
+</menucascade>	Bold shortcut: underline
+Message block	A multi-line message. Same context as for <msgph>, but for a block element, rather than inline. See also Message phrase.	<msgblock> Note: a more complete set of descriptive tags for a message is available in the DITA message specialization.	The message says: Deploys data to the brokerName broker. Syntax: mqsideploy [-b brokerName ...	The message says:<msgblock> Deploys data to the <varname> brokerName</varname> broker.
+Syntax: mqsideploy
+
+[<parmname>-b</parmname>
+<varname>brokerName
+</varname> ... </msgblock>	Monospace with gray background line breaks are preserved
+Message number	 	<msgnum>	See message: bip1234	See message: <msgnum>bip1234
+</msgnum>	Monospace
+Message phrase	The text of a message produced by an application.	<msgph>	... you see the message
+User ID is not
+ authorized ...
+
+... you see the message <msgph>User ID is not
+authorized ...
+</msgph>	Monospace
+Monospace highlighting	Do not use unless no alternative. Use appropriate semantic tag instead.	<tt> (3)	 	 	Monospace
+New term	A new term in the sentence in which it is first defined. See Definition in text.	 	 	 	 
+Note	Information, differentiated from the main text. Use notes sparingly.	<note type="note">
+(6)
+
+type attribute can have following values:
+
+note
+attention
+caution
+danger
+fastpath
+important
+other
+remember
+restriction
+tip
+
+See Notes and notices for more information, especially about the use of “caution” and “danger” notes.	Note: This is a note ... My title: My little note ...	<note type="note">This is a note ...</note> <note type="other"
+  othertype="My title">My
+  little note ... </note>	notetitle: bold
+caution: bold
+
+danger: bold, border
+Object name	Objects created or used in the product, including database tables, for example.	Do not tag. (5)	... to add a table object to your utility procedure ...	... to add a table object to your utility procedure ...	 
+Option value	Values for arguments or command options, including values of: API structure parameters Command parameters and arguments Configuration parameters Environment variables Keywords Registry variables	<option> (5) add importance="default" attribute to indicate a default value	When the debug parameter is set to true ... Parameter values: yes|no|maybe	When the <parmname>debug</parmname> parameter is set to <option>true</option>...
+Parameter values:
+
+<option
+importance="default">yes</option>|
+<option>no</option>|
+<option>maybe</option>	Monospace default values: underlined
+Parameter name	Name of a parameter referred to in text.	<parmname>(5)	Use the date parameter ...	Use the <parmname>date</parmname>parameter	Bold monospace
+Platform icon	Insert an icon at start of a platform-specific block.	platform attribute	 Enter the command ...
+ Enter the command ...
+
+<p platform="aix">Enter the
+  command ... </p>
+<li platform="aix">Enter the
+   command ... </li>
+[Set ditaval file to flag such
+occurrences and insert graphic]	 
+Preserved line breaks	Do not use unless no alternative. Normally, let text flow on a page.	<lines>	 	 	 
+Preserved line breaks and spaces	Do not use unless no alternative. Use appropriate semantic tag instead, such as <screen> or <codeblock>.	<pre> (3)	 	 	Monospace with gray background line breaks are preserved
+Program name	 	Do not tag. (5)	Use the StartConfig program to ...	 	 
+Quotation	Inline quotation of information from another source. See also Long quotation.	<q> (quotation marks added by DITA transform)	The manual states: there are two ways to make widgets.	The manual states: <q>there are two ways to make widgets.</q>	 
+Registry variable	The name and value of a registry variable. (8)	Same tagging as for Environment variable	 	 	 
+Reusable text	Use the <keyword> element only as a placeholder for reusable text as this tag can appear in nearly every other element. Do not use for semantic tagging. (4)	<keyword
+   conref="...">	 	 	 
+ 	You can also use <keyword> within the prolog to identify key words or phrases that you want search engines to find.	<prolog>
+ <metadata>
+  <keywords>
+   <keyword>	“SCA module”,“mediation” ...	<prolog>
+ <metadata>
+  <keywords>
+   <keyword>SCA module
+     </keyword>
+   <keyword>mediation
+     </keyword>
+   </keywords>
+  </metadata>
+</prolog>	 
+Screen	Same context as for System output but for a block element, rather than inline.	<screen>	 	 	Monospace with gray background and border line breaks are preserved
+Script name	 	Same tagging as for Command name	 	 	 
+SQL and ESQL statements, functions, views	 	Do not tag. Usually all uppercase except in case-sensitive environments	... the SELECT statement
+The BIGINT function returns a 64-bit ...
+
+The KEY_CLIENTINFO view ...	 	 
+State	Name/value pair: a named state that has a variable value. Primarily intended for use in specializations to represent specific states (like logic circuit states, chemical reaction states, airplane instrumentation states, and so forth).	<state>	Verify the presence of an “on” or high condition at the input gate (that is, state: inflag=high)	Verify the presence of an “on” or high condition at the input gate (that is, <state name="inflag" value="high"/>)	Red
+Subscript	 	<sub>	 	 	Subscript
+Superscript	 	<sup>	 	 	Superscript
+Syntax fragment	The <synph> element is used to contain syntax definition elements within the text flow. See also Code phrase, Option value, and Parameter name.	<synph>
+Can contain:
+
+ <codeph>
+ <option>
+ <parmname>
+ <var>
+ <kwd>
+ <oper>
+ <delim>
+ <sep>
+
+Can be modified with
+
+importance=
+"optional"|"requ
+ired"|"default"
+
+1+(two)=something	<synph>
+  <kwd>1</kwd>
+  <oper>+</oper>
+  <sep>(</sep>
+  <var>two</var>
+  <sep>)</sep>
+  <delim>=</delim>
+  <kwd importance="default">
+     something</kwd>
+</synph>	kwd: bold var: italic
+System output	General computer output or response to a command or situation; message text or prompts addressed to the user. See also Screen, Codeblock, Message phrase, and so on.	<systemoutput> Use more specific markup where appropriate	If the operation fails, the system shows Server busy.	If the operation fails, the system shows <systemoutput>Server busy</systemoutput>.	Monospace
+Table	For tabular information.	<table>
+<simpletable>
+For information centers, it is usually better not to number tables. To suppress numbering, omit <title> and <desc> tags.
+
+For accessibility, keep tables simple; avoid spans - do not include footer notes as last ‘spanned’ row within the body of a table. (6)	Table 1. Table title. A description of the table.
+
+
+<table>
+  <title>Table title</title>
+  <desc>A description of the
+     table.</desc>
+  <tgroup cols="2">
+    <colspec colname="col1"/>
+    <colspec colname="col2"/>
+    <thead>
+      <row valign="bottom">
+        <entry colname="col1">
+          Header1</entry>
+        <entry colname="col2">
+          Header2</entry>
+      </row></thead>
+    <tbdy><row>
+     <entry colname="col1">a1
+      </entry>
+     <entry colname="col2">a2
+      </entry>
+     </row><row>
+     <entry colname="col1">b1
+      </entry>
+     <entry colname="col2">b2
+      </entry>
+     </row></tbody>
+  </tgroup>
+</table>	Table title, desc: italic header: bold, gray background
+Table referenced in text	Reference to a table or to a table column in the text.	Do not tag. Use uppercase if not referring to the table using an English descriptive name.	The task control table ... The EMP_ID table ...	 	Plain text
+Tag	Tags in markup languages, used in text. See also XML tags.	Do not tag. Enclose in angle brackets.	Use the <syntax> element to ...	Use the &lt;syntax &gt;element to ...	 
+Trademark	 	<tm>	IBM®	<tm tmtype="reg"
+trademark="IBM">IBM</tm>	 
+Underline highlighting	Do not use unless no alternative. Use appropriate semantic tag instead.	<u> (3)	 	 	Underline
+Unusual phrase	Words and terms that are used in a special sense. Do not overuse.	No DITA tag. Enclose in double quotation marks (use keyboard double quotation marks).	This “feature” can block access to all users in seconds.	 	 
+URL	See Internet address.	 	 	 	 
+User input	Text that the user must type in response to a program or system prompt.	<userinput>	Type exit and press Enter.	Type <userinput>exit</userinput> and press Enter.	Monospace
+User interface control	Includes:
+Check box
+
+Container
+
+Entry field
+
+Folder
+
+Group box label
+
+Icon name
+
+Items inside list box
+
+Labels (such as Tip:)
+
+List box
+
+Menu choice
+
+Menu name
+
+Multicolumn list
+
+Property sheet
+
+Push button
+
+Radio button
+
+Spin button
+
+Tab name
+
+Toolbar button
+
+<uicontrol> (5) Optionally, include the control’s icon where appropriate.	Click OK to continue.
+Click the DB2 folder.
+
+Click the Permanent Pen toolbar button ...	Click <uicontrol>OK</uicontrol> to continue.
+Click the <uicontrol>DB2</uicontrol> folder.
+
+Click the <uicontrol> Permanent Pen</uicontrol> <image alt="Permanent Pen icon" href="pen.gif" placement="inline"></image> toolbar button ...	Bold
+Utility	Name of a utility.	Use <cmdname> if utility can be typed as command, otherwise do not tag.	the install utility ... The DB2 trace utility ...	the <cmdname>install</cmdname> utility ... The DB2 trace utility ...	Bold monospace
+Variable	Variable that must be supplied to a software application, possibly within a message or API description.	<varname>
+Lowercase unless case sensitive.
+
+Typically, replace spaces with underscore character.	... where myname represents your user ID
+C:\install_dir\app.exe
+
+... where <varname> myname </varname> represents your user ID <filepath>C:\<varname>
+install_dir</varname>\app.exe
+</filepath>	Italic
+Web address	See Internet address.	 	 	 	 
+Window title, and so on	Titles of windows, panes, dialog boxes, preference pages, notebook pages, names of views, wizard titles, and wizard page titles.	<wintitle>
+- or -
+
+“<wintitle> ...”
+
+Use additional quotation marks when sentence-style capitalization is used in the interface.	When you click the icon, the Open the Remote Database window opens.
+- or -
+
+When you click the icon, the “Open the remote database” window opens.	When you click the icon, the <wintitle>Open the Remote Database</wintitle> window opens.
+- or -
+
+When you click the icon, the “<wintitle>Open the remote database</wintitle> “window opens.	 
+Word used in a special sense	See Unusual phrase.	 	 	 	 
+XML	XML element names and attributes. See also Tags in markup languages.	Do not tag. Enclose XML tag in angle brackets.	Use the <syntax> element to ... The highlight attribute of the syntax element ...	Use the &lt;syntax &gt;element to ... The highlight attribute of the syntax element ...	 
+Typical task elements:
+Abstract	Contains the short description of the topic, and can also contain other information and other elements, including lists.	<abstract>	Build a widget ... Something else about widgets ...	<abstract>
+  <shortdesc>Build a widget ...
+     </shortdesc>
+  <p>Something else about
+    widgets ... </p>
+</abstract>	 
+Short description	Initial paragraph-like content that represents the purpose of the topic; also intended to be used as a link preview and for searching.	<shortdesc>	Build a widget by applying ... A message definition file contains the messages, elements ...	<shortdesc>Build a widget by applying ... </shortdesc> <shortdesc outputclass="definition">A <term>message definition</term> file contains the messages, elements ...</shortdesc>	 
+Prerequisites	Things that the user needs to know or do before starting the task.	<prereq> “Before you begin” title added automatically, unless disabled.	Before you begin Before you can deploy a message flow application, you must have created and started a ...	<prereq><Before you can deploy a message flow application, you must have created and started a ... </prereq>	 
+Context	Background information.	<context> “About this task” title added automatically, unless disabled.	About this task Deploying a widget involves ...	<context>Deploying a widget involves ... </context>	 
+Task steps	Main content, describing the task as a series of steps which can include one level of substeps.	<steps>
+  <stepsection>
+  <step>
+   <cmd>
+   <substeps>
+     <substep> “Procedure” title added automatically, unless disabled.	Procedure
+Complete the following steps to ...
+
+1. On the menu, click ... More information ...
+
+Step example ... Step result ...	<steps>
+  <stepsection>Complete the
+   following steps to ...
+   </stepsection>
+  <step>
+    <cmd>On the menu, click ...
+      </cmd>
+    <info>More information ...
+      </info>
+    <stepxmp>Step example ...
+      </stepxmp>
+    <stepresult>Step result ...
+      </stepresult>
+  </step>
+</steps>	 
+Step section	Introduction to steps. There can be several <stepsection> elements within a <steps> element; numbering is continuous.	<stepsection>	 	Use as above: <stepsection>Complete the following steps to ... </stepsection>	 
+Step command	Single sentence instruction for completing the step.	<cmd>	 	Use as above: <cmd>On the menu, click ... </cmd>	 
+Step information	More information about how to complete this step.	<info>	 	Use as above: <info>More information ... </info>	 
+Step example	Illustrates a step of a task with an example.	<stepxmp>	 	Use as above: <stepxmp>Step example ... </stepxmp>	 
+Step choices	Allows the user to choose between actions in a step; formats in same way as <substeps>.	<choices> <choice>	 	 	 
+Step choice table	A series of optional choices in tabular form.	<choicetable>	
+
+
+<choicetable>
+ <chhead>
+  <choptionhd>Option
+   </choptionhd>
+  <chdeschd>Description
+   </chdeschd>
+  </chhead>
+  <chrow>
+   <choption>Option 1
+     </choption>
+   <chdesc>Description of
+    option 1 </chdesc>
+  </chrow>
+  ...
+</choicetable>	chhead & choption: bold
+Step result	Expected outcome of a step. (Only include if there is more to say than “The step is now completed.”)	<stepresult>	 	 	 
+Task result	Expected outcome for the task. (Only include if there is more to say than “The task is now completed.”)	<result> “Results” title added automatically, unless disabled.	Result: You have now completed this task and have ...	<result>You have now
+completed this task and have ...
+
+</result>	 
+Task example	Examples that illustrate or support the task.	<example> “Example” title added automatically, unless disabled.	Example The following code is an example of ...	<example>The following code is an example of ... </example>	 
+Post-requisites	Tasks to do after successful completion.	<postreq> “What to do next” title added automatically, unless disabled.	What to do next Continue by adding a broker to the domain ...	<postreq>Continue by adding a broker to the domain ... </postreq>	 
+Notes
+(1) Only opening tags are shown in this column. Other tags that are included within an element are indented.
+(2) This column shows what highlighting you should expect to see for each element according to the style described in “Highlighting” on page 102. Generally, styles for margin, padding, and so on, are not indicated.
+(3) These tags do not convey any semantic meaning. Therefore, do not use them if you can use another tag. For example, use <i> only to put stress on a word in normal text.
+(4) Do not use <keyword> to tag tokens, such as a single value from an enumerated list, the name of a command or parameter, product name, or a lookup key for a message. There are usually other suitable tags such as <option>. Or you could consider using <synph><kwd>. Restrict use of <keyword> for marking reusable text (“text entities”) that you might want to use anywhere in your documentation with a conref parameter. (<ph> might be considered a reasonable alternative, but there are some places where you might want to insert a text entity, where <ph> is not allowed, whereas <keyword> can appear almost anywhere.) This restriction avoids confusion between these two distinct usages.
+(5) If an element, such as a command name, uses a normal English word that might be inadvertently translated, add the translate="no" attribute to ensure that it is not translated. If the element would not normally be tagged, use <ph translate="no">.
+(6) There is no set way of creating notes for tables, but it is probably most appropriate to add a <note> element that contains an ordered list immediately following the table and use <sup> tags around corresponding numbers within the body of the table:
+Code View: Scroll / Show All
+<note othertype="Notes" type="other">                                                     
+         <!— setting type to "other" means that the title of the note is set to "Notes" ——>
+  <ol>                                                                                    
+    <li> ... </li>                                                                        
+    <li> ... </li>                                                                        
+
+					  
+
+(7) There is currently no DITA element for a single letter. Use <i> because this highlighting is purely presentational and has no semantic meaning. (Do not use <term>, which should be reserved for definitions. See Definition in text.)
+(8) There is currently no explicit DITA element for an environment or registry variable. Use <parmname> for the name of the variable, and <option> for its value.
+

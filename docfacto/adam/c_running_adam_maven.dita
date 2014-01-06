@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="adammaven">
+	<title>Running Adam from Maven</title>
+	<shortdesc>How to use Maven to run <codeph><keyword keyref="adam" /></codeph>.</shortdesc>
+	<conbody>
+		<example>
+			<title>Example section of a pom.xml to configure <codeph><keyword keyref="adam" /></codeph></title>
+			<codeblock><coderef href="ex_running_adam_maven.xml" /></codeblock>
+		</example>
+		<section>
+			<p>There may be a requirement to add the docfacto.jar to the your local repository, this can be done by the following</p>
+			<userinput>
+mvn install:install-file -Dfile=<keyword keyref="docfacto.jar" /> -DgroupId=com.docfacto -DartifactId=java-toolkit -Dversion=<keyword keyref="docfacto.release.version" /> -Dpackaging=jar
+			</userinput>			
+		</section>
+		<section>
+			<p>To execute <codeph><keyword keyref="adam" /></codeph> within the <codeph>Maven</codeph> framework</p>
+			<userinput>
+mvn javadoc:javadoc
+			</userinput>
+		</section>
+	</conbody>
+</concept>

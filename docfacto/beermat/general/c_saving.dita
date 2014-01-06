@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="savingBeermat">
+<!-- @docfacto.link key="saving" uri="${src-beermat}/plugin/BeermatMultiPage.java" link-to="source" -->
+
+	<title>Saving in Beermat</title>
+	<shortdesc>
+		Beermat editor saves opened files as SVG, but also has the ability to export SVG's to other formats.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				Save works in line with all eclipse editors, accessed through
+				<menucascade>
+					<uicontrol>File</uicontrol>
+					<uicontrol>Save</uicontrol>
+				</menucascade>
+				, or the save shortcut on your OS.
+			</p>
+			<p>Using the <uicontrol>Save as</uicontrol> on the File menu, an SVG can be exported as a PNG or JPEG, the original SVG is still retained
+				for further editing.</p>
+		</section>
+	</conbody>
+</concept>

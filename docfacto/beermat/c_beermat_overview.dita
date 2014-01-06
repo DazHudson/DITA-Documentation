@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="introBeermat">
+	<title>Beermat</title>
+	<shortdesc>
+		The SVG (Scalable Vector Graphics) creator/editor for
+		Eclipse.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				Beermat is an Eclipse plugin, used to create and edit SVG (
+				<xref href="c_beermat_whysvg.dita" />
+				) documents.
+				It is a quick and easy way for developers to improve
+				their documentation, by adding designs or ideas, without ever
+				having
+				to leave the IDE. The concept of Beermat is to capture designs and
+				ideas of the developers and link the image to the code.
+				At docfacto,
+				we use it for system diagrams, architecture diagrams, class
+				diagrams. We also use it for wire diagrams for UI's. It has a free
+				hand
+				mode for those white board design sessions that can be checked
+				in with the code so future developers can see the history of the
+				design process.
+			</p>
+			<p>
+				Although complicated diagrams can be drawn with Beermat is not
+				meant to be a replacement for tools like Visio or Powerpoint, its
+				meant to be simple!
+			</p>
+		</section>
+	</conbody>
+</concept>

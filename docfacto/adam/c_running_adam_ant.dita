@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="adamant">
+	<title>Running Adam from Ant</title>
+	<shortdesc>How to use Ant to run <codeph><keyword keyref="adam" /></codeph>.</shortdesc>
+	<conbody>
+		<example>
+			<title>Example of an Ant target which runs <codeph><keyword keyref="adam" /></codeph></title>
+			<p>Note in the example below, the <codeph>Javadoc</codeph> option of <codeph>private</codeph> is set.  
+			This means that <codeph><keyword keyref="adam" /></codeph> will check 
+			<codeph>private</codeph> methods and fields as well as <option>public</option> ones</p>
+			<codeblock><coderef href="ex_running_adam_ant_1.xml" /></codeblock>
+		</example>
+	</conbody>
+</concept>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "../../dtd/technicalContent/dtd/concept.dtd">
+<concept id="running_adam">
+	<title>Running Adam</title>
+	<shortdesc>How to run Adam.</shortdesc>
+	<conbody>
+		<section><codeph><keyword keyref="adam" /></codeph> is a <codeph>Doclet</codeph> so it needs to be run from the <codeph>Javadoc</codeph> process.
+		<note>As <codeph><keyword keyref="adam" /></codeph> doesn't run or extend the default <codeph>Javadoc Doclet</codeph> no <codeph>Javadoc</codeph> will be produced.</note>
+		</section>
+	</conbody>
+</concept>

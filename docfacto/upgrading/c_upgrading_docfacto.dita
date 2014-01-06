@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="upgrading_docfacto">
+	<title>Upgrading docfacto rumtime</title>
+	<shortdesc>How to upgrade the docfacto runtime</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				To upgrade an existing docfacto installation, a new installation should first be done.  This will create a new folder with the release numbers appended to it.
+				If installing the same release, then you must take care to backup the Docfacto.xml as this will be over written.
+				Once you have installed the new release, then you must merge the changes that you have made to the existing Docfacto.xml and modify the new Docfacto.xml.  All plugins
+				must then be configured to reflect the new file location of the Docfacto.xml.
+			</p>
+		</section>
+	</conbody>
+</concept>

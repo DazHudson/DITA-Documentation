@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="linksEclipseHovers">
+	<title>Link - Hovers</title>
+	<shortdesc>How hovers work with the Eclipse Plugin</shortdesc>
+	<conbody>
+		<section id="links_eclipse_hovers">
+			<p>
+				If your Links paths are configured correctly within your Eclipse environment, then hovers will be enabled.  The hover
+				will locate the linked file and show the section of the file where the keys match.  The linked file can be quickly edited
+				by pressing the icon in the button bar at the bottom left of the hover.
+			</p>
+		</section>
+		<example>
+			<title>Example of a link hover in a Java editor</title>
+			<image href="source-hover.png" placement="break" />
+		</example>
+		
+		<example>
+			<title>Example a document hover, showing the code</title>
+			<image href="doc-hover.png" placement="break" />
+		</example>
+	</conbody>
+</concept>

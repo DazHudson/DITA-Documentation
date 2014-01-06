@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="dita_config">
+	<title><keyword keyref="javadoc2dita" /> Configuration</title>
+	<shortdesc>How to configure <codeph><keyword keyref="javadoc2dita" /></codeph>. </shortdesc>
+	<refbody>
+		<section>
+			<p>
+				Although currently, there isn't Javadoc2DITA section in the Docfacto.xml, the <codeph>Doclet</codeph> still requires the location of the configuration xml.
+				This is specified via the <codeph>JavaDoc</codeph> <parmname>additionalparam</parmname>.  The reason for this is because the taglets will still be honoured as taglets
+				can be used for DITA as well as HTML.
+			</p>
+			<p>In addition to the normal <codeph>Javadoc</codeph> parameters, there is a slight change, where as <parmname>-doctitle</parmname> is now used as the title of the root DITA map</p>
+	
+		</section>
+	</refbody>
+</reference>

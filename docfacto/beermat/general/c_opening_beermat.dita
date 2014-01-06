@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="openingBeermat">
+	<title>Opening Beermat</title>
+	<shortdesc>
+		Beermat can open existing SVG Files, create new SVG files, or can be used to open and embed raster formats.
+	</shortdesc>
+	<conbody>
+
+		<section>
+			<title>Opening Beermat by creating a new SVG</title>
+			<p>
+				New SVG's can be created by opening the New File Wizard, this can be accessed three
+				<ol>
+					<li>
+						<menucascade>
+							<uicontrol>File</uicontrol>
+							<uicontrol>New</uicontrol>
+							<uicontrol>Other</uicontrol>
+							<uicontrol>docfacto</uicontrol>
+							<uicontrol>SVG</uicontrol>
+						</menucascade>
+						from the eclipse bar
+					</li>
+					<li>
+						<menucascade>
+							<uicontrol>New</uicontrol>
+							<uicontrol>Other</uicontrol>
+							<uicontrol>docfacto</uicontrol>
+							<uicontrol>SVG</uicontrol>
+						</menucascade>
+						after right clicking an open project
+					</li>
+					<li>
+						Using the beermat shortcut, located in your eclipse toolbar, pressing this will open the new
+						<image href="shortcut.png" placement="inline" />
+					</li>
+				</ol>
+			</p>
+
+			<fig>
+			<!-- @docfacto.link key="newSVGWizard" uri="${src-beermat}/plugin/wizards/NewSvgWizard.java" link-to="source" -->			
+				<title>Beermat wizard</title>
+				<p>This is the Beermat new File wizard below</p>
+				<image href="beermat_wizard.png" placement="break" />
+			</fig>
+		</section>
+
+		<section>
+			<title>Opening existing SVG's</title>
+			<p>
+				<ul>
+					<li>SVG's residing within an eclipse project will automatically be associated with beermat after installing,
+						meaning they can be opened from any project folder and will save back to it.</li>
+					<li>
+						SVG's outside of the eclipse workspace can also be opened using
+						<menucascade>
+							<uicontrol>File</uicontrol>
+							<uicontrol>Open File</uicontrol>
+						</menucascade>
+					</li>
+				</ul>
+			</p>
+		</section>
+
+		<section>
+		<!-- @docfacto.link key="openingRasters" uri="${src-beermat}/plugin/BeermatMultiPage.java" link-to="source" -->
+			<title>Opening a raster format(PNG, JPEG) with beermat</title>
+			<p>
+				Right clicking any image file and using the <uicontrol>open with</uicontrol> menu to open with Beermat, will open beermat with an
+				automatically created SVG with the image embedded in it, this will be located in the same directory as the image.
+				This SVG can then be annotated with text and drawings, and retained as an SVG or 'saved as' raster.
+			</p>
+		</section>
+	</conbody>
+</concept>

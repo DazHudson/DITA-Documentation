@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<map>
+	<title>
+		XSD2DITA
+	</title>
+	<topicref href="c_xsd2dita_overview.dita" type="concept">
+	<topicref href="r_booking.dita" type="reference" toc="no" />
+	</topicref>
+	<topicref href="c_running_xsd2dita.dita" type="concept">
+		<topicref href="c_running_xsd2dita_ant.dita" type="concept" />
+		<topicref href="c_running_xsd2dita_cmdline.dita" type="concept" />
+		<topicref href="c_running_xsd2dita_jaxb.dita" type="concept" />
+	</topicref>
+	<mapref href="../keyrefs.ditamap" processing-role="resource-only" />
+	<topicref href="../glossary.dita" processing-role="resource-only" keys="terms"/>
+</map>

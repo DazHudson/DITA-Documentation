@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- @docfacto.link key="squareHandler" uri="${src-beermat}/ui/toolbar/shapes/SquareShapeHandler.java" link-to="source" -->
+<!-- @docfacto.link key="rectTool" uri="${src-beermat}/ui/toolbar/shapes/RectangleShapeHandler.java" link-to="source" -->
+<concept id="rect-paletteItem">
+	<title>Draw rectangles and squares</title>
+	<shortdesc>
+		Square and rectangle are drawn via different tools, although they book create 'rect' elements on the SVG.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>Use the Square tool when you want an equal sided rect. Use the Rectangle tool otherwise.</p>
+			<ol>
+				<li>
+					Select the Rectangle tool<image href="rectTool.png" /> or the Square tool<image href="squareTool.png" />
+				</li>
+				<li>
+					Do one of the following
+					<ul>
+						<li>Move your mouse to where you want one of the corners of the rectangle to be, then drag in any direction until the rectangle is the desired size.
+						</li>
+						<li>Click where you want the top left corner of a new rectangle to appear with the dimensions of the last rectangle created.
+						</li>
+					</ul>
+				</li>
+			</ol>
+		</section>
+	</conbody>
+</concept>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- ID required by eclipse -->
+<map id="com.docfacto.beermat.help">
+	<title>
+		Beermat, SVG Editor
+	</title>
+	<topicref href="c_beermat_overview.dita" type="concept">
+		<topicref href="c_beermat_whysvg.dita" type="concept" />
+
+		<topicref href="general/c_using_beermat.dita" type="concept">
+			<topicref href="general/c_running.dita" type="concept" />
+			<topicref href="general/c_opening_beermat.dita" type="concept" />
+			<topicref href="general/c_using_editor.dita" type="concept" />
+			<topicref href="general/c_saving.dita" type="concept" />
+		</topicref>
+
+		<mapref href="drawing/drawing.ditamap" format="ditamap" />
+
+		<topicref href="selecting/c_selecting.dita" type="concept" />
+
+		<topicref href="controlbar/c_control_bar.dita" type="concept">
+			<topicref href="controlbar/c_selector_widget.dita" type="concept" />
+			<topicref href="controlbar/c_stroke_widget.dita" type="concept" />
+			<topicref href="controlbar/c_fill_widget.dita" type="concept" />
+			<topicref href="controlbar/c_font_widget.dita" type="concept" />
+			<topicref href="controlbar/c_group_tool_palette_item.dita" type="concept" />
+			<topicref href="controlbar/c_bring_backFront_palette_item.dita" type="concept" />
+		</topicref>
+
+		<topicref href="palettebar/c_palette_bar.dita" type="concept">
+			<topicref href="palettebar/c_text_tool_palette_item.dita" type="concept" />
+			<topicref href="palettebar/c_uml_tool_palette_item.dita" type="concept" />
+			<topicref href="palettebar/c_flow_tool_palette_item.dita" type="concept" />
+			<topicref href="palettebar/c_shapes_tool_palette_item.dita" type="concept" />
+			<topicref href="palettebar/c_clear_palette_item.dita" type="concept" />
+			<topicref href="palettebar/c_insert_image_palette_item.dita" type="concept" />
+			<topicref href="palettebar/c_insert_stylesheet_palette_item.dita" type="concept" />
+		</topicref>
+
+		<topicref href="canvasbar/c_canvas_bar.dita">
+			<topicref href="canvasbar/c_zoom_widget.dita" type="concept" />
+			<topicref href="canvasbar/c_grid_widget.dita" type="concept" />
+			<topicref href="canvasbar/c_size_widget.dita" type="concept" />
+			<topicref href="canvasbar/c_mouse_widget.dita" type="concept" />
+		</topicref>
+
+		<topicref href="rightclick/c_rightclick_menu.dita">
+			<topicref href="rightclick/c_elementSelection.dita" type="concept" />
+			<topicref href="rightclick/c_convert_to_path.dita" type="concept" />
+			<topicref href="rightclick/c_convert_to_path_single.dita" type="concept" />
+			<topicref href="rightclick/c_grouping.dita" type="concept" />
+			<topicref href="rightclick/c_arranging.dita" type="concept" />
+			<topicref href="rightclick/c_assign_class.dita" type="concept" />
+			<topicref href="rightclick/c_assign_filter.dita" type="concept" />
+			<topicref href="rightclick/c_autoresize.dita" type="concept" />
+		</topicref>
+	</topicref>
+</map>

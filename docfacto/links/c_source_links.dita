@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="source_uri_html">
+	<title>Source links for documentation files</title>
+	<shortdesc>
+		How to create a source link for documentation.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>To create a source link in either HTML or XML, then a XML / HTML comment is used.  The comment should have the docfacto.link attributes present.</p>
+		</section>
+		<section>
+			<title>Source Link Attributes</title>
+			<p>
+          			<simpletable relcolwidth="90* 180* 50*">
+            			<sthead>
+              				<stentry>Attribute</stentry>
+              				<stentry>Description</stentry>
+              				<stentry>Required</stentry>
+            			</sthead>
+            			<strow>
+              				<stentry><codeph>uri</codeph></stentry>
+              				<stentry>Location of source file.  Currently is assumes a file location, but will soon be extended to structured content repositories</stentry>
+              				<stentry>yes</stentry>
+            			</strow>
+						<strow>
+							<stentry><codeph>key</codeph></stentry>
+							<stentry>The key is what makes the link unqiue.  It is possible that source will have many doc links to the same documentation and visa versa.</stentry>
+							<stentry>yes</stentry>
+						</strow>
+						<strow>
+							<stentry><codeph>version</codeph></stentry>
+							<stentry>A String representation of a version.  If version checking is enabled, then the doc link and the corresponding source link will be checked to see if the versions match.</stentry>
+							<stentry>no</stentry>
+						</strow>
+						<strow>
+							<stentry><codeph>type</codeph></stentry>
+							<stentry>The type of source document. The links process will try and ascertain the type of document, but if the file extension is ambiguous, then it might need some help.</stentry>
+							<stentry>no</stentry>
+						</strow>
+						<strow>
+							<stentry><codeph>metadata</codeph></stentry>
+							<stentry>User supplied metadata.  May be used in the future for filtering</stentry>
+							<stentry>no</stentry>
+						</strow>
+				</simpletable>
+			</p>
+		</section>
+		<example>
+			<title>Example XML / HTML source link</title>
+			<codeblock>
+&lt;!-- @docfacto.link uri="${adam-root}AdamOutputProcessor.java" version="1.1" key="AdamOutput" --&gt;
+			</codeblock>
+		</example>
+	</conbody>
+</concept>

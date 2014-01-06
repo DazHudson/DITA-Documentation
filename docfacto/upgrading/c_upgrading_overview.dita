@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="upgrading">
+	<title>Docfacto Upgrading Overview</title>
+	<shortdesc>How to upgrade Docfacto</shortdesc>
+	<conbody>
+		<section>
+			<p>Docfacto has a runtime engine component, as well as Sonar and Eclipse plugin components, which takes the form of a <codeph>plugins</codeph>.  
+			The runtime engine installation has the Docfacto.xml configuration file, which the Sonar and Eclipse installations requires to be complete.
+			When upgrading, you must take care to swap to the new Docfacto.xml.  Often during releases the schema of the Docfacto.xml will change to contain 
+			extra functionality.  You must look at the old Docfacto.xml and merge in your changes with the new Docfacto.xml
+			</p>
+		</section>
+	</conbody>
+</concept>

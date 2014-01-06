@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="xsddoc">
+	<title>XSD Documentation</title>
+	<shortdesc>What is this for?</shortdesc>
+	<conbody>
+		<section>
+			<p>Although Java comes with <codeph>Properties</codeph> they have a limited scope when trying to describe hierarchical structures.  More and more developers are now turning to XML as way of configuring of their software.  
+			This then leads to a requirement to document it, so that end users may know what options and properties are available.  This section describes how to use XML <codeph>annotations</codeph> as a way of capturing information and then presenting it.  
+			This can be used for either user or system documentation. 
+			</p>
+		</section>
+	</conbody>
+</concept>

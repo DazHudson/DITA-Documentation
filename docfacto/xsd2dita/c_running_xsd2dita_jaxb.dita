@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="xsd2ditajaxb">
+	<title>Running XSD2DITA from JAXB</title>
+	<shortdesc>How to run XSD2DITA from a XJC plugin.</shortdesc>
+	<conbody>
+		<section>
+		<p>In order to use the JAXB plugin, the XSD will need some modifications so that parameters can be retrieved from the XSD.
+		</p>
+		</section>
+		<example>
+			<title>Extending the XSD to enable to XSD2DITA plugin</title>
+			<codeblock><coderef href="ex_running_xsd2dita_jaxb_1.xml" /></codeblock>
+		</example>
+		<example>
+			<title>Example of running XSD2DITA for xjc</title>
+			<codeblock>
+java -cp ../lib/<keyword keyref="docfacto.jar" />:../jaxb/lib/jaxb-xjc.jar com.sun.tools.xjc.Driver -extension -Xdita-generator ../samples/course-booking.xsd
+			</codeblock>
+		</example>
+	</conbody>
+</concept>

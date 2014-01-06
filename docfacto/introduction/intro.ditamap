@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<map>
+	<title>
+		Introduction
+	</title>
+	<topicref href="c_introduction_new.dita" type="concept" >
+		<topicref href="c_cool_tools.dita" type="concept" />
+		<topicref href="c_tools_work_together.dita" type="concept" />
+		<topicref href="c_documentation_rate.dita" type="concept" />
+		<topicref href="c_impact_doc_debt.dita" type="concept" />
+		<topicref href="c_what_docfacto.dita" type="concept" />
+	</topicref>
+</map>

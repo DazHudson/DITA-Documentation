@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="introWhat">
+	<title><keyword keyref="doc-tm" /> toolkit for java</title>
+	<shortdesc>
+		What does the <keyword keyref="doc-tm" /> Toolkit do and how does it go about solving documentation problems.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>To overcome the problems of developer mindsets, bad documentation practises, lack of any link between user and system doc;
+			The <keyword keyref="doc-tm" /> toolkit was created, each part of the suite contributes to the practise of good technical doc.</p>
+			
+			<!--
+			<fig>
+				<title><keyword keyref="doc-tm" /> Java Toolkit</title>
+				<image href="Overview.svg" width="500" height="600" otherprops="pdf" />
+				<image href="Overview.svg" scalefit="yes" otherprops="html" />
+			</fig>
+			-->
+			
+		</section>
+		
+		<section>
+			<title>System Doc</title>
+			<p>System doc is more the "how" systems work and are linked together. By using Taglets, this information can be captured within the code, using diagrams to explain how different parts
+			of the systems work.  System doc is vital for developer onboarding.  By having images and text within the code, but without making the code too bloated, there is a link now between the code 
+			and the documentation.</p>
+		</section>
+		
+		<section>
+			<title>User Doc</title>
+			<p>Is what gets externally exposed to the end user, having developers contribute to the user manual is key, but it has to be simple to produce.  <codeph>Javadoc</codeph> is a good way of documenting <codeph>Class</codeph> and
+			<codeph>Method</codeph> contracts and functionality, again using Taglets is a good way of enhancing that information.  Makeing sure that the comments match the code, and adhere to standards, <keyword keyref="adam" /> is a key component of the toolkit.</p>
+		</section>
+		
+		<section>
+			<title>Why use DITA?</title>
+			<p>DITA allows for some very important concepts that the development community will easily get to grips with.
+				<ul>
+					<li>A topic oriented approach for Doc.</li>
+					<li>Markdown XML content.</li>
+					<li>Content reuse.</li>
+					<li>Supports inheritance and extensibility.</li>
+					<li>Ant based processing.</li>
+					<li>Multi channel publishing.</li>
+					<li>Content and style are broken apart.</li>
+					<li>Content can be created on any platform and in any development environment.</li>
+				</ul>
+			</p>
+			<p>The DITA toolkit enables multi format publishing, and although can be difficult at times, <keyword keyref="doc-tm" /> aims to simplify this process allowing the developer to focus on content.</p>
+		</section>
+	</conbody>
+</concept>

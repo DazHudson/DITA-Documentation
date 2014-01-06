@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="linksEclipseOverview">
+	<title>Link - Using the Links Eclipse Plugin</title>
+	<shortdesc>The Links Plugin</shortdesc>
+	<conbody>
+		<section id="links_eclipse_plugin">
+			
+		</section>
+		
+		<section id="using_links_plugin">
+			<title>Using the Links Plugin in the Eclipse IDE</title>
+			<p>
+				To open the Links Wizard got adding a link, open a text file such as a java source file or an xml file,
+				and right click on the file where you want to add a link, and go to the 'Docfacto' menu and then select
+				'Create link' or alternatively you can click 'Ctrl-Alt-L' as a shortcut.
+			</p>
+			<fig>
+				<title>The Links menu in Eclipse</title>
+				<image href="linksEclipseSubMenu.png" placement="break" />
+			</fig>
+		</section>
+		
+		<section id="links_wizard_description">
+			<title>The Links Wizard</title>
+			<p>
+				<ol>
+					<li>The current file you are adding the link to.</li>
+					<li>The file type of the current file you are adding the link to.</li>
+					<li>The file you are linking the current file to.</li>
+					<li>The key to match this link with the corresponding link in the target file.</li>
+					<li>The version of this link.</li>
+					<li>The type of link this is.
+						<p>For example, if the current file is a source file and the target file is a doc file, 
+						then the type should be 'link-to-doc'.</p>
+					</li>
+					<li>The file type of the target file.</li>
+					<li>Metadata for extra data you may want which isn't supported by links.</li>
+				</ol>
+			</p>
+		</section>
+		
+		<section >
+			<title>Linking a source file to a documentation file</title>
+			<p>
+				For example, to link a 'java' source file to a 'dita' documentation file:
+				
+				<ol>
+					<li>Open the source file you want to add the link to in eclipse.</li>
+					<li>Set the current file type to 'java'.</li>
+					<li>Browse for and select the dita file you want to link the source file with.</li>
+					<li>Enter the key and version for that link.</li>
+					<li>Set the 'type of link' to 'link-to-doc'</li>
+					<li>Set the target file type to 'xml' (because dita files are treated as xml)</li>
+					<li>Enter any metadata you may need.</li>
+				</ol>
+			</p>
+		</section>
+		
+		<section >
+			<title>Linking a doc file to a documentation file</title>
+			<p>
+				For example, to link a 'dita' doc file to a 'java' source file:
+				
+				<ol>
+					<li>Open the dita file you want to add the link to in eclipse.</li>
+					<li>Set the current file type to 'xml'.</li>
+					<li>Browse for and select the java file you want to link the source file with.</li>
+					<li>Enter the key and version for that link.</li>
+					<li>Set the 'type of link' to 'link-to-source'</li>
+					<li>Set the target file type to 'java'</li>
+					<li>Enter any metadata you may need.</li>
+				</ol>
+			</p>
+		</section>
+		
+	</conbody>
+</concept>

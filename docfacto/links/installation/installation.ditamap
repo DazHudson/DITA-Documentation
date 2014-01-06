@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<map>
+	<title>Installation</title>
+	<topicref href="c_installing_links.dita" type="concept"/>	
+	<topicref href="c_installing_plugin.dita" type="concept" />		
+	<topicref href="c_installing_docfacto_links_servlet.dita" />
+			
+	<topicref href="../../installation/c_installing_sonar.dita" type="concept">
+		<topicref href="c_installing_sonar_links.dita" type="concept" />
+	</topicref>		
+
+</map>

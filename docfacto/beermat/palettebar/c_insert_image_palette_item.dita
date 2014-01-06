@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- @docfacto.link uri="src-beermat/ui/InsertImagePaletteItem.java key="insertImage-action" version="2.4.2" -->
+<concept id="insertImage-paletteItem">
+	<title>Insert Image Action</title>
+	<shortdesc>
+		The insert image tool is depicted by a yellow frame.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				When pressed, a dialog is presented to choose the location of an Image. 
+				On pressing OK, the image is inserted in to the SVG Canvas
+			</p>	
+			<p>Clicking advanced and expanding the advanced options allow you to choose a custom size for the image. Or, if an element is selected before clicking the insert image item
+			then "Fit Selected Element" can be chosen, this will shrink or grow the image to the size of the element that was selected; this is useful for when the image is the background or a shape, or will be grouped with a shape.
+			In these advanced options, an image position can also be specified.
+			</p>
+			<p>
+				For an image to show correctly on the SVG, a path is needed for the xlink:href attribute;
+			 	for this an absolute path is not used, as this only work on a single system. Therefore Beermat calculates a 
+			 	relative path between the location of the SVG and the Image, meaning this image path will work on any system, should the directory
+			 	hierarchy remain intact and the image exists.
+			</p>
+		</section>
+	</conbody>
+</concept>

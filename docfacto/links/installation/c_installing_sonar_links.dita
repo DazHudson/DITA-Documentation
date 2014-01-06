@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="installing_sonar_links">
+	<title>Installing the Sonar Links Plugin</title>
+	<shortdesc>
+		Configuring the Links Plugin for Sonar is done as follows.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				Copy the plugin jar (<keyword keyref="links.sonar.jar" />) from the <filepath>lib</filepath> directory of the docfacto installation to the <filepath>'/extensions/plugin'</filepath> folder of your Sonar installation. Then
+				restart the server for the plugin to take effect.
+			</p>
+			
+			<p>
+				You then need to add the following three properties to your Sonar configuration:
+				
+				<codeblock>					
+sonar.links.docs
+sonar.links.docType
+sonar.links.docExtensions
+				</codeblock>
+				
+				<varname>'sonar.links.doc'</varname> should reference the directory of your documentation, <varname>'sonar.docfacto.config'</varname> should be the format your doc is in,
+				and <varname>'sonar.links.docExtensions'</varname> should be the valid file extensions for your doc files.
+			</p>
+		</section>
+		
+		<section>
+			<title>Configuring the Links Plugin for Sonar-runner</title>
+			<p>
+				Here is an example of what the properties look like when set into <codeph>sonar-project.properties</codeph> file for the project 
+				you want to analyse using Sonar-Runner:
+				
+				<codeblock>					
+sonar.links.docs=/Users/your_username/Documents/workspace/TestProject/doc
+sonar.links.docType=xml
+sonar.links.docExtensions=dita,DITA
+				</codeblock>
+			</p>
+		</section>
+	</conbody>
+</concept>

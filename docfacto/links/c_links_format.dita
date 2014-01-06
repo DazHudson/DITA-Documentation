@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="links_format">
+	<title>Links Format</title>
+	<shortdesc>
+		Format of a link.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				Links are tags with attributes which can be used to locate and link to a source or documentation file.
+				For two files to be linked to each other, they each need to have a corresponding link to the other file.
+				For example, a Source file should have a <codeph>Doc Link</codeph> to a Doc file with a 
+				<codeph>Source Link</codeph> back to the Source file.
+			</p>
+		</section>
+		<section>
+			<title>Link Attributes</title>
+			<p>
+       			<simpletable relcolwidth="90* 180* 50* 40*">
+           			<sthead>
+           				<stentry>Attribute</stentry>
+           				<stentry>Description</stentry>
+           				<stentry>Possible Values</stentry>
+           				<stentry>Required</stentry>
+           			</sthead>
+           			<strow>
+           				<stentry><codeph>uri</codeph></stentry>
+           				<stentry>Location of the target file. Currently it assumes a file location, but will soon be extended to structured content repositories</stentry>
+           				<stentry>Any uri to a file</stentry>
+           				<stentry>yes</stentry>
+           			</strow>
+					<strow>
+						<stentry><codeph>key</codeph></stentry>
+						<stentry>The key is what makes the link unique. It is possible that source will have many doc links to the same documentation and visa versa.</stentry>
+						<stentry>Any string consisting of characters and numbers</stentry>
+						<stentry>yes</stentry>
+					</strow>
+					<strow>
+						<stentry><codeph>version</codeph></stentry>
+						<stentry>A String representation of a version. If version checking is enabled, then the doc link and the corresponding source link will be checked to see if the versions match.</stentry>
+						<stentry>Any string consisting of characters and numbers</stentry>
+						<stentry>no</stentry>
+					</strow>
+					<strow>
+						<stentry><codeph>link-to</codeph></stentry>
+						<stentry>Should be either 'doc' or 'source'. This determines whether the link is a doc link 
+						(a link to a documentation file) or a source link (a link to a source file). The value should be 'doc' if it is a doc link 
+						and 'source' if it is a source link</stentry>
+						<stentry>
+							<ul>
+								<li>doc</li>
+								<li>source</li>
+							</ul>
+						</stentry>
+						<stentry>yes</stentry>
+					</strow>
+					<strow>
+						<stentry><codeph>metadata</codeph></stentry>
+						<stentry>User supplied metadata.  May be used in the future for filtering</stentry>
+						<stentry>Any string consisting of characters and numbers</stentry>
+						<stentry>no</stentry>
+					</strow>
+				</simpletable>
+			</p>
+		</section>
+		<section>
+			<!-- @docfacto.link key="supported-file-types" uri="${source-root}/com/docfacto/links/FileType.java" version="1.0" link-to="source" -->
+			<title>File types</title>
+			<p>Currently Links understands Java, Javascript, HTML and XML as source, so either of these can contain <codeph>doc links</codeph>.</p>
+		</section>
+		<section>
+			<!-- @docfacto.link key="java-link-format" uri="${source-root}/com/docfacto/links/links/JavaLink.java" version="1.0" link-to="source" -->
+			<title>Java Links</title>
+			<p>
+			There are a couple of ways link java code to documentation. If providing a link for a class or a method then a Javadoc tag can be used.
+			If your are linking functionality inside a method block comments can be used.
+			</p>
+		</section>
+		<example>
+			<title>Single line block comment example</title>
+			<codeblock>
+				/* @docfacto.link uri="${doc-root}/user-guide/admin/CreateUsers.xml" key="a-unique-key" link-to="doc" version="2.1" */ 
+			</codeblock>
+		</example>
+		<example>
+			<title>Javadoc example</title>
+			<codeblock>
+				/**
+				 * Some class description.
+				 *
+				 * @author yourname - created 8 Jul 2012
+				 * @since 2.0
+				 * @docfacto.link uri="${doc-root}/user-guide/admin/CreateUsers.xml" key="a-unique-key" link-to="doc" version="2.1" 
+				 */		
+ 			</codeblock>
+		</example>
+		<section>
+			<!-- @docfacto.link key="xml-links-format" uri="${source-root}/com/docfacto/links/links/XMLLink.java" version="1.0" link-to="source" -->
+			<title>XML Links</title>
+			<p>
+				XML Links have the same format as Java links just done using a different comment notation.
+			</p>
+		</section>
+		<example>
+			<title>XML Doc Link Example</title>
+			<codeblock>
+				&lt;!-- @docfacto.link uri="${doc-root}/someDocFile.dita" key="attributes" link-to="doc" version="2.3" --&gt;			
+			</codeblock>
+		</example>
+		<example>
+			<title>XML Source Link Example</title>
+			<codeblock>
+				&lt;!-- @docfacto.link uri="${source-root}/someClass.java" key="attributes" link-to="source" version="2.3" --&gt;			
+			</codeblock>
+		</example>
+	</conbody>
+</concept>

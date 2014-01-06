@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap xml:lang="en">
+
+	<chapter format="ditamap" href="introduction/intro.ditamap" />
+	<chapter format="ditamap" href="installation/installation.ditamap" />
+	<chapter format="ditamap" href="upgrading/upgrading.ditamap" />
+	<chapter format="ditamap" href="adam/adam.ditamap" />
+	<chapter product="dita" format="ditamap" href="doclets/dita/dita.ditamap" />
+	<chapter format="ditamap" href="taglets/taglets.ditamap" />
+	<chapter format="ditamap" href="beermat/beermat.ditamap" />
+	<chapter format="ditamap" href="grabit/grabit.ditamap" />
+	<chapter format="ditamap" href="xsddoc/xsddoc.ditamap" />
+ 
+</bookmap>

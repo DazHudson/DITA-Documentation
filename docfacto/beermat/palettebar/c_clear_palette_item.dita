@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- @docfacto.link uri="src-beermat/ui/ClearPaletteItem.java key="clear-action" version="2.4.2" -->
+<concept id="clear-palette-item">
+	<title>Clear Action</title>
+	<shortdesc>
+		Functions of the clear action.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>When the clear palette item is selected, a dialog asking if this is the correct action is presented.  If the response is OK, then all of the SVG
+			elements are removed.
+			</p>
+		</section>
+	</conbody>
+</concept>

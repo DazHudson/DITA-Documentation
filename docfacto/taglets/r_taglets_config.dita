@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+                           "reference.dtd">
+<reference id="reference_docfacto">
+	<title>Taglet Configuration</title>
+	<shortdesc>
+		How to configure the
+		<codeph>taglets</codeph>
+		.
+	</shortdesc>
+	<refbody>
+		<section>
+			<p>
+				As the
+				<codeph>Taglets</codeph>
+				are part of the the larger
+				<ph>
+					<xref keyref="docfacto-for-java" scope="external">
+						<keyword keyref="doc-tm" />
+						<codeph> Toolkit for Java</codeph>
+					</xref>
+				</ph>
+				it shares a section of the
+				Docfacto.xml. The configuration simply enables certain
+				<codeph>taglets</codeph>
+				to be enabled. In the example below, the
+				<codeph>system-taglet</codeph>
+				is not enabled, so no
+				<codeph>docfacto.system taglet </codeph>
+				information will be displayed.
+			</p>
+		</section>
+		<example>
+			<title>
+				<codeph>Taglet</codeph>
+				Configuration Example
+			</title>
+			<codeblock><coderef href="ex_taglets_config.xml" /></codeblock>
+		</example>
+
+		<section>
+			<title>
+				<codeph>Since Taglet</codeph>
+			</title>
+			<p>
+				The
+				<codeph>since-taglet</codeph>
+				takes an extra value, which is the value to highlight. This feature
+				allows the developer to quickly see what has been added at the
+				latest release
+			</p>
+		</section>
+
+		<section>
+			<title>
+				User defined
+				<codeph>Taglets</codeph>
+			</title>
+			<p>
+				It is possible to specify custom / user defined
+				<codeph>Taglets</codeph>
+				within the configuration XML file. These
+				<codeph>Taglets</codeph>
+				will be automatically registered with the
+				<codeph>Javadoc</codeph>
+				engine
+				with the name supplied. It is recommended by Oracle / Sun that custom
+				taglets have a . in the name, as how are all of the
+				<keyword keyref="doc-tm" />
+				ones.
+				The specified class must implement the
+				<apiname>com.sun.tools.doclets.Taglet</apiname>
+				interface.
+			</p>
+		</section>
+
+	</refbody>
+</reference>
+<!-- Created by Docfacto [2012-07-30 16:57:31] -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_">
+	<title>Introduction</title>
+	<shortdesc>Docfacto eliminates documentation debt and takes the "too hard" out of documentation for time-pressured developers.</shortdesc>
+	<conbody>
+		<section>
+			<p>
+			Docfacto is developing cool tools for developers that work together from within their IDE and help eliminate documentation debt (the amount of work required to fix all outstanding documentation issues for a software project), by making it easier for them to increase the accuracy of code comments, capture white board designs, and write user or system documentation. The code can then be linked to the documentation to keep both in sync.
+			</p>
+			<p>
+			This methodology puts the software team at the heart of the documentation process ensuring the code is the source of the truth. This way the developers are creating the content that technical authors need for authoring.
+			</p>
+			<p>
+			Docfacto tools make understanding the level of documentation debt and the impact of code change easier and when used in conjunction with our methodology helps eliminate documentation debt, which will improve performance, efficiencies and lower the barriers to developers completely and accurately commenting code.
+			</p>
+			<p>
+			The best way for a developer to demonstrate the brilliance of their code is to capture all the smart thinking that went into it. When the developer's clever logic isn't captured nobody ever knows if the code is good or "why" it was done the way it is. Capturing these ideas leads to better documentation. Ultimately, software is only as good as its supporting documentation. Not documenting code creates legacy code as soon as it's written and this is bad for business.
+			</p>
+			<p>
+			At Docfacto, we understand that creating reusable, structured content is key for good technical documentation. We work with DITA, because it's a great way to manage single-source documentation for product variants, different output formats or different languages; but it can be complex, and we think DITA should be easier so that it is suitable for developers to use on projects of any size.
+			</p>
+		</section>
+	</conbody>
+</concept>

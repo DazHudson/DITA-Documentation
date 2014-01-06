@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="xsddoc_introduction">
+	<title>XSD Doc Introduction</title>
+	<shortdesc>Introduction to XSD Doc.</shortdesc>
+	<conbody>
+		<section>
+			<p>As XSD's are becoming more important in programs, the need to expose this information to the user is also becoming more important.			
+			We are going to use this simple course booking XSD in our documentation examples.</p>
+			<codeblock><coderef href="ex_introduction_to_xsddoc_1.xml" /></codeblock>
+			<p>The correct way to add documentation to a XSD is to use the <codeph>documentation</codeph> element with a nested <codeph>annotation</codeph> element, as shown below</p>
+			<codeblock><coderef href="ex_introduction_to_xsddoc_2.xml" /></codeblock>
+		</section>
+		<section>
+			<p>There are a couple of ways that the <xref keyref="docfacto-for-java" scope="external"><keyword keyref="doc-tm" /> <codeph>Toolkit for Java</codeph></xref> can extract the documentation from the XSD and represent the information in differing formats.
+			</p>
+			<fig>
+				<title>Different methods of documenting XSD's</title>
+				<image href="Architecture.svg" width="500" otherprops="pdf" />
+				<image href="Architecture.svg" placement="break" otherprops="html" />
+			</fig>
+			<p><codeph>XSDTree</codeph> is being used here to extract the documentation information from the XSD.  
+			This API is part of the toolkit and extends the <ph><xref keyref="xsom-for-java" scope="external"><codeph>XSOM API</codeph></xref></ph>; 
+			by allowing simple traversal of the XSD and being able to get to type and annotation information.</p>
+		</section>
+		<example>
+			<title>Example of using the XSDTree API</title>
+			<codeblock><coderef href="ex_introduction_to_xsddoc_3.java" /></codeblock>
+		</example>
+	</conbody>
+</concept>

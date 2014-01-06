@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="adam_config">
+	<title>Adam Configuration</title>
+	<shortdesc>How to configure <codeph><keyword keyref="adam" /></codeph>. </shortdesc>
+	<refbody>
+		<section>
+			<p>
+				As <codeph><keyword keyref="adam" /></codeph> is part of the the larger <ph><xref keyref="docfacto-for-java" scope="external"><keyword keyref="doc-tm" /> <codeph>Toolkit for Java</codeph></xref></ph> it shares a section of the 
+				<codeph>Docfacto.xml</codeph>.  The configuration is broken up into sections, each section controls which part of the 
+				<codeph>Javadoc</codeph> to interact with.  The 'all section' can be used to apply a configuration to all sections of the <codeph>Javadoc</codeph> process.
+			</p>
+			<p>The first section of the <codeph>Docfacto.xml</codeph> is dedicated to the control of the <codeph><keyword keyref="adam" /></codeph> engine.</p>
+			<p>Comments and required-tags elements behave slightly differently.  If a section, for example 'fields', does not have a comment section, then
+			<codeph><keyword keyref="adam" /></codeph> will use the comments from the 'all section'.  This means that the 'all section' can be over-ridden with a local comments element.
+			Required tags, however, are in addition to; so any <codeph>required-tags</codeph> in the 'all section', will be processed first and then the <codeph>required-tags</codeph> in the local section.</p>
+			<p>Each rule can express the level of severity that issue will have.  This is done via the <codeph>severity</codeph> attribute.  The attribute can have three values
+			<ul>
+				<li>error</li>
+				<li>warning</li>
+				<li>info</li>
+			</ul>
+			If the attribute is not defined, it will have the default value of warning.  Comments and required tags also have an attribute of enabled, which by default is true.  If set to false then the section processing will not take place.
+			</p>
+		</section>
+		<example>
+			<title>Adam Configuration Example</title>
+			<p>In the example below you can see that classes must have required tags of <codeph>author</codeph> and <codeph>since</codeph>, whilst methods only require the <codeph>since</codeph> tag.
+			As no comment elements are defined in the sections, then the all comments will be used for all sections. It is also worth noting that warnings will be issued, if TODO appears in the comment as well. An <codeph><keyword keyref="adamlet" /></codeph> of Since Checker is defined, but is restricted to
+			the <codeph>since tag</codeph>.</p>
+			<codeblock><coderef href="ex_adam_config_1.xml" /></codeblock>
+		</example>
+	</refbody>
+</reference>

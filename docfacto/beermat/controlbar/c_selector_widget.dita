@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- @docfacto.link uri="${src-beermat}/ui/widgets/SelectorWidget.java key="selector-widget" version="2.4.2"  link-to="source"-->
+<concept id="selector-widget">
+	<title>Selector Widget</title>
+	<shortdesc>
+		Functions of the selector widget.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				The selector widget displays which tool is currently selected. Hovering over the selector widget will display the release
+				of beermat that you have installed.
+			</p>
+		</section>
+	</conbody>
+</concept>

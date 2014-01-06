@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<map>
+	<topicref href="c_dita_overview.dita" type="concept">
+		<topicref href="c_introduction_to_dita.dita" type="concept" />
+		<topicref href="r_dita_config.dita" type="reference" />
+		<topicref href="c_running_dita.dita" type="concept">
+			<topicref href="c_running_dita_ant.dita" type="concept" />
+			<topicref href="c_running_dita_cmdline.dita" type="concept" />
+			<topicref href="c_running_dita_maven.dita" type="concept" />
+			<topicref href="c_running_dita_eclipse.dita" type="concept" />
+		</topicref>
+	</topicref>
+</map>

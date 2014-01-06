@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- @docfacto.link uri="${src-beermat}/ui/widgets/StrokeWidget.java key="stroke-widget" version="2.4.2" link-to="source" -->
+<concept id="stroke-widget">
+	<title>Stroke Widget</title>
+	<shortdesc>
+		Functions of the stroke widget.
+	</shortdesc>
+	<conbody>
+		<!-- @docfacto.link uri="${src-beermat}/ui/widgets/StrokeWidget.java key="stroke-width" version="2.4.2" link-to="source" -->
+		<section>
+			<title>Stroke Width</title>
+			<p>
+				Changes the stroke characteristics of the line to be draw. SVG works on the principle of a pen that draws on the canvas,
+				changing the thickness of the
+				pen stroke will not only be used by the line tool, but also all of the shape tools, as its outline. For example if the
+				circle tool is selected, the outline
+				of the circle will use the pen stroke width which has been set.
+			</p>
+			<p>
+				A dropdown list of widths are available. If 0 is chosen then shapes will not have an outline, but could still have
+				a fill. If a line or an arrow is
+				drawn with a width of 0, then nothing will be displayed.
+			</p>
+		</section>
+		<!-- @docfacto.link uri="${src-beermat}/ui/widgets/StrokeWidget.java key="stroke-type" version="2.4.2" link-to="source" -->
+		<section>
+			<title>Stroke Type</title>
+			<p>
+				This allows for dotted or dashed outlines or lines to be drawn. A dropdown list of available line types can be
+				selected.
+			</p>
+		</section>
+		<!-- @docfacto.link key="colourPicker" uri="${src-eclipse-root}/core/src/com/docfacto/core/widgets/AbstractColorPicker.java" 
+			link-to="source" -->
+		<section>
+			<title>Stroke Colour</title>
+			<p>By selecting the stroke colour, a palette of colours is displayed to choose from. On the right hand slide of the
+				colour selector are predefined
+				standard colours. Choose a colour by simply clicking the mouse on the required colour.
+			</p>
+			<p>By pressing the X on the top right of the colour selector widget or clicking on the colour selector widget again
+				will leave the
+				previously selected colour unchanged.
+			</p>
+		</section>
+
+		<section>
+			<title>Marker Start/End </title>
+			<!-- @docfacto.link uri="${src-beermat}/ui/widgets/Stroke-Widget.java key="markers" version="2.4.5" -->
+			<p>Two ToolItems located after the stroke-colour picker, by default represented by a blank line; allow you to select
+				various UML and Flowchart or general markers, for use with your lines and paths</p>
+
+			<p>Every line or path created will have selected marker-head or marker-start that is currently selected in this
+				widget set to it.
+				Setting the ToolItems back to the default blank line, will result in line/paths being created without a marker-end or
+				marker-start
+			</p>
+
+			<p>
+				Markers can be changed on existing line by first selecting the line, then setting the marker selection with these
+				ToolItems
+				<note>Selecting a path/line with a marker, will display the marker(s) set to it in these ToolItems</note>
+			</p>
+
+			<p>There are two shortcuts, located to the left of the marker start/end items, used to quickly set the markers to a
+				default blank line, or to a standard filled arrow.</p>
+		</section>
+	</conbody>
+</concept>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="linksservlet">
+	<title>
+		Running
+		<keyword keyref="links" />
+		from Docfacto Links Servlet
+	</title>
+	<shortdesc>
+		How to use Docfacto Links Servlet to run
+		<codeph>
+			<keyword keyref="links" />
+		</codeph>
+		.
+	</shortdesc>
+	<conbody>
+		<section>
+			<title>Adding a Project</title>
+			<p>
+				After deploying <keyword keyref="links.servlet.war" /> you can view the links servlet opening screen at for example: 
+				
+				<codeblock>localhost:8080/docfacto-links-servlet</codeblock>
+			</p>
+
+			<p>
+				To add a project, you must be logged in (by clicking the 'Log in' button on the top right of the page) then add project 
+				by clicking the 'Add a Project' button in the 'Projects' side bar on the left of the page.
+			
+				<note>
+					Your log in details are set into the config.xml file. See the 'Installing the Docfacto Links Servlet' section for more details.
+				</note>
+			</p>
+			
+			<p>	
+				The 'Add Project' pop up will appear and ask for the following information:
+			
+				<ul>
+					<li>The project name you would like to associate with this project.</li>
+					<li>The directory of the source files if you have any.</li>
+					<li>The directory of the documentation files if you have any.</li>
+					<li>The path to the Docfacto XML Config which also has the correct source-root and doc-root configured for this project.</li>
+					<li>The type of the source files you want to analyze.</li>
+					<li>The possible extensions to the source files you want to analyze.</li>
+					<li>The type of the documentation files you want to analyze.</li>
+					<li>The possible extensions to the document files you want to analyze.</li>
+					<li>The base directory for your project (This is optional and overrides the one set in the Docfacto XML config)</li>
+				</ul>
+			
+				An example project configuration would be: 
+				
+				<sl>
+					<sli>Project Name: My project</sli>
+					<sli>Source Directory: your-home/workspace/project/src</sli>
+					<sli>Doc Directory: your-home/workspace/project/doc</sli>
+					<sli>XML Config Directory: your-home/workspace/project/Docfacto.xml</sli>
+					<sli>Source Type: java</sli>
+					<sli>Source File Extensions: .java</sli>
+					<sli>Doc Type: xml</sli>
+					<sli>Doc File Extensions: .dita, .txt, .xml</sli>
+					<sli>Base Directory: your-home/workspace/project</sli>
+				</sl>
+				
+				<note>
+					Remember to make the links paths in the Docfacto.xml file are set correctly in relation to 
+					the working directory and your links tags in your source/doc files to ensure the results will display 
+					correctly.
+				</note>
+			</p>
+			
+			<p>
+				You can change the project or delete it in the 'Project Details' tab by clicking the 'Edit Project' button.
+			</p>
+		</section>
+		<section>
+			<title>Viewing and Analysing Output from Links</title>
+			<p>
+				Once you have added a project, Links is automatically run on it. 
+			</p>
+			
+			<p>
+				You can see a summary of the statistics by clicking the 'Summary' tab, and view all the rule violations by clicking on the 'Errors' tab. 
+			</p>
+			
+			<p>In the Errors tab you can select which packages you want to analyse by selecting the packages you wish to see results for in the 'Packages' section 
+				and then clicking the 'Update' button.
+			</p>
+			
+			<p>
+				To see the location of a particular violation in the 'Errors' Tab, click on one of the rules which have been violated in the 
+				'Results' section's 'Rule' table, then click on a package in the subsequent Package table, then select one of the files in the 'File' table.
+			</p>
+		</section>
+	</conbody>
+</concept>

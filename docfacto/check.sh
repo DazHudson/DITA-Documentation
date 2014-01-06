@@ -1,0 +1,1 @@
+xmllint -dtdvalid /Users/dhudson/development/projects/XSDTree/DITA-OT1.6/dtd/technicalContent/dtd/reference.dtd r_docfacto_config.xml

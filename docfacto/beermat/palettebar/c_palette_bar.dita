@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="palette-bar">
+	<title>Palette Item ToolBar</title>
+	<shortdesc>
+		The Palette Item toolbar contains tools to draw and edit elements.
+	</shortdesc>
+	<conbody>
+		<section>
+			The toolbar is located on the left hand side of the editor, sitting vertically. The tools located here are used for drawing on the canvas,
+			as well as editing existing elements on the canvas.
+		</section>
+	</conbody>
+</concept>

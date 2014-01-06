@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "../../dtd/technicalContent/dtd/concept.dtd">
+<concept id="running_dita">
+	<title>Running <keyword keyref="javadoc2dita"></keyword></title>
+	<shortdesc>How to run <codeph><keyword keyref="javadoc2dita"></keyword></codeph>.</shortdesc>
+	<conbody>
+		<section><codeph><keyword keyref="javadoc2dita"></keyword></codeph> is a <codeph>Doclet</codeph> so it needs to be run from the <codeph>Javadoc</codeph> process.
+		</section>
+	</conbody>
+</concept>

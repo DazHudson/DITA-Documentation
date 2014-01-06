@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="assign-class">
+	<title>Assign Filter</title>
+	<shortdesc>
+		Assign a Filter to an element or group of elements.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>SVG filters are used to add nice effects to SVG elements. For instance, drop shadow, blur or highlights.  If there are any filters defined within
+			the document then the filter ids will be populated in a drop down list.  You can
+			select one from the list, or type in a new filter to be defined later.</p>
+			<fig>
+				<title>Assign Filter Dialog</title>
+				<image href="AssignFilter.png" placement="break"></image>
+			</fig>
+		</section>
+	</conbody>
+</concept>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd" >
+<map xml:lang="en-US">
+	<title>Docfacto Grabit</title>
+	<topicref href="c_grabit_plugin_overview.dita" type="concept">
+		<topicref href="c_working_with_grabit.dita" type="concept" />
+		<topicref href="c_grabit_preferences.dita" type="concept" />
+	</topicref>
+</map>

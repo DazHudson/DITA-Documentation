@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- @docfacto.link key="lineTool" uri="${src-beermat}/ui/toolbar/shapes/LineShapeHandler.java" link-to="source" -->
+<concept id="lineTool-paletteItem">
+	<title>Draw straight lines</title>
+	<shortdesc>
+		Use the Line tool when you want to draw a single straight line.
+	</shortdesc>
+	<conbody>
+		<section>
+			<ol>
+				<li>
+					Select the Line tool <image href="lineTool.png"  placement="inline"/>
+				</li>
+				<li>
+					Do one of the following:
+					<ul>
+						<li>Position the mouse at where you want the line to start, then start dragging till where you want the line to end</li>
+						<li>
+							Put the mouse near or over an element so that hot spots appear, start dragging from a <xref href="../../selecting/c_selecting.dita">hot spot</xref>
+							to another element's hot spot, a line is drawn and this is set as a 'connector' between these two hot spots.
+						</li>
+						<li>Click the canvas where you want a line of the same dimensions as the last drawn line to appear</li>
+					</ul>
+				</li>
+			</ol>
+		</section>
+	</conbody>
+</concept>

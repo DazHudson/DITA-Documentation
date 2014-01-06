@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="introImportance">
+	<title>The Importance of Documentation</title>
+	<shortdesc>
+		Why is good documentation important? There are many advantages to a well documented piece of software. 
+	</shortdesc>
+	<conbody>
+		<section>
+		<!-- 
+			<p>From the developers perspective: 
+			being able to go back to code written months ago, using good documentation to quickly remind 
+			themselves what, why and how enables them to get back to making changes and refactoring immedietly.</p>
+			
+			<p>From the perspective of a coder attempting to make modifications to another persons work: undocumented code can be so opaque that it’s commonly easier to throw the existing code away, and start a fresh.
+			Clearly this is incredibly inefficient and well documented software prevents this.</p>
+			
+			<p>From development managers viewpoint: the ability to look through an existing library of code modules, and re-using existing
+			functionality is crucial. However, undocumented code makes the process of re-use difficult as it’s difficult to truly understand the what the code does,
+			if not impossible, leading to a situation where “The wheel is re-invented” many times over. 
+			Documentation without the “why” and the “how” it was done, also leads to code that may not be fully understood.
+			Also personnel changes can lead to a situation where a simple maintenance/refactor assignment can be very inefficient as the new coder struggles to understand 
+			what, why and how, existing code was written and many man hours are wasted during this period of learning what old code did.
+			</p>
+			
+			<p>From a Company management perspective, undocumented code has very little value as a Company asset. This will have a material impact in any Company investment
+			 or merger/acquisition/IPO conversations. This uncomfortable truth is commonly seen too late, and whilst frantic efforts are commonly performed to document code, 
+			 the result is easily seen as sub-standard by the potential business partner, with the resultant low valuation or investment offer.</p>
+			
+			-->
+			<p>If the user document is not closely tied to the code then we see a number of potential business problems arising as shown in <xref format="dita" href="#introImportance/broken-process"></xref>.</p>
+			<p>For example, if the User doc does not correctly represent the current state of the code then user / customer perception is affected when they buy and use the code. There is also a possibility that time to market increases as 
+			the release is delayed in order to improve the User doc; we have seen plenty of companies face this difficult dilemma when it comes to the release date. Both of these issues can significantly affect revenue.</p>
+			<p>Similarly, if the System doc is not closely tied to the current state of the code then there is the risk that the code quickly becomes legacy code as the technical debt increases rapidly. Development team efficiency will inevitably drop in this situation.</p>
+			<p>Whilst User doc is usually linked to the code we have found that System doc rarely is and, sometimes, not created at all.</p>
+			<p>For the developer, being able to return to a piece of code or start to work on code written by someone else, that is well documented with clear explanations of logic and thinking behind the code is incredibly efficient and will take a lot of frustration out of the project.</p>
+
+			<fig id="broken-process">
+				<title>Poor documentation and business performance</title>
+				<image href="Broken.svg" width="500" height="600" otherprops="pdf" />
+				<image href="Broken.svg" scalefit="yes" otherprops="html" />
+			</fig>
+
+			 <!-- 
+			 <p>Although user documentation is normally present, system documentation is normally not linked to code and sometimes just not done.  We as a company are trying to achive is to make the code the source
+			 of truth, and be able to re-use documentation assets for technical documentation, which encompasses system and user documentation.</p>
+			 -->
+		</section>
+	</conbody>
+</concept>

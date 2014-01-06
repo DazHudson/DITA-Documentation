@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd" >
+<map xml:lang="en-US">
+	<title>Drawing</title>
+	<topicref href="simpleshapes/c_drawing_simple.dita">
+		<topicref href="simpleshapes/c_lineTool.dita" type="concept" />
+		<topicref href="simpleshapes/c_rectSquareTool.dita" type="concept" />
+		<topicref href="simpleshapes/c_ellipseCircleTool.dita" type="concept" />
+		<topicref href="simpleshapes/c_drawing_pencil.dita" type="concept" />
+	</topicref>
+
+	<topicref href="arrows/c_drawing_arrows.dita" toc="yes" type="concept">
+
+	</topicref>
+
+
+</map>

@@ -1,0 +1,18 @@
+<target name="Javadoc2DITA" description="Generates DITA files from the Javadoc engine">
+	<javadoc sourcepath="." docletpath="../../lib/__JAR_FILE__" doclet="com.docfacto.doclets.dita.DITADoclet" additionalparam="-config ../../etc/Docfacto.xml"
+		maxmemory="1024M">
+		<classpath refid="extpath" />
+		<package name="com.docfacto.common" />
+		<package name="com.docfacto.config" />
+		<package name="com.docfacto.dita" />
+		<package name="com.docfacto.doclets.adam" />
+		<package name="com.docfacto.doclets.dita" />
+		<package name="com.docfacto.jaxb.plugins" />
+		<package name="com.docfacto.taglets" />
+		<package name="com.docfacto.xml" />
+		<package name="com.docfacto.svg" />
+		<package name="com.docfacto.xsd2dita" />
+		<package name="com.docfacto.xsd2svg" />
+		<package name="com.docfacto.xsdtree" />
+	</javadoc>
+</target>

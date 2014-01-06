@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="920" height="520">
+	<style type="text/css"><![CDATA[
+    	.system { fill:lightblue }
+    	.arrow { marker-end: url(#mTriangle); fill:none; stroke:black; }
+    	rect { stroke:#000000; stroke-width:2; fill:none; }
+    	text { text-anchor:middle; }
+  	]]></style>
+	<defs>
+		<!-- Arrow Marker -->
+		<marker id="mTriangle" markerWidth="5" markerHeight="10" refX="5"
+			refY="5" orient="auto">
+			<path d="M 0 0 5 5 0 10 Z" style="fill:black;" />
+		</marker>
+		
+		<!-- Up Arrow -->
+		<path id="up-arrow" fill="red" d="M 4 16 L 4 6 L 0 6 L 6 2 L 12 6 L 8 6 L 8 16 Z " />
+
+		<!-- Down Arrow -->
+		<path id="down-arrow" fill="red" d="M 4 2 L 8 2 L 8 12 L 12 12 L 6 16 L 0 12 L 4 12 Z" />
+		
+	</defs>
+  	
+  	<title>Current Process</title>
+
+	<g id="Docfacto" transform="translate(10,10)">
+		<rect height="500" width="200" class="system"/>	
+		<text y="220" x="100" style="font-size:22;">Code</text>
+		<text y="245" x="100" style="font-size:22;">Development</text>
+		<text y="270" x="100" style="font-size:22;">Process</text>
+		<line x1="200" y1="100" x2="310" y2="100" class="arrow" />
+		<text x="255" y="109" style="font-size:22;">X</text>
+		<line x1="200" y1="400" x2="310" y2="400" class="arrow" />
+		<text x="255" y="409" style="font-size:22;">X</text>
+	</g>
+	
+	<g id="UserDoc" transform="translate(320,10)">
+		<rect height="200" width="200" class="system"/>
+		<text x="100" y="80" style="font-size:22;">User</text>
+		<text x="100" y="95" style="font-size:22;">Documentation</text>
+		<text x="100" y="130" style="font-size:22;font-weight:bold">Confused users</text>
+	</g>
+	
+	<g id="SystemDoc" transform="translate(320,310)">
+		<rect height="200" width="200" class="system"/>
+		<text x="100" y="70" style="font-size:22;">System</text>
+		<text x="100" y="95" style="font-size:22;">Documentation</text>
+		<text x="100" y="130" style="font-size:22;font-weight:bold">Modern legacy</text>
+		<text x="100" y="150" style="font-size:22;font-weight:bold">code</text>
+	</g>
+
+	<g id="timeToMarket" transform="translate(550,10) scale(2)">
+		<use xlink:href="#up-arrow" />
+		<text x="20" y="14" style="text-anchor:start">Time to market</text>
+	</g>
+	
+	<g id="support" transform="translate(550,50) scale(2)">
+		<use xlink:href="#up-arrow" />
+		<text x="20" y="14" style="text-anchor:start">Support calls</text>
+	</g>
+	
+	<g id="community" transform="translate(550,90) scale(2)">
+		<use xlink:href="#down-arrow" />
+		<text x="20" y="12" style="text-anchor:start">Community uptake</text>
+	</g>
+	
+	<g id="userValue" transform="translate(550,130) scale(2)">
+		<use xlink:href="#down-arrow" />
+		<text x="20" y="12" style="text-anchor:start">User perception</text>
+	</g>
+	
+	<g id="costs" transform="translate(550,170) scale(2)">
+		<use xlink:href="#up-arrow" />
+		<text x="20" y="14" style="text-anchor:start">Documentation cost</text>
+	</g>
+	
+	<g id="maintenance-costs" transform="translate(550,310) scale(2)">
+		<use xlink:href="#up-arrow" />
+		<text x="20" y="14" style="text-anchor:start">Maintenance cost</text>
+	</g>
+	
+	<g id="on-board" transform="translate(550,340) scale(2)">
+		<use xlink:href="#up-arrow" />
+		<text x="20" y="14" style="text-anchor:start">Time to on-board developers</text>
+	</g>
+	
+	<g id="technical-debt" transform="translate(550,370) scale(2)">
+		<use xlink:href="#up-arrow" />
+		<text x="20" y="14" style="text-anchor:start">Technical debt</text>
+	</g>
+	
+	<g id="refactoring" transform="translate(550,405) scale(2)">
+		<use xlink:href="#up-arrow" />
+		<text x="20" y="14" style="text-anchor:start">Re-factoring costs</text>
+	</g>
+	
+	<g id="reuse" transform="translate(550,437) scale(2)">
+		<use xlink:href="#down-arrow" />
+		<text x="20" y="12" style="text-anchor:start">Re-use opportunity</text>
+	</g>
+	
+	<g id="code-costs" transform="translate(550,470) scale(2)">
+		<use xlink:href="#up-arrow" />
+		<text x="20" y="14" style="text-anchor:start">Code costs</text>
+	</g>
+</svg>

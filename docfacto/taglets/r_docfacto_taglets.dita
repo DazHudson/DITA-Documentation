@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="docfacto_taglets">
+	<title><keyword keyref="doc-tm" /> Taglets</title>
+	<shortdesc>What are the supplied <codeph>Taglets</codeph>?
+	</shortdesc>
+	<refbody>
+		<section>
+			<p>It is worth noting that all of the supplied <keyword keyref="doc-tm" /> <codeph>Taglets</codeph> can be not only be used in <codeph>Javadoc</codeph> comments within Java files, but can also in overview.html, as well as package.html.  The 
+			Taglets can also be used with the <codeph>Javadoc</codeph> to DITA Doclet, as the taglets can produce html as well as DITA xml.</p>
+		</section>
+		<section>
+			<simpletable relcolwidth="90* 50* 180*">
+				<sthead>
+					<stentry>Name</stentry>
+					<stentry>Type</stentry>
+					<stentry>Description</stentry>
+				</sthead>
+				<strow>
+					<stentry><xref href="#docfacto_taglets/example_taglet">docfacto.example</xref></stentry>
+					<stentry>inline</stentry>
+					<stentry>This allows for the injection of source files, that are
+						not part of the <codeph>Javadoc</codeph> process.</stentry>
+				</strow>
+				<strow>
+					<stentry><xref href="#docfacto_taglets/note_taglet">docfacto.note</xref></stentry>
+					<stentry>inline</stentry>
+					<stentry>This allows a notes to be added to the <codeph>Javadoc</codeph> output</stentry>
+				</strow>
+				<strow>
+					<stentry><xref href="#docfacto_taglets/system_taglet">docfacto.system</xref></stentry>
+					<stentry>inline</stentry>
+					<stentry>This allows a system documentation to be captured, which
+						does not need to be generated, when generating user API
+						documentation.</stentry>
+				</strow>
+				<strow>
+					<stentry><xref href="#docfacto_taglets/todo_taglet">docfacto.todo</xref></stentry>
+					<stentry>inline</stentry>
+					<stentry>This allows for reminders, and to do's to be captured in the <codeph>Javadoc</codeph> output</stentry>
+				</strow>
+				<strow>
+					<stentry><xref href="#docfacto_taglets/media_taglet">docfacto.media</xref></stentry>
+					<stentry>inline</stentry>
+					<stentry>This allows for pictures, images, video to be linked into the <codeph>Javadoc</codeph></stentry>
+				</strow>
+				<strow>
+					<stentry><xref href="#docfacto_taglets/since_taglet">since</xref></stentry>
+					<stentry>block</stentry>
+					<stentry>Allows for highlighting methods and classes that match a since release number.  This overrides the <codeph>Javadoc</codeph> standard <codeph>since tag</codeph></stentry>
+				</strow>
+			</simpletable>
+		</section>
+		
+		<section id="example_taglet">
+			<title><codeph>Example Taglet</codeph></title>
+			<p>There are two main features of the <codeph>example taglet</codeph>, firstly it enables injection of code rather than 
+			having code pasted into comments.  This is important if the example / code snippet changed at all there would be no way 
+			of validating if the code snippet was still accruate.  Secondly, it doesn't bloat the class file with commented code, 
+			in eclipse use the hover feature to see the example code.</p>
+			<p>It is an <codeph>in-line Taglet</codeph> so takes the form of 
+			{@docfacto.example title="My Example" uri="com.docfacto.test.MyTest" }.
+			The taglet has two attributes, <codeph>title</codeph> attribute is optional and will display a title bar if present.  
+			The <codeph>uri</codeph> attribute is required and takes the form of a dot notated class file.</p>
+			<fig>
+				<title>Example <codeph>Taglet</codeph></title>
+				<image href="example.png" placement="break" ></image>
+			</fig>
+		</section>
+		
+		<section id="note_taglet">
+			<title><codeph>Note Taglet</codeph></title>
+			<p>The note taglet allows for notes to be generated.  It is an <codeph>in-line Taglet</codeph> so takes the form of {@docfacto.note .. }</p>
+			<p>The taglet has an optional attribute of title, so that notes can be given a heading</p>
+			<fig>
+				<title>Note Taglet</title>
+				<image href="note.png"></image>
+			</fig>
+		</section>
+		
+		<section id="system_taglet">
+			<title><codeph>System Taglet</codeph></title>
+			<p>The <codeph>system-taglet</codeph> is designed for system documentation rather than user documentation.  It is an  <codeph>in-line Taglet</codeph> so takes the form of {@docfacto.system .. }</p>
+			<p>The taglet an optional attribute of title, so that notes can be given a heading</p>
+			<fig>
+				<title>System Taglet</title>
+				<image href="system.png"></image>
+			</fig>
+		</section>
+		
+		<section id="todo_taglet">
+			<title> <codeph>ToDo Taglet</codeph></title>
+			<p>The taglet has an optional attribute of title, so that ToDo sections can be given a heading</p>
+			<fig frame="all">
+				<title> <codeph>TODO-taglet</codeph></title>
+				<image placement="break" href="todo.png"></image>
+			</fig>
+		</section>
+		
+		<section id="media_taglet">
+			<title><codeph>Media Taglet</codeph></title>
+			<p>The media taglet can be used to embed iamges and video if required.  This is an inline-taglet and can be used
+			in package documentation as well.  The taglet will inject different html / dita tags depending on the type of image.</p>
+		</section>
+		
+		<section>
+			<title><codeph>Media Taglet</codeph> and HTML</title>
+			<p>Has a required attribute of <codeph>uri</codeph>.  Other attributes that can be used in Javadoc which will be included in the HTML are
+				<ul>
+					<li>height</li>
+					<li>width</li>
+					<li>alt</li>
+				</ul>
+			</p>
+		</section>
+		
+		<section product="dita">
+			<title><codeph>Media Taglet</codeph> and DITA</title>
+			<p>If the tag has an attribute of <codeph>title</codeph> a <codeph>fig</codeph> element with a title, will be created with an embedded image element</p>
+			<p>Other attributes that can be used are 
+				<ul>
+					<li>height</li>
+					<li>width</li>
+					<li>align</li>
+					<li>scale</li>
+					<li>placement</li>
+					<li>alt</li>
+				</ul>
+			</p>
+		</section>
+			
+		<section id="since_taglet">
+			<title> <codeph>Since Taglet</codeph></title>
+			<p>The <codeph>since-taglet</codeph> is designed to highlight new methods / classes / features of an API.</p>
+			<fig>
+				<title> <codeph>Since Taglet</codeph></title>
+				<image href="since.png"></image>
+			</fig>
+		</section>
+		
+	</refbody>
+</reference>

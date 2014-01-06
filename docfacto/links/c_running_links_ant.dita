@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="linksant">
+	<title>Running <keyword keyref="links" /> from Ant</title>
+	<shortdesc>How to use Ant to run <codeph><keyword keyref="links" /></codeph>.</shortdesc>
+	<conbody>
+		<section>
+		<p>
+			The <keyword keyref="links" /> Ant task is very simple to configure.  The task itself has two attributes, firstly <codeph>versionmatch</codeph>.  This is a boolean value and 
+			instructs the <keyword keyref="links" /> process to check to see if the source links and documentation links versions match, if not produce a warning.  Secondly the
+			<codeph>configpath</codeph> specifies where to locate the Docfacto.xml file.</p>
+		<p>
+			The <codeph>source</codeph> and <codeph>doc</codeph> nested elements take a nested sourceset and doc set elements.  These elements take nested fileset elements so that you can define more
+			than one type of documentation set and many types of source sets.  Here you can define what file are going to be checked. See <xref href="http://ant.apache.org/manual/Types/fileset.html" format="html">FileSet Type</xref> for more information.	
+			The <codeph>sourceset</codeph> and <codeph>docset</codeph> nested element has an attribute of <codeph>type</codeph>.  This defines the type of source / document that the <keyword keyref="links" /> process will scan.  Supported types are
+			java and xml.
+		</p>
+		</section>
+		<example>
+			<title>Example of an Ant target which runs <codeph><keyword keyref="links" /></codeph></title>
+			<codeblock><coderef href="links-ant.xml" /></codeblock>
+		</example>
+	</conbody>
+</concept>

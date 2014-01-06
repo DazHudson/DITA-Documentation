@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="svgEditor">
+	<title>Usage guide</title>
+	<shortdesc>
+		With Beermat up and running, usage is fairly simple, this section outlines usage of the main editor, the graphical editor.
+	</shortdesc>
+	<conbody>
+		<section>
+			<title>Graphical Editor (SVG Editor)</title>
+			<p>This is the main editor, showing a large centred canvas, surrounded by toolbars.</p>
+			<p>
+				The top toolbar are element
+				properties, changing these will change how elements are drawn on the canvas. To see full
+				functionality of this toolbar refer to
+				<xref href="../controlbar/c_control_bar.dita" />
+			</p>
+			<p>
+				The left vertical toolbar are the different tools available, see
+				<xref href="../palettebar/c_palette_bar.dita" />
+			</p>
+			<p>
+				The toolbar located on the bottom relate to the canvas, this includes zooming, and showing a grid, as well as mouse
+				position. See
+				<xref href="../canvasbar/c_canvas_bar.dita" />
+			</p>
+		</section>
+
+		<section>
+			<title>Clicking the Canvas</title>
+			<p>
+				Left click is used for drawing, selecting and moving elements, see
+				<xref href="../selecting/c_selecting.dita" />
+				for a full explanation of how selection works in beermat can be
+			</p>
+			<p>
+			<!-- @docfacto.link key="rightClickPopup" uri="${src-beermat}/listeners/CursorToolInputListener.java" link-to="doc" -->
+				Right clicking will bring up the popup menu, more options become enabled when right clicking with elements
+				selected, see 
+				<xref href="../rightclick/c_rightclick_menu.dita" />
+				for a detailed right click description.
+			</p>
+		</section>
+
+		<section>
+			<title>Panning the Canvas</title>
+			<p>
+				Depending on the size of the SVG document, or if the document is currently zoomed, scroll bars will appear to
+				allow the user
+				to pan the SVG. The scroll wheel on the mouse can also be used to pan the SVG image.
+				The SVG can also
+				be panned by using the mouse with the scroll bars.
+			</p>
+		</section>
+
+		<section>
+			<title>Shortcuts and tricks</title>
+			<p>Once a shape has been created on the canvas, to create another
+				of the same size, just click on the canvas where you
+				want it located and an identical shape will appear.</p>
+			<p>With an element selected, using the arrow keys will nudge the element by 1 pixel in that direction, this is useful
+				for fine-aligning an element</p>
+			<p>With an element selected, either backspace or delete will work to delete an element off the canvas.</p>
+		</section>
+
+	</conbody>
+</concept>

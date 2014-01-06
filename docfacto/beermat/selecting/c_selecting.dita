@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- @docfacto.link key="elementHighlightStyle" uri="${src-beermat}/highlight/HighlightElement.java" link-to="source" -->
+<concept id="selector-palette-item">
+	<title>Selecting Elements</title>
+	<shortdesc>
+		How selecting works in Beermat.
+	</shortdesc>
+	<conbody>
+		<section>
+			<title>Selecting elements</title>
+			<p>Elements on the SVG can be selected and moved using the cursor tool. While elements are selected, their properties can be altered using
+			the control bar</p>
+			<p>When hovering over an element, the element will be outlined in red, the highlight will present itself around the outermost group of the element, if this is not
+			the required behaviour then holding down the <codeph>alt</codeph> key will highlight the inner elements in the group. To select many elements, click the highlighted element
+				and the highlight will change colour.</p>
+			<p>To move elements, simply hover over it (you'll see highlighting around the element) and drag to the desired location.  Highlighted elements are surrounded by
+			a red dashed box, whilst selected items are surrounded by a black box.</p>
+			<fig>		 				 		
+		 		<p>An element selected</p>
+		 		<image href="Selection.png" />
+		 	</fig>
+		 	<p>Selected elements have hot spots.  The cursor will change when the mouse is over a hot spot.  This enables the image to be stretched or resized.
+		 	<note>While using a hotspot to resize, holding down the <codeph>shift</codeph> key will retain the original aspect ratio of the shape</note>
+		 	</p>
+		 	<p>To un select elements, just click the element again, to remove all highlights, either press <codeph>escape</codeph> or click the canvas where there are no elements</p>
+		 	<p>Elements can also be selected by dragging the mouse, which causes a select region to be drawn, when finished dragging the enclosed items within the rectangle will be selected,
+		 	to change the behaviour to intersects, then have the alt key pressed down before creating the rectangle.  To select all of the elements on the canvas, then use the select all option
+		 	from the popup menu.  Using the shift key allows for multiple items to be selected.</p>
+		 	<p>Selected elements can be deleted from the SVG using backspace, or by using the right click menu popup.</p>
+		</section>
+	</conbody>
+</concept>

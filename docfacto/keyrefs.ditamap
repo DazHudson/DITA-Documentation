@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"  "../dtd/map.dtd">
+<map id="keyrefs" title="Key references">
+  <keydef keys="docfacto">
+  	<topicmeta>
+  		<keywords>
+  			<keyword>docfacto</keyword>
+  		</keywords>
+  	</topicmeta>
+  </keydef>
+  <keydef keys="docfacto.release.version">
+    <topicmeta>
+      <keywords>
+        <keyword>__RELEASE_BUILD__</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="docfacto.jar">
+  	<topicmeta>
+  		<keywords>
+  			<keyword>__JAR_FILE__</keyword>
+  		</keywords>
+  	</topicmeta>
+  </keydef>
+  <keydef keys="links.jar">
+  	<topicmeta>
+  		<keywords>
+  			<keyword>__LINKS_JAR_FILE__</keyword>
+  		</keywords>
+  	</topicmeta>
+  </keydef>
+  <keydef keys="adam.sonar.jar">
+    <topicmeta>
+      <keywords>
+        <keyword>__ADAM_SONAR_JAR__</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="links.sonar.jar">
+    <topicmeta>
+      <keywords>
+        <keyword>__LINKS_SONAR_JAR__</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="links.servlet.war">
+    <topicmeta>
+      <keywords>
+        <keyword>docfacto-links-servlet.war</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="docfacto.xml">
+  	<topicmeta>
+  		<keywords>
+  			<keyword>Docfacto.xml</keyword>
+  		</keywords>
+  	</topicmeta>
+  </keydef>
+  <keydef keys="java.version">
+    <topicmeta>
+      <keywords>
+        <keyword>1.6</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="ant.version">
+    <topicmeta>
+      <keywords>
+        <keyword>1.8.2</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="jaxb.version">
+  	<topicmeta>
+  		<keywords>
+  			<keyword>2.2.7</keyword>
+  		</keywords>
+  	</topicmeta>
+  </keydef>
+  <keydef keys="DITAOT.version">
+  	<topicmeta>
+  		<keywords>
+  			<keyword>1.8</keyword>
+  		</keywords>
+  	</topicmeta>
+  </keydef>
+  <keydef keys="DITAOT" href="http://dita-ot.sourceforge.net/" scope="external" format="html">
+  	<topicmeta>
+  		<linktext>DITA Open Toolkit</linktext>
+  	</topicmeta>
+  </keydef>
+  <keydef keys="adam-project" href="http://www.docfacto.com/products/adam.html" scope="external" format="html">
+    <topicmeta>
+      <linktext>Project adam hosted on docfacto</linktext>
+    </topicmeta>
+  </keydef>
+  <keydef keys="docfacto-for-java" href="http://www.docfacto.com/" scope="external" format="html">
+    <topicmeta>
+      <linktext>docfacto toolkit for Java</linktext>
+    </topicmeta>
+  </keydef>
+  <keydef keys="docfacto-DITA-suite" href="http://www.docfacto.com" scope="external" format="html">
+  	<topicmeta>
+  		<linktext>docfacto DITA Documentation Suite</linktext>
+  	</topicmeta>
+  </keydef>
+  <keydef keys="xsom-for-java" href="http://xsom.java.net" scope="external" format="html">
+    <topicmeta>
+      <linktext>XSOM API for Java</linktext>
+    </topicmeta>  
+  </keydef>
+  <keydef keys="jaxb-for-java" href="http://jaxb.java.net/2.2.7" scope="external" format="html">
+    <topicmeta>
+      <linktext>JAXB RI 2.2.7</linktext>
+    </topicmeta>  
+  </keydef>
+  <keydef keys="maven-javadoc-plugin" href="http://maven.apache.org/plugins/maven-javadoc-plugin/" scope="external" format="html">
+  	<topicmeta>
+  		<linktext>Maven javadoc plugin</linktext>
+  	</topicmeta>
+  </keydef>
+  <keydef keys="doc-tm">
+    <topicmeta>
+      <keywords>
+        <keyword><tm trademark="Docfacto" tmtype="tm">Docfacto</tm></keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>	
+  <keydef keys="adam">
+    <topicmeta>
+      <keywords>
+        <keyword>Adam</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="links">
+  	<topicmeta>
+  		<keywords>
+  			<keyword>Links</keyword>
+  		</keywords>
+  	</topicmeta>
+  </keydef>
+  <keydef keys="adamlet">
+    <topicmeta>
+      <keywords>
+        <keyword>Adamlet</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="javadoc2dita">
+  	<topicmeta>
+  		<keywords>
+  			<keyword>Javadoc to DITA</keyword>
+  		</keywords>
+  	</topicmeta>
+  </keydef>
+  <keydef keys="javadoc.gloss" href="glossary.dita">
+  	<topicmeta>
+  		<keywords>
+  			<keyword>Javadoc</keyword>
+  		</keywords>
+  	</topicmeta>
+  </keydef>
+  
+  <keydef keys="product.beermat">
+  	<topicmeta>
+  		<keywords>
+  			<keyword>Beermat</keyword>
+  		</keywords>
+  	</topicmeta>
+  </keydef>
+  
+  <keydef keys="sonar.site" href="http://www.sonarsource.org" scope="external" format="html">
+  	<topicmeta>
+  		<keywords>
+  			<keyword>Sonar website</keyword>
+  		</keywords>
+  	</topicmeta>
+  </keydef>
+</map>

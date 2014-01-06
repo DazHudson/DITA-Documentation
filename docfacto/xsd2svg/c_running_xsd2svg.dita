@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "../../dtd/technicalContent/dtd/concept.dtd">
+<concept id="running_xsd2svg">
+<title>Running XSD2SVG</title>
+<shortdesc>How to run XSD2SVG.</shortdesc>
+<conbody>
+	<section>
+		<p>XSD2SVG can either be run from the command line, Ant or a JAXB plugin.</p>
+	</section>
+	<section>
+		<p>There are four options for this utility.</p>
+		<p>
+		<simpletable>
+			<sthead>
+              <stentry>Argument</stentry>
+              <stentry>Description</stentry>
+              <stentry>Required</stentry>
+            </sthead>
+            <strow>
+              <stentry>-xsd</stentry>
+              <stentry>Path to the xsd to process</stentry>
+              <stentry>yes</stentry>
+            </strow>
+            <strow>
+              <stentry>-output</stentry>
+              <stentry>Path to the resulting file</stentry>
+              <stentry>yes</stentry>
+            </strow>
+            <strow>
+              <stentry>-rootnode</stentry>
+              <stentry>If a sub node or section of a large XSD is required then specify a root node</stentry>
+              <stentry>no</stentry>
+            </strow>
+            <strow>
+              <stentry>-title</stentry>
+              <stentry>Set a title</stentry>
+              <stentry>no</stentry>
+            </strow>
+		</simpletable>
+	   </p>
+	</section>
+</conbody>
+</concept>

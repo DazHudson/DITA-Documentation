@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="links">
+	<title>Links Overview</title>
+	<shortdesc>What is the concept behind links.</shortdesc>
+	<conbody>
+		<section>
+			<p>A code and documentation linking tool that shows the impact of any code change on the documentation, the scope of documentation 
+			coverage and exposes hidden features. It also helps technical authors track what code is responsible for which features and functions.</p>
+		</section>
+	</conbody>
+</concept>

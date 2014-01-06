@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="running_sonar_adam">
+	<title>Running Adam from Sonar</title>
+	<shortdesc>
+		How to run the Adam plugin for Sonar
+	</shortdesc>
+	<conbody>
+		<section>
+			<title>Using the Adam rules</title>
+			<p>
+				If the Adam plugin for Sonar has been installed correctly, you can
+				now use
+				the rules that Adam provides when analysing your project, and
+				view
+				metrics in the Docfacto Adam widget.</p>
+
+			<p>
+				To enable the rules, login to Sonar as
+				admin and go to:
+
+				<menucascade>
+					<uicontrol>Settings</uicontrol>
+					<uicontrol>Quality Profiles</uicontrol>
+					<uicontrol>Sonar Way</uicontrol>
+				</menucascade>
+
+				<ol>
+					<li>Under the 'Coding Rules' tab, enter 'Checkstyle' as the
+						'Repository', 'Any' as the
+						'Severity'
+						and 'Any' as 'Status'.</li>
+
+					<li>
+						To find the Adam rules, either enter 'Docfacto Adam' into the
+						Name/Key and search, or scroll down
+						the rules until you find the
+						rules which begin with
+						'Docfacto Adam'.
+
+						<fig>
+							<image href="SonarCodingRulesSettings.png" width="300"
+								placement="break"></image>
+						</fig>
+					</li>
+
+					<li>
+						To enable the rules you want, tick the box next to the rule
+						(untick to disable). You can
+						click on a rule to expand it and see
+						it's description.
+
+						<fig>
+							<image href="SonarEnablingRule.png" width="250" placement="break"></image>
+						</fig>
+					</li>
+
+					<li>
+						Then run sonar again for your project. If all went well, by
+						looking at
+						the violations for your project, you can see the rules
+						that your
+						project has broken show up as a violation.
+
+						<fig>
+							<image href="SonarAdamViolationExample.png" width="250"
+								placement="break"></image>
+						</fig>
+					</li>
+				</ol>
+			</p>
+		</section>
+
+		<section>
+			<title>Viewing the measures in the widgets</title>
+			<p>
+				There are two widgets available:
+			</p>
+			<p>
+				The Docfacto Adam Summary Widget gives
+				a summary of the Adam
+				Results. It
+				shows
+				how many of the Adam Rules
+				which have been enabled
+				have been
+				violated, and the percentage of
+				various areas of the code
+				which have
+				been documented. The bar chart
+				also shows the percentage of
+				the code
+				which has bene documented, and
+				the bar will be colored green
+				when the
+				percentage documented is at
+				100%, orange when 25% or above,
+				and red
+				otherwise.
+			</p>
+			<p>
+				The Docfacto Adam Statistics Widget lists all the measures from
+				Adam.
+			</p>
+
+			<p>To
+				enable the widgets, login to Sonar as admin and
+				either go
+				to
+				the
+				main
+				'Dashboards'
+				page or the Dashboard for a
+				specific
+				project
+				by
+				clicking on
+				the project
+				in the main Dashboards page
+				under
+				'Projects'.
+			</p>
+
+			<p>
+				Then click on 'Configure Widgets' on the top right of
+				the
+				page, and
+				scroll down to find the two Docfacto Adam widgets, then add the
+				widgets you want.
+
+				<fig>
+					<title>Adding the Sonar Docfacto Adam widgets</title>
+					<image href="SonarAddWidgets.png" width="350" placement="break"></image>
+				</fig>
+
+				<fig>
+					<title>The Docfacto Adam Summary widget</title>
+					<image href="SonarAdamSummaryWidget.png" width="350"
+						placement="break"></image>
+				</fig>
+
+				<fig>
+					<title>The Docfacto Adam Statistics widget</title>
+					<image href="SonarAdamStatisticsWidget.png" width="300"
+						placement="break"></image>
+				</fig>
+
+				<note>
+					If you added the widget at the main 'Dashboards'
+					page,
+					then a
+					'Project' dropdown will appear for the widget and you need to type
+					in the name of the project you want
+					to see
+					the
+					Adam
+					metric results for,
+					select it
+					and
+					save.
+				</note>
+			</p>
+		</section>
+	</conbody>
+</concept>

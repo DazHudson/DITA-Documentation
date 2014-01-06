@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- @docfacto.link key="controlToolbar" uri="${src-beermat}/ui/ControlToolBar.java" link-to="source" -->
+<concept id="control-bar">
+	<title>Control Bar</title>
+	<shortdesc>
+		Functions of the control bar.
+	</shortdesc>
+	<conbody>
+		<section>
+			The control bar is located at the top of the SVG image editor.  The control bar contains widgets for modifying elements on the canvas,
+			or choosing how elements are created on to the canvas.
+			
+			<p>
+				The control bar copies the attributes of the last element selected to the widgets in the control bar.For example, if a red rectangle with
+				blue stroke of size 3 is selected, the stroke section takes the properties stroke-width: 3, stroke-colour: blue. And the fill section will show
+				with red. 
+				<note>If a group is selected, it will show 'x' 'x' for the colour attributes, but setting these attributes will change every child in the group</note>
+			</p>
+		</section>
+	</conbody>
+</concept>

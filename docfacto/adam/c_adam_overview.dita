@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="adamlets">
+	<title>Adam Overview</title>
+	<shortdesc>What is <codeph><keyword keyref="adam" /></codeph> all about?</shortdesc>
+	<conbody>
+		<section>
+			<p> <codeph><keyword keyref="adam" /></codeph> <fn>So why is it called <codeph><keyword keyref="adam" /></codeph>? Whilst CTO at <xref href="http://www.pushtechnology.com" scope="external" format="html">Push Technology</xref>, I was fortunate enough to work with a chap called Adam. 
+			Although Adam was very bright, a like minded individual, and an excellent coder, his comments were somewhat laconic and definitely shy.</fn> 
+			 was born out of the necessity to sanity check <codeph>Javadoc</codeph> comments with the code.
+			Although <codeph>Javadoc</codeph> will test for some things, it was clearly lacking in sanity checking the code with the tags in the comments.  I was 
+			surprised to see how little the standard <codeph>Javadoc</codeph> process issued warnings, where there was a mismatch between the code and the comments.
+			</p>
+			<p>The natural evolution of software, is by refactoring.  As a development manager and CTO I heavily encouraged refactoring as a way of reducing
+			technical debt, but what I found is that although the classes, methods and instance variables were being refactored, the <codeph>Javadoc</codeph> wasn't, so the API documentation
+			being produced for the outside world to consume was wholly inaccurate. <codeph><keyword keyref="adam" /></codeph> is a way to prevent this.
+			</p>
+			<p>There also a requirement to encourage <codeph>Javadoc</codeph> standards, <codeph><keyword keyref="adam" /></codeph> is a step towards that.
+			</p>
+		</section>
+	</conbody>
+</concept>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="installing_plugin">
+	<title>Installing <keyword keyref="doc-tm" /> plugins for <codeph>Eclipse</codeph></title>
+	<shortdesc>How to install Eclipse Plugin.</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				The eclipse plugins can be installed in many ways, all with the same result.
+			</p>
+			<p>The plugins can be found on the eclipse market place.  The URL for the market place is http://marketplace.eclipse.org/.  Searching for docfacto will
+			list the plugin. Once located, simply drag the install icon to your eclipse workbench.</p>
+			<p>The market place can also be launched from within Eclipse via
+			<menucascade>
+				<uicontrol>Help</uicontrol>
+				<uicontrol>Eclipse Marketplace</uicontrol>
+			</menucascade>
+			</p>
+			<p>The eclipse plugin can be installed from the Docfacto download site.  The URL for this is 
+			http://www.docfacto.com/eclipse/4.2</p>
+			<p>
+			To install use the <codeph>Eclipse</codeph> menus 
+			<menucascade>
+				<uicontrol>Help</uicontrol>
+				<uicontrol>Install New Software</uicontrol>
+			</menucascade>
+			This will enable you to enter the URL above, which will locate and install the Docfacto Eclipse Plugin.
+			Once the <codeph>Eclipse</codeph> plugin has been install, you will need to locate the Docfacto.xml from the previous install.
+			This is done by using the menus
+			<menucascade>
+				<uicontrol>Preferences...</uicontrol>
+				<uicontrol>Docfacto</uicontrol>
+			</menucascade>
+			</p>
+		</section>
+		<section>
+			<fig>
+				<title>Setting the Docfacto core preference</title>
+				<image href="core-preference.png" placement="break" ></image>
+			</fig>
+		</section>
+	</conbody>
+</concept>

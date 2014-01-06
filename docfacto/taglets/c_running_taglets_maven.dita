@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tagletsmaven">
+	<title>Running Taglets from Maven</title>
+	<shortdesc>How to use Maven to run the <codeph>Taglets</codeph>.</shortdesc>
+	<conbody>
+		<example>
+			<title>Example of an <codeph>Maven</codeph> pom section which configures the <codeph>javadoc</codeph> plugin for use with the <keyword keyref="doc-tm"></keyword> <codeph>Taglets</codeph></title>
+			<codeblock><coderef href="ex_running_taglets_maven.xml" /></codeblock>
+		</example>
+		<section>
+			<p>
+				See <ph><xref keyref="maven-javadoc-plugin" scope="external"><codeph>Maven javadoc plugin</codeph></xref> for more configuration information</ph>
+			</p>
+		</section>
+	</conbody>
+</concept>

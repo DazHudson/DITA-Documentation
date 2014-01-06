@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_">
+	<title>How does your documentation rate?</title>
+	<shortdesc>Understanding your organisations level of documentation debt can be difficult,
+	 but knowing the standard of good documentation can aid in establishing the quality of your documentation
+	  and identifying areas of concern.</shortdesc>
+	<conbody>
+		<section>
+			<p>
+			Docfacto has identified five qualities of good documentation, which,
+			 when in place, lead to reduced documentation debt:</p>
+		</section>
+		<section>
+			<title>1. Coverage:</title>
+			<p>Code that is and is not documented is easily identifiable.</p>
+		</section>
+		<section>
+			<title>2. Accuracy:</title> 
+			<p>The code comments accurately describe the code reflecting the last set of source code changes.</p>
+		</section>
+		<section>
+			<title>3. Clarity:</title>
+			<p>The system documentation describes what the code does and why it is written that way.</p>
+		</section>
+		<section>
+			<title>4. Maintainability:</title>
+			<p> A single source is maintained to handle multiple output formats, product variants, localisation or translation.</p> 
+		</section>
+		<section>
+			<title>5. Synchronisation:</title>
+			<p>The code and documentation are linked to keep them in sync.</p>
+			
+			<p>
+			Any of these qualities missing from your documentation is a sign of documentation debt.
+			</p>
+			<p> </p>
+			
+			<fig>
+				<title>How does your documentation rate?</title>
+				<image href="docdebtscaleTNR.png" width="450" height="250" otherprops="pdf" />
+				<image href="docdebtscaleTNR.png" scalefit="yes" otherprops="html" />
+			</fig>
+		</section>
+	</conbody>
+</concept>

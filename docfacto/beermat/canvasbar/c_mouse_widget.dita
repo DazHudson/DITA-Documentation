@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- @docfacto.link uri="src-beermat/ui/widgets/MouseStatusWidget.java key="mouse-widget" version="2.4.2" -->
+<concept id="mouse-widget">
+	<title>Mouse Widget</title>
+	<shortdesc>
+		Functions of the mouse widget.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>The mouse widget displays the mouse position in pixels relative to the SVG canvas.
+			</p>
+		</section>
+	</conbody>
+</concept>

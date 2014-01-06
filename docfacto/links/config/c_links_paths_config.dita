@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="links_paths_config">
+	<title>Link Paths</title>
+	<shortdesc>
+		How to set up link paths.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>The links section of the Docfacto.xml contains a 'basedir' meaning the 'Base Directory' and a list of paths.</p>
+			
+			<p>The Base Directory is the directory which all other paths will be relative to, and the base directory is relative to the location
+			of the Docfacto.xml file.</p>
+			
+			<note>It is recommended that you place the Docfacto.xml file into the root of your project, and set the base dir to '.' so the base dir 
+			is the root of your project.</note>  
+			
+			<p>
+				The paths enable you to make your paths relative so the links can be processed on more than one machine, as opposed to using absolute paths 
+				which will only work on one machine. They can also make the paths in the links shorter and easier to read.
+			</p>
+			<p>Once a path has been declared it my be used in other path defintions.  To use a path definition, the name of the path is preceeded by 
+			 	<codeph>${</codeph> and postfix by <codeph>}</codeph>. Paths are resolved at runtime, and an error will be issued if the paths to not point to a physical location.
+			 </p>
+		</section>
+		<example>
+			<title>Links Paths Example</title>
+			<codeblock>
+				&lt;links>
+					%lt;basedir>.&lt;/basedir>
+					
+					&lt;!-- Define the top level doc and code paths -->
+					&lt;path name="doc-root" description=Doc Root">./doc&lt;/path>
+					&lt;path name="source-root" description="Source root">./src/java.&lt;/path>
+					
+					&lt;!-- Define more specific paths -->
+					&lt;path name="package-a" description="Package A">${source-root}/com/docfacto/packageA.&lt;/path>
+					&lt;path name="package-b" description="Package B">${source-root}/com/docfacto/packageB.&lt;/path>
+				&lt;/links>		
+			</codeblock>
+		</example>
+		<example>
+			<title>A link which uses a defined path</title>
+			<!-- @docfacto.link key="links-resolved-path" uri="${source-root}/com/docfacto/links/LinksPathsResolver.java" version="1.0" link-to="source" -->
+			<codeblock>
+				&lt;!-- @docfacto.link uri="${doc-root}/someDocFile.dita" key="attributes" link-to="doc" version="2.3" --&gt;		
+			</codeblock>
+		</example>
+		
+	</conbody>
+</concept>

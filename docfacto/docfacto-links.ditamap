@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap xml:lang="en">
+	<booktitle>
+   		<booklibrary>User-guide to</booklibrary>
+   		<mainbooktitle>docfacto Links <keyword keyref="docfacto.release.version" />
+    		<image href="./images/docfacto_logo.png" scale="10" placement="break" />   				
+   		</mainbooktitle>
+	</booktitle>
+
+	<bookmeta>
+		<prodinfo>
+			<prodname><keyword keyref="doc-tm" /> Links </prodname>
+			<vrmlist>
+				<vrm version="2.0" />
+			</vrmlist>
+		</prodinfo>
+	</bookmeta>
+	<frontmatter>
+		<mapref href="keyrefs.ditamap" processing-role="resource-only" />
+		<mapref href="subjectscheme.ditamap" type="subjectScheme"
+			processing-role="resource-only" />
+		<booklists>
+			<toc />
+			<figurelist />
+			<tablelist />
+		</booklists>
+	</frontmatter>
+
+	<chapter href="links.ditamap" format="ditamap" />
+
+	<backmatter>
+		<booklists>
+			<indexlist />
+			<glossarylist>
+				<topicref format="dita" href="glossary.dita" toc="yes" type="glossary"/>			
+			</glossarylist>
+		</booklists>
+	</backmatter>
+</bookmap>

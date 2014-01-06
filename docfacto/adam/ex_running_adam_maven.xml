@@ -1,0 +1,19 @@
+<build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-javadoc-plugin</artifactId>
+			<version>2.9</version>
+			<configuration>
+				<doclet>com.docfacto.doclets.adam.AdamDoclet</doclet>
+				<docletArtifact>
+					<groupId>com.docfacto</groupId>
+					<artifactId>java-toolkit</artifactId>
+					<version>__RELEASE_BUILD__</version>
+				</docletArtifact>
+				<additionalparam>-config ../../etc/Docfacto.xml</additionalparam>
+				<useStandardDocletOptions>false</useStandardDocletOptions>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>

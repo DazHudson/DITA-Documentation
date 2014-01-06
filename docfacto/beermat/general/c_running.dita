@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="runningBeermat">
+	<title>Issues Running Beermat</title>
+	<shortdesc>
+		If you have any issues running beermat, refer to this
+	</shortdesc>
+	<conbody>
+		<section>
+			<title>Running Beermat using Java 6</title>
+			<p>If using Java 6, to get beermat running, Eclipse Juno (4.2) is required</p>
+		</section>
+		<section>
+			<title>Running Beermat using Java 7</title>
+			<p>Eclipse Kepler is required, and the latest update of Java 7 is required (u40 or higher).</p>
+		</section>
+		<!-- @docfacto.link key=" runningBeermatProblems" uri="${src-beermat}/plugin/BeermatMultiPage.java" link-to="source" -->
+		
+		<section>
+			<title>Problems opening Beermat</title>
+			<p>Beermat will still open an editor through encountering problems, the editor's first page will display the problem
+				encountered, and the XML view will still be accessible
+				if the SVG opened is valid. Opening an un-parsable SVG, opening a file type not understood by beermat, or having the
+				incorrect Java/Eclipse combination will all trigger
+				the error page to load instead of the graphical editor.</p>
+		</section>
+	</conbody>
+</concept>

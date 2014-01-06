@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="installing_sonar_plugins">
+	<title>Installing the Sonar plugins</title>
+	<shortdesc>How to install Sonar plugins</shortdesc>
+	<conbody>
+		<section>
+			<p>
+				To use the Sonar plugins, you obviously need to install Sonar. If you haven't already done so, head 
+				over to the <keyword keyref="sonar.site" /> for more details.
+			</p>
+		</section>
+		
+		<section>
+			<p>
+				You then need to add the following two properties to your Sonar configuration:
+				
+				<codeblock>					
+sonar.docfacto.jar 
+sonar.docfacto.config
+				</codeblock>
+				
+				<varname>'sonar.docfacto.jar'</varname> should reference the location of <codeph><keyword keyref="docfacto.jar" /></codeph>, and sonar.docfacto.config should reference
+				the location of <codeph><keyword keyref="docfacto.xml" /></codeph>.
+			</p>
+			</section>
+			
+		<section>
+			<title>Configuring Sonar Plugins for Sonar-runner</title>
+			<p>
+				For example to add these properties if you are running Sonar with Sonar-runner, add the following parameters to the <codeph>sonar-project.properties</codeph> file for the project 
+				you want to analyse, for example:
+				
+				<codeblock>					
+sonar.docfacto.jar=/Users/your_username/<keyword keyref="docfacto.jar" /> 
+sonar.docfacto.config=/Users/your_username/<keyword keyref="docfacto.xml" />
+				</codeblock>
+			</p>
+		</section>
+			
+		<section>
+			<title>Configuring Sonar Plugins for Maven</title>
+			
+			<p>
+				If you are running Sonar with Maven, add the two properties within the <codeph>&lt;properties&gt;</codeph> tags in your Maven <codeph>settings.xml</codeph> file for your Sonar profile, for example:
+				
+				<codeblock>
+&lt;settings&gt;
+	&lt;profiles&gt;
+		&lt;id&gt;sonar&lt;/id&gt;
+			&lt;activation&gt;
+				&lt;activeByDefault&gt;true&lt;/activeByDefault&gt;
+			&lt;activation&gt;
+		
+			&lt;properties&gt;
+				...		
+				<b>		
+				&lt;sonar.docfacto.jar&gt;
+						/Users/your_username/<keyword keyref="docfacto.jar" />
+				&lt;/sonar.docfacto.jar&gt;
+				&lt;sonar.docfacto.config&gt;
+						/Users/your_username/<keyword keyref="docfacto.xml" />
+				&lt;/sonar.docfacto.config&gt;
+				</b>
+				...
+			&lt;/properties&gt;
+		
+		&lt;/profile&gt;
+	&lt;/profiles&gt;
+&lt;/settings&gt;
+				</codeblock>
+			</p>
+		</section>
+			
+		<section>
+			<title>Configuring Sonar Plugins for Ant Task</title>
+			<p>
+				If you are running Sonar with an Ant task, you need to define the new properties in your Ant build script, for example:
+				
+				<codeblock>
+&lt;property name="sonar.docfacto.jar" 
+			 value="/Users/your_username/<keyword keyref="docfacto.jar" />"/&gt;
+&lt;property name="sonar.docfacto.config" 
+			 value="/Users/your_username/<keyword keyref="docfacto.xml" />" /&gt;
+				</codeblock>
+			</p>
+		</section>
+		<section>
+		<note>
+			Don't forget to add the docfacto jar to the your local maven repository!
+		</note>
+		</section>
+	</conbody>
+</concept>

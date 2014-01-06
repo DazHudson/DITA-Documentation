@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="introExisting">
+	<title>Existing practises</title>
+	<shortdesc>
+		How is documentation done today? At what standards?
+	</shortdesc>
+	<conbody>
+		<section>
+		<title>How the industry documents today</title>
+<!-- 			<p>Current documentation standards are currently not up to par with what they should be, internal documentation can be seen as
+			less than helpful, and end-user documentation usually does not actually portray with what the code performs.
+			The following issues regarding documentation often occur in the industry</p>
+			
+			<ul>
+				<li>No Documentation: sections of code are not documented at all. </li>
+				<li>Documentation does not reflect the most current revision of the code; the code was written and documented at first, but after refactoring, documentation is not often refactored with the code.</li>
+				<li>Documentation is done weeks to months after the code was actually written; meaning the developer has likely forgotten the detail of what the code actually did.</li>
+				<li>Documentation is written by an external author; the transfer of knowledge from developer to tech author often results in an inaccurate description of what's happening, the process is also lengthy, tedious and costly.</li>
+				<li>Current documentation nearly always focuses on what has been coded, but does not how the developer came to his or why this method was chosen.</li>
+			</ul>
+
+			<fig>
+				<title>The relationship between the code and technical documentation</title>
+				<image href="Current.svg" width="500" height="600" otherprops="pdf" />
+				<image href="Current.svg" scalefit="yes" otherprops="html" />
+			</fig>
+			
+		</section>
+		
+		<section>
+		<title>Why are documentation standards this way?</title>
+		<p> 
+			The obvious question here is "Why is internal documentation so rarely done to top-class standards?". A simple answer to this 
+			would be it's a pain for a developer to do. There are tools which help with the process, but they require a developer to learn a completely
+			new environment, produce inaccurate results, are fragmented, produce un-helpful results and don't warn of inconsistencies between the code and the documentation as it stands.
+			Inevitably documentation is put straight in to the 'to-do list' for each developer.
+		</p>
+ -->
+ 			<p>There are a variety of practices in existence across the industry, some driven by development process methodologies. We all know of examples where new code functionality is not represented in the Technical doc because the linkage between the developer and the technical author is not working effectively.</p>
+ 			<p><xref format="dita" href="#introExisting/doc-process"></xref> shows a simple check list for the processes associated with generating Technical doc.</p>
+ 			<p>Of critical importance are the issues of dynamic linking and having the code and Technical doc close-coupled.</p>
+ 			<p>Dynamic linking places the code as the ‘source of truth’ and means that there is a process that ensures that any code changes are reflected in the Technical doc. This can be, and often is, delivered by technical authors working closely with the developers continuously; an expensive option.</p>
+ 			<p>Close coupling means that the time lag between and code change and a change in the Technical doc is short.</p>
+
+ 			<fig id="doc-process">
+				<title>Document creation processes</title>
+				<image href="Broken1.svg" width="500" height="600" otherprops="pdf" />
+				<image href="Broken1.svg" scalefit="yes" otherprops="html" />
+			</fig>			
+
+ 			<p>Our vision is that the <keyword keyref="doc-tm" /> tools will deliver instantaneous changes to the Technical doc each and every time the code is changed. Importantly, as developers ourselves, we recognise that whilst the ‘code is king’, our tools must be useful to the developers rather than another management process burden.</p>
+		</section>
+	</conbody>
+</concept>

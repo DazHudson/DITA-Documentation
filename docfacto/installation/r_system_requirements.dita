@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="system_requirements">
+	<title>System Requirements</title>
+	<shortdesc>System Requirements
+	</shortdesc>
+	<refbody>
+		<section>
+			<title>Adam System Requirements.</title>
+			<p>
+				To successfully run <codeph><keyword keyref="adam" /></codeph> Java JDK <keyword keyref="java.version"></keyword> and above is required. 
+				<codeph><keyword keyref="adam" /></codeph> is a <codeph>Doclet</codeph> which runs within the <codeph>Javadoc</codeph> framework, which is only
+				supplied with the JDK installations.
+			</p>
+			<p>
+				If the Ant task is to be used, then the demos / examples were
+				built using Ant verison <keyword keyref="ant.version"></keyword> Earlier versions may work.
+			</p>
+			<p>
+				If using 1.6 or greater, then tools.jar from the JDK lib directory may need to be added to the class path.  This is not required for the eclipse plugin.
+			</p>
+		</section>
+		<section>
+			<title>Taglet System Requirements.</title>
+			<p>
+				To successfully run these <codeph>Taglets</codeph> it requires Java JDK <keyword keyref="java.version" /> and above. <codeph>Taglets</codeph>
+				runs within the <codeph>Javadoc</codeph> framework, which is only supplied with the JDK installations.
+			</p>
+			<p>
+				If the Ant task is to be used, then the demos / examples were
+				built using Ant version <keyword keyref="ant.version"></keyword> Earlier versions may work.
+			</p>
+		</section>
+		<section>
+			<title>Eclipse System Requirements.</title>
+			<p>
+				To successfully run <codeph>Eclipse Plugin</codeph> it requires Eclipse 4.2 (Juno) or above and Java JDK 1.6 or above.
+			</p>
+		</section>
+		<section product="dita">
+			<title>Javadoc to DITA system requirements</title>
+			<p>
+				To successfully run <codeph><keyword keyref="javadoc2dita" /></codeph> Java JDK <keyword keyref="java.version"></keyword> and above is required. 
+				<codeph><keyword keyref="javadoc2dita" /></codeph> is a <codeph>Doclet</codeph> which runs within the <codeph>Javadoc</codeph> framework, which is only
+				supplied with the JDK installations.
+			</p>
+			<p>
+				If the Ant task is to be used, then the demos / examples were
+				built using Ant verison <keyword keyref="ant.version"></keyword> Earlier versions may work.
+			</p>
+			<p>
+				If using 1.6 or greater, then tools.jar from the JDK lib directory may need to be added to the class path.  This is not required if running from eclipse.
+			</p>
+			<p>
+			   As no specialisation is required, DITA 1.2 version is supported.
+			</p>
+		</section>
+		<section>
+			<title>Beermat System Requirements.</title>
+			<p>
+				If using OSX and Java 1.7, then due to an bug within the JDK. the minimum Java release is 1.7u40 will be required as well as Eclipse 4.3 (Kepler)
+			</p>
+		</section>
+		<section>
+			<title>JAXB Plugin System Requirements.</title>
+			<p>
+				The JAXB plugins require at least Java <keyword keyref="java.version"></keyword> and above. The JAXB
+				framework that these plugins were built against was JAXB RI <keyword keyref="jaxb.version"></keyword>
+				You may have to reference this implementation if this is not the standard included with your JDK.
+				This implementation can be found <ph><xref keyref="jaxb-for-java" scope="external"><codeph>here</codeph></xref></ph> and you may have to use -Djava.endorsed.dirs on the java command if you are not using the same reference implementation as <keyword keyref="jaxb.version"></keyword>
+			</p>
+			<p>
+				If the Ant task is to be used, then the demos / examples were
+				built using Ant verison <keyword keyref="ant.version"></keyword>. Earlier versions may work.
+			</p>
+		</section>
+	</refbody>
+</reference>

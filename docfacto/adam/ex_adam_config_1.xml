@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<docfacto>
+
+	<adam statistics-output="true">
+
+		<packages>
+			<required-documentation>
+				<doc severity="error">package.html</doc>
+				<doc>doc-files</doc>
+			</required-documentation>
+			
+			<required-tags>
+				<required-tag>since</required-tag>
+			</required-tags>
+		</packages>
+
+		<classes>
+			<required-tags>
+				<required-tag severity="info">author</required-tag>
+				<required-tag severity="info">since</required-tag>
+			</required-tags>
+		</classes>
+
+		<interfaces>
+		</interfaces>
+		
+		<enums>
+			<constants-require-javadoc>true</constants-require-javadoc>
+		</enums>
+		
+		<constructors>
+			<required-tags>
+				<required-tag severity="info">since</required-tag>
+			</required-tags>
+		</constructors>
+
+		<methods>
+			<required-tags>
+				<required-tag severity="info">since</required-tag>
+			</required-tags>
+			<allow-no-comments-for-interface-methods>true</allow-no-comments-for-interface-methods>
+		</methods>
+
+		<fields>
+		</fields>
+
+		<all>
+			<comments>
+				<comment-required severity="warning">true</comment-required>
+				<check-meaningless-comment>true</check-meaningless-comment>
+				<throws-tag-require-descriptions>true</throws-tag-require-descriptions>
+				<param-tag-require-descriptions>true</param-tag-require-descriptions>
+				<return-tag-require-description>true</return-tag-require-description>
+				<deprecated-tag-require-descriptions>true</deprecated-tag-require-descriptions>
+				<deprecated-annotation-requires-tag>true</deprecated-annotation-requires-tag>
+				<warning-if-contains>Constructor</warning-if-contains>
+				<warning-if-contains>TODO</warning-if-contains>
+				<warning-if-contains tag-name="since">n.n</warning-if-contains>
+				<adamlet name="Since Checker" tag-name="since">com.docfacto.doclets.adam.adamlets.SinceAdamlet</adamlet>
+			</comments>
+		</all>
+	</adam>
+</docfacto>

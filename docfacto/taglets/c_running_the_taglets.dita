@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "../../dtd/technicalContent/dtd/concept.dtd">
+<concept id="running_taglets">
+<title>Running the Taglets</title>
+<shortdesc>How to run the <codeph>Taglets</codeph>.</shortdesc>
+<conbody>
+	<section>
+		<p>
+			As <codeph>Taglets</codeph> extend the <codeph>Javadoc</codeph> engine, it's a requirement that the <codeph>Javadoc</codeph> engine must be extended
+			to include the <keyword keyref="doc-tm" /> <codeph>Taglets</codeph>.  To run correctly; the <keyword keyref="doc-tm" /> <codeph>Taglets</codeph>
+			have to be able to locate the configuration XML, this is done by setting a Java System Property.  
+			Depending on how the configuration XML file is configured, will influence on how the tags are rendered or included.  
+			It is also important to include the supplied <codeph>css (Docfacto7.css or Docfacto6.css)</codeph> so that the
+			<codeph>Taglets</codeph> can be rendered correctly.
+			<note>As JavaDoc has changed at java7, users running java7 and above should use the <codeph>Docfacto7.css</codeph> elsewise
+			pre java7 should use <codeph>Docfacto6.css</codeph></note>
+		</p> 
+	</section>
+</conbody>
+</concept>

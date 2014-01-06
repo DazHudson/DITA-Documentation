@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="xsd2svgcmdline">
+	<title>Running XSD2SVG from the command line</title>
+	<shortdesc>How to run XSD2SVG from the command line.</shortdesc>
+	<conbody>
+		<!-- @docfacto.link uri="${code-root}/com/docfacto/xsd2svg.java" version="2.2" key="class" -->
+		<section id="args">
+			<p>
+				In the <filepath>bin</filepath> directory there is a shell script called
+				<codeph>xsd2svg.sh</codeph>. This takes two arguments the first argument is the XSD to process,
+				the second argument is the output folder. There is a an optional
+				third argument, which is the root node. This allows for sections of
+				the schema selected rather than the whole schema.
+			</p>
+		</section>
+		<example>
+			<title>
+				Example of using
+				<codeph>xsd2svg.sh</codeph>
+				from the command line
+			</title>
+			<codeblock>
+				./xsd2svg.sh -xsd ../xsds/course-booking.xsd -output/course-booking.svg
+			</codeblock>
+		</example>
+	</conbody>
+</concept>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "../../dtd/technicalContent/dtd/concept.dtd">
+<concept id="running_links">
+	<title>Running <keyword keyref="links" /></title>
+	<shortdesc>How to run <keyword keyref="links" />.</shortdesc>
+	<conbody>
+		<section><keyword keyref="links" /> requires a selection source files or a selection of documentation files, or both.  Depending on what has been supplied depends on which 
+		reports will be generated.  If source files are only specified, then source files will be scanned and processed.  This will check for links between the source and the 
+		documentation, it will not then check the documentation files to see if there are any links back to the code.  Normally you would specify both source and documentation files.
+		</section>
+	</conbody>
+</concept>

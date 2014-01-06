@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- @docfacto.link uri="src-beermat/ui/widgets/GridWidget.java key="grid-widget" version="2.4.2" -->
+<concept id="grid-widget">
+	<title>Grid Widget</title>
+	<shortdesc>
+		Functions of the grid widget.
+	</shortdesc>
+	<conbody>
+		<section>
+			<!-- @docfacto.link uri="src-beermat/ui/widgets/GridWidgetWidget.java key="grid-widget-size" version="2.4.2" -->
+			<p>The grid widget is a check box, that when clicked will display (by default a 20x20) grid behind the SVG image. 
+			If the label "Grid" itself is clicked, a Dialog will popup in which you can fully customise the grid size and colour to your preference.
+			</p>
+		</section>
+	</conbody>
+</concept>

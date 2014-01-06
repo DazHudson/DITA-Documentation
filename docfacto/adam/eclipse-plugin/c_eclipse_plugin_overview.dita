@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="adamEclipseOverview">
+	<title>Adam - Eclipse Plugin</title>
+	<shortdesc>Adam plugin adds document checking capabilities to the
+		Eclipse IDE. This section shows you how to use and customize your Adam
+		plugin.</shortdesc>
+	<conbody>
+		<section id="adam_eclipse_plugin">
+			<p>
+				The eclipse version of Adam (<xref href="../c_adam_overview.dita" />) provides a means of 
+				visually discovering documentation errors on the fly. It does a sanity check of your code, similar to what the spell checker does for free text. 
+				
+				With the adam feature, users are able update documentation preferences without leaving the IDE environment, 
+				Adherence to a documentation standard can also be greatly improved by modifying your docfacto configuration file to suit your requirements.
+			</p>
+			<fig>
+				<title>Adam document checking in Eclipse</title>
+				<image href="ProblemViewANDpref.png" placement="break" />
+			</fig>
+		</section>
+		
+		<section id="using_adam_plugin">
+			<title>Using Adam in Eclipse IDE</title>
+			<p>
+				Adam comes bundled with the Eclipse ‘Docfacto Toolkit’. If you don't
+				have the Docfacto Toolkit, install the feature from Docfacto update
+				site (<xref href="../../installation/c_installing_plugin.dita" />).
+
+				After installation, you should notice the Adam icon in toolbar when you restart Eclipse.
+			</p>
+			<fig>
+				<title>Adam Icon</title>
+				<image href="ToolBarIcon.png" placement="break" />
+			</fig>
+			<p>When Adam is running, the icon in the toolbar will be seen as enabled. Markers added to opened 
+			source files would be highlighted as errors, warnings or infos based on your preferences. 
+			You can browse Adam errors, warnings and info by opening the <b>Problems</b> view and looking for "Adam Checks".
+			You can also browse these checks via the Markers view 
+			<menucascade>
+				<uicontrol>Window</uicontrol>
+				<uicontrol>Show View</uicontrol>
+				<uicontrol>Markers</uicontrol>
+			</menucascade>.	
+			</p>
+			
+			
+			<p>Additional menu options are available by right clicking java resources in the package explorer and navigating to the <b>Source</b> menu option. 
+			Executing <b>Generate Adam Report</b> option opens the eclipse console and produces a summary of documentation issues discovered in the selected resource.
+			Users can choose to generate the report with or without markers added to the resources.
+			<fig>
+				<title>Viewing Adam Report in the Eclipse console.</title>
+				<image href="adamReport.png" />
+			</fig>
+			
+			
+			The <b>Clear Adam Markers</b> menu option can be used to clear Adam markers from source files. 
+			If the Adam is still running, markers would be added to any opened source file when changes are made to that file.
+			
+			<fig>
+				<title>Additional menu options.</title>
+				<image href="reportMenu.png" />
+			</fig>
+			<note>Adam markers can also be cleared from java source files by turning off Adam or by closing the files.</note>
+			</p>
+			
+		</section>
+
+		<section id="customizing_adam">
+			<title>Customising Adam</title>
+			<p>
+				Tags can be added, edited or deleted by using the appropriate
+				controls in the preference page 
+				<menucascade>
+					<uicontrol>Preferences</uicontrol>
+					<uicontrol>docfacto</uicontrol>
+					<uicontrol>Adam</uicontrol>
+				</menucascade>.
+				<note type="note">Ensure you have loaded a valid configuration file
+					before attempting to fine tune your Adam plugin</note>
+			</p>
+			<fig>
+				<title>Modifying Adam Preferences</title>
+				<image href="tagCheck.png" />
+			</fig>
+			<p>For example, you can edit any tag by opening the Adam preference
+				page to select the tag and then click ‘Edit’ to modify the tag.</p>
+			<fig>
+				<title>Fine tuning Adam Preferences</title>
+				<image href="DetailComment.png" placement="break" />
+			</fig>
+			<p>To perform detailed comment checks, you will need to modify the Adam <b>comment settings </b>and choose the 
+			options you want and un-check the ones you would like to ignore. See also <xref href="../r_adam_config.dita" /></p>
+			
+			
+
+		</section>
+	</conbody>
+</concept>

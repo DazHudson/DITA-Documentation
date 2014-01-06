@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<docfacto>
+	<taglets>
+		<taglet name="since" enabled="true" param="2.1" />
+		<taglet name="docfacto.system" enabled="false" />
+		<taglet name="docfacto.note" enabled="true" />
+		<taglet name="docfacto.example" enabled="true" />
+		<taglet name="docfacto.todo" enabled="true" />
+		<taglet name="docfacto.media" enabled="true" />
+		<user-taglet name="underline">com.docfacto.test.UnderlineTaglet</user-taglet>
+	</taglets>
+</docfacto>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ditacmdline">
+	<title>Running <keyword keyref="javadoc2dita" /> from the command line</title>
+	<shortdesc>How to use JavaDoc to run <keyword keyref="javadoc2dita" />.</shortdesc>
+	<conbody>
+		<section>
+			As <codeph><keyword keyref="javadoc2dita" /></codeph> is a <codeph>JavaDoc Doclet</codeph>, the standard <codeph>Javadoc</codeph> options apply.  
+			<codeph><keyword keyref="javadoc2dita" /></codeph> has an additional parameter of <parmname>-config</parmname>.  
+			The config option needs to specify the location of the Docfacto configuration file. 
+		</section>
+		<example>
+			<title>Example of using <codeph>JavaDoc</codeph> from the command line to run <codeph><keyword keyref="javadoc2dita" /></codeph></title>
+			<codeblock>
+javadoc -sourcepath <filepath>src/java</filepath> -doclet "com.docfacto.doclets.dita.DITADoclet" -docletpath <filepath>lib/<keyword keyref="docfacto.jar"/></filepath> -config <filepath>etc/Docfacto.xml</filepath> @packages
+			</codeblock>
+		</example>
+	</conbody>
+</concept>

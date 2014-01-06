@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- @docfacto.link uri="src-beermat/ui/TextsShapeHandler.java key="text-action" version="2.4.2" -->
+<concept id="text-paletteItem">
+	<title>Text Insertion Tool</title>
+	<shortdesc>
+		Inserts text in to the canvas, represented by a 't'.
+	</shortdesc>
+	<conbody>
+		<section>
+			<p>With the Text Tool palette item selected, a click on the canvas brings up a dialog for text entry.
+			Multi line text can be entered by entering multi lines of text.  When using the text tool, if the cursor shown is a <codeph>ibeam</codeph> then a single click will enable
+			the text to be edited.
+			</p>
+			<p>When the Text Tool item is selected, hot spots will appear on elements.  If the hot spot is selected when the mouse is clicked, the text will be
+			anchored to that element, in that position.  If the element is moved or resized, the text will still be anchored to that position.  Connectors can
+			also be annotated in the same way, a hot spot will appear in the centre of the connector, allowing for text to be anchored at the centre of the connector.</p>
+		</section>
+	</conbody>
+	<!-- 
+	The entry widget allows for text to be entered with its translations to other languages if required. At the 
+			SVG level, this creates a switch for each locale added, the text is only display when the system locale
+			matches one of the locale's in the switch. The default tab is for when no locale matches on a system, this is the 
+			text shown. Default can also be used if no translation is required at this moment.
+	 -->
+</concept>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN"
+ "map.dtd">
+<map>
+	<title>
+		XSD2SVG
+	</title>
+	<topicref href="c_xsd2svg_overview.dita" type="concept" />
+	<topicref href="c_running_xsd2svg.dita" type="concept">
+		<topicref href="c_running_xsd2svg_ant.dita" type="concept" />
+		<topicref href="c_running_xsd2svg_cmdline.dita" type="concept" />
+		<topicref href="c_running_xsd2svg_jaxb.dita" type="concept" />
+	</topicref>
+	<mapref href="../keyrefs.ditamap" processing-role="resource-only" />
+</map>

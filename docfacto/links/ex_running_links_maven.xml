@@ -1,0 +1,46 @@
+<build>
+<plugins>
+	<plugin>
+		<artifactId>maven-antrun-plugin</artifactId>
+		<version>1.7</version>
+		<executions>
+			<execution>
+				<id>default-cli</id>
+				<!-- <phase>install</phase> -->
+				<configuration>
+					<target name="links">
+
+						<property name="doc.dir"
+							value="/Users/your_username/workspace/TestProject/doc" />
+
+						<taskdef name="links" classname="com.docfacto.links.ant.LinksTask"
+							classpath="/Users/your_username/docfacto.jar" />
+
+						<links versionmatch="true"
+							configpath="/Users/your_username/Docfacto.xml">
+							<source>
+								<sourceset type="java">
+									<fileset dir="/Users/your_username/Documents/workspace/TestProject/src">
+										<include name="**/*.java" />
+										<exclude name="**/generated/**" />
+									</fileset>
+								</sourceset>
+							</source>
+							<doc>
+								<docset type="xml">
+									<fileset dir="${doc.dir}">
+										<include name="**/*.dita" />
+									</fileset>
+								</docset>
+							</doc>
+						</links>
+					</target>
+				</configuration>
+				<goals>
+					<goal>run</goal>
+				</goals>
+			</execution>
+		</executions>
+	</plugin>
+</plugins>
+</build>

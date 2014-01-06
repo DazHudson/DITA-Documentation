@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN"
+ "concept.dtd">
+<dita>
+<glossgroup id="glossary">
+  <title>Glossary</title>
+  <glossentry id="ant">
+    <glossterm>Ant</glossterm>
+    <glossdef>
+    	Apache Ant is a Java library and command-line tool whose mission is to drive processes described in build files as 
+    	targets and extension points dependent upon each other
+    </glossdef>
+    <related-links>
+      <link format="html" href="http://ant.apache.org/" scope="external">
+        <linktext>Apache Ant's official website</linktext>
+      </link>
+    </related-links>
+    </glossentry>
+  <glossentry id="doclet">
+  	<glossterm>Doclet</glossterm>
+  	<glossdef>
+  		Java programs implementing the doclet API to specify content and format for the Javadoc process. 
+  	</glossdef>
+  	<related-links>
+  		<link href="#javadoc">
+  			<linktext>See Javadoc</linktext>
+  		</link>
+  	</related-links>
+  </glossentry>
+  <glossentry id="javadoc">
+  	<glossterm>Javadoc</glossterm>
+  	<glossdef>
+  		A Java tool for generating API documentation in HTML format using doc comments in the source code.
+  	</glossdef>
+  </glossentry>
+  <glossentry id="taglet">
+	  <glossterm>Taglet</glossterm>
+	  <glossdef>
+	 		A program implementing the Taglet API. A taglet can modify and format the text argument of a custom tag.
+	  </glossdef>
+  </glossentry>
+  <glossentry id="maven">
+	  <glossterm>Maven</glossterm>
+	  <glossdef>
+	 		Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+	  </glossdef>
+  </glossentry>
+  <glossentry id="XML">
+    <glossterm>XML</glossterm>
+    <glossdef>
+    	e<b>X</b>tensible <b>M</b>arkup <b>L</b>anguage. A markup language to define a set of rules that is both machine
+    	and human readable.
+    </glossdef>
+  </glossentry>
+  <glossentry id="XSD">
+    <glossterm>XSD</glossterm>
+    <glossdef>
+    	<b>X</b>ML <b>S</b>chema <b>D</b>ocument. A schema language to express a set of rulesto which an XML must conform too
+    	to be considered valid.
+    </glossdef>
+    <related-links>
+    	<link href="#XML"/>
+    </related-links>
+  </glossentry>
+</glossgroup>
+</dita>

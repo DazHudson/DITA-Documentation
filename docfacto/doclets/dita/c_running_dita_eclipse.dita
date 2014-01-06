@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ditaeclipse">
+	<title>Running <keyword keyref="javadoc2dita" /> from Eclipse</title>
+	<shortdesc>How to use Eclipse to run <codeph><keyword keyref="javadoc2dita" /></codeph>.</shortdesc>
+	<conbody>
+		<section>
+			To use <codeph>Eclipse</codeph> to run <codeph><keyword keyref="javadoc2dita" /></codeph> use the menu  
+			<menucascade>
+				<uicontrol>File</uicontrol>
+				<uicontrol>Export</uicontrol>
+			</menucascade>
+			</section>
+		<section>
+			<fig>
+				<title>Select Javadoc to export</title>
+				<image href="EclipseExport.png" placement="break" ></image>
+			</fig>
+			After selection Javadoc, configure the Doclet.  At this point you can select if you want private and public classes and members checked.
+			<fig>
+				<title>Eclipse <keyword keyref="javadoc2dita" /> Setup</title>
+				<image href="EclipseDITAGeneration.png" placement="break"></image>
+			</fig>
+			Configure the location of the Docfacto.xml file
+			<fig>
+				<title>Eclipse <keyword keyref="javadoc2dita" /> config</title>
+				<image href="EclipseDITAConfig.png" placement="break"></image>
+			</fig>
+			Pressing the finish button at this stage will run <codeph><keyword keyref="javadoc2dita" /></codeph>.  The DITA files will be generated at the location specified by the <option>-d</option> option
+		</section>
+	</conbody>
+</concept>
